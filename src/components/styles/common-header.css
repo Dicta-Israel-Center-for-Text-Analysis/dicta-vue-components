@@ -1,0 +1,197 @@
+a {
+  color: #000;
+}
+.eng {
+  position: relative;
+  font-size: 14px;
+  text-decoration: underline;
+  padding: 0;
+  color:#000000 !important;
+}
+.eng:before {
+  width: 1px;
+  height: 10px;
+  top: 5px;
+  bottom: 0;
+  position: absolute;
+  background: #000;
+  content: "";
+}
+.top-header {
+  padding: 1px 0;
+  min-height: 28px;
+  background-color: #ffffff;
+  margin-bottom: 0;
+}
+.title {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 3px 5px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+}
+.txt.add {
+  font-size: 13px;
+  line-height: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px 0 0;
+  content: 'Analytical tools for Jewish texts';
+}
+.link {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 15px;
+  box-shadow: none;
+  padding: 0;
+  margin: 6px 0 0;
+  display: block;
+  color: #000000 !important;
+}
+.link-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+}
+.header-dropdown {
+  position: static;
+}
+.header-dropdown.open .link {
+  background: transparent !important;
+}
+.mega-menu {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 0;
+  min-width: auto;
+  width: 100%;
+  margin-top: 0;
+  border-color: #ccc;
+  left: 0 !important;
+  height: 145px;
+  padding: 20px 0 0;
+  border-right: 0;
+  border-left: 0;
+}
+.mega-menu .container {
+  height: 100%;
+  position: relative;
+}
+.media {
+  margin-bottom: 20px;
+  display: block;
+}
+.media-heading {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: normal;
+  margin-bottom: 0;
+  display: inline-block;
+}
+ .media-heading:hover {
+  background: #E3E3E3;
+}
+.sub-heading {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.46;
+  margin-bottom: 0;
+}
+ .close-btn-div {
+  position: absolute;
+  bottom: 5px;
+}
+.media-object{
+  width: 25px;
+}
+/*tabs and mobile*/
+@media screen and ( max-width: 991px ) {
+  .top-header, .logo-header,
+   .dicta-link {
+    display: none;
+  }
+  .logo-header-for-result{
+    display: block;
+  }
+  /*.home .logo-header{display: none}*/
+   .title {
+    margin: 0;
+    font-size: 16px;
+  }
+   .link {
+    float: right;
+    margin: 7px 0 0;
+  }
+   .txt.add {
+    font-size: 11px;
+  }
+  .mobile-header {
+    padding: 10px 0;
+  }
+  .mobile-header-for-result {
+    padding: 6px 0;
+    background: #fff;
+  }
+  .mobile-link {
+    float: right;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: underline;
+  }
+  .he .mobile-link{
+    float: right;
+  }
+  .he .mobile-link-for-result{
+    float: left;
+  }
+  /*.mobile-link img {*/
+    /*margin: 0 6px 0 0;*/
+  /*}*/
+  .logo-header {
+    width: 150px;
+    height: 34px;
+    float: left;
+  }
+  /*.logo-header a {*/
+    /*display: block;*/
+    /*height: 100%;*/
+  /*}*/
+  .logo-img {
+    width: 34px;
+    height: 34px;
+    margin: 0 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .logo-text {
+    color: #000;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+  }
+  .rest-dicta-link {
+    float: left;
+    margin: 12px 0 0 7px;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: underline;
+  }
+  .rest-mobile-header-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and ( max-width: 767px ) {
+
+}
