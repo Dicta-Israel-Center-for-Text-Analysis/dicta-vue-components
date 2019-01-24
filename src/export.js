@@ -1,11 +1,13 @@
-import Header from '@/components/commonHeader'
-import Footer from '@/components/commonFooter'
-import bootstrap from '@/css/custom.scss'
-import checkbox from '@/components/checkbox'
+import dHeader from '@/components/commonHeader'
+import dFooter from '@/components/commonFooter'
+import dBootstrap from '@/css/custom.scss'
+import dCheckbox from '@/components/checkbox'
+import dRadio from '@/components/radio'
 
 export default {
-  Header,
-  Footer,
-  bootstrap,
-  checkbox
+  dHeader,
+  dFooter,
+  dBootstrap,
+  dCheckbox,
+  dRadio
 }

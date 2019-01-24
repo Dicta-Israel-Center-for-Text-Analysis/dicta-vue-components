@@ -1,6 +1,6 @@
 <template>
-  <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" :id="id">
+  <div class="custom-control custom-radio">
+    <input type="radio" :id="id" name="customRadio" class="custom-control-input">
     <label class="custom-control-label" :for="id">
       <slot></slot>
     </label>
@@ -10,16 +10,16 @@
 <script>
 let id = 0
 export default {
-  name: 'checkbox',
+  name: 'radio',
   beforeCreate () {
-    this.id = 'checkbox' + id
+    this.id = 'radio' + id
     id += 1
   },
   model: {
     prop: 'checked',
     event: 'change'
   },
-  props: ['checked', 'partial']
+  props: ['checked', 'partial', 'name', 'value']
 }
 </script>
 
