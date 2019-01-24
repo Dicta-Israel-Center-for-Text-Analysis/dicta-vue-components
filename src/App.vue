@@ -10,8 +10,8 @@
       <div class="he" dir="rtl">
         <p>Hebrew</p>
         <checkbox>Checkbox test</checkbox>
-        <radio name="bob">Radio test</radio>
-        <radio name="bob">Radio test</radio>
+        <radio v-model="radio2" :value="'a'">Radio test</radio>
+        <radio v-model="radio2" :value="'b'">Radio test</radio>
       </div>
     </div>
     <Footer></Footer>
@@ -30,6 +30,11 @@ export default {
     Checkbox,
     Footer,
     Header
+  },
+  data () {
+    return {
+      radio2: null
+    }
   }
 }
 </script>

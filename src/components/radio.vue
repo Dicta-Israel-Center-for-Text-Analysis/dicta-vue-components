@@ -2,9 +2,8 @@
   <div class="custom-control custom-radio">
     <input type="radio" :id="id"
            class="custom-control-input"
-           :name="name"
            :value="value"
-           :checked="checked"
+           :checked="internalChecked"
            @change="$emit('change', $event.target.value)">
     <label class="custom-control-label" :for="id">
       <slot></slot>
@@ -21,10 +20,20 @@ export default {
     id += 1
   },
   model: {
-    prop: 'checked',
+    prop: 'radioValue',
     event: 'change'
   },
-  props: ['checked', 'partial', 'name', 'value']
+  data () {
+    return {
+      internalChecked: this.value === this.radioValue
+    }
+  },
+  watch: {
+    radioValue () {
+      this.internalChecked = this.value === this.radioValue
+    }
+  },
+  props: ['radioValue', 'partial', 'value']
 }
 </script>
 
