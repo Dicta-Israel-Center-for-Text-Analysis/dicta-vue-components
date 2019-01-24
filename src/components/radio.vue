@@ -1,6 +1,11 @@
 <template>
   <div class="custom-control custom-radio">
-    <input type="radio" :id="id" name="customRadio" class="custom-control-input">
+    <input type="radio" :id="id"
+           class="custom-control-input"
+           :name="name"
+           :value="value"
+           :checked="checked"
+           @change="$emit('change', $event.target.value)">
     <label class="custom-control-label" :for="id">
       <slot></slot>
     </label>
