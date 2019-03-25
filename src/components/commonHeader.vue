@@ -1,18 +1,27 @@
 <template>
-  <div :dir="hebrew? 'rtl' : 'ltr'">
+  <div :dir="computedHebrew ? 'rtl' : 'ltr'">
     <div class="top-bar">
       <span class="top-bar-left">
         <a href="http://dicta.org.il/index.html">
           <span class="dicta">DICTA</span>
           &nbsp;
-          <span class="dicta-tagline">Analytical tools for Hebrew texts</span>
+          <span class="dicta-tagline">
+            {{
+            computedHebrew ?
+            'דיגיטליים לעיבוד טקסטים בעברית' :
+            'Analytical tools for Hebrew texts'
+            }}
+          </span>
         </a>
       </span>
       <span class="top-bar-right">
-        <a @click="changeLanguage" href="#">עברית</a>
-        |
+        <slot name="endContent"></slot>
+        <span v-if="hebrewSupported && englishSupported">
+          <a @click="changeLanguage" href="#">עברית</a>
+          |
+        </span>
         <a @click="toggleDropDown">
-          DICTA Tools <img src="../assets/Triangle-down.png">
+          {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
         </a>
       </span>
     </div>
@@ -24,8 +33,8 @@
             <a :href="tool.href" class="tool-link" target="_blank">
               <img class="logo" alt="logo" :src="tool.logo">
               <div class="description">
-                <div class="title">{{hebrew ? tool.hebTitle : tool.engTitle}}</div>
-                <div class="subtitle">{{hebrew ? tool.hebSubtitle : tool.engSubtitle}}</div>
+                <div class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</div>
+                <div class="subtitle">{{computedHebrew ? tool.hebSubtitle : tool.engSubtitle}}</div>
               </div>
             </a>
           </li>
@@ -42,17 +51,34 @@ export default {
   props: {
     hebrew: {
       default: false
+    },
+    hebrewSupported: {
+      default: true
+    },
+    englishSupported: {
+      default: true
     }
   },
   data () {
     return {
-      menuOpen: true,
+      menuOpen: false,
       tools
+    }
+  },
+  computed: {
+    computedHebrew () {
+      if (!this.englishSupported) {
+        return true
+      }
+      if (!this.hebrewSupported) {
+        return false
+      }
+      return this.hebrew
     }
   },
   methods: {
     changeLanguage: function () {
-      this.hebrew = !this.hebrew
+      // this.hebrew = !this.hebrew
       this.$emit('lang', this.hebrew ? 'en' : 'he')
     },
     toggleDropDown: function () {

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header></Header>
+    <Header :english-supported="false"></Header>
     <div class="spacer">
       <div>
         <checkbox>Checkbox test</checkbox>
@@ -41,7 +41,6 @@ export default {
 
 <style lang="scss">
 #app {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
