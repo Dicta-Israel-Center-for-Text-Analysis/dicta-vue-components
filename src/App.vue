@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :english-supported="false"></Header>
+    <Header :hebrew="hebrew" @lang-changed="hebrew = !hebrew"></Header>
     <div class="spacer">
       <div>
         <checkbox>Checkbox test</checkbox>
@@ -14,7 +14,7 @@
         <radio v-model="radio2" :value="'b'">Radio test</radio>
       </div>
     </div>
-    <Footer></Footer>
+    <Footer :hebrew="hebrew"></Footer>
   </div>
 </template>
 
@@ -33,7 +33,8 @@ export default {
   },
   data () {
     return {
-      radio2: null
+      radio2: null,
+      hebrew: false
     }
   }
 }
@@ -43,9 +44,12 @@ export default {
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .spacer {
-  height: calc(100vh - 200px);
+  flex: 1;
 }
 @import './css/custom.scss';
 

@@ -79,7 +79,7 @@ export default {
   methods: {
     changeLanguage: function () {
       // this.hebrew = !this.hebrew
-      this.$emit('lang', this.hebrew ? 'en' : 'he')
+      this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
     },
     toggleDropDown: function () {
       this.menuOpen = !this.menuOpen
