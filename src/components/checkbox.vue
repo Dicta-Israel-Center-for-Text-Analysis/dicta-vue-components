@@ -1,6 +1,11 @@
 <template>
   <div class="custom-control custom-checkbox">
-    <input type="checkbox" class="custom-control-input" :id="id" :checked="checked" @change="$emit('change', $event.target.checked)">
+    <input type="checkbox"
+           class="custom-control-input"
+           :id="id"
+           :checked="checked"
+           :indeterminate.prop="indeterminate"
+           @change="$emit('change', $event.target.checked)">
     <label class="custom-control-label" :for="id">
       <slot></slot>
     </label>
@@ -19,7 +24,7 @@ export default {
     prop: 'checked',
     event: 'change'
   },
-  props: ['checked', 'partial']
+  props: ['checked', 'indeterminate']
 }
 </script>
 
