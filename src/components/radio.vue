@@ -4,6 +4,7 @@
            class="custom-control-input"
            :value="value"
            :checked="internalChecked"
+           :disabled="disabled"
            @change="$emit('change', $event.target.value)">
     <label class="custom-control-label" :for="id">
       <slot></slot>
@@ -33,17 +34,9 @@ export default {
       this.internalChecked = this.value === this.radioValue
     }
   },
-  props: ['radioValue', 'partial', 'value']
+  props: ['radioValue', 'partial', 'value', 'disabled']
 }
 </script>
 
 <style scoped>
-.he .custom-control-label::before {
-  right: -1.5rem;
-  left: initial;
-}
-.he .custom-control-label::after {
-  right: -1.5rem;
-  left: initial;
-}
 </style>

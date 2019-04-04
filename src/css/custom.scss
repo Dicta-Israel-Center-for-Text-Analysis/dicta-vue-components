@@ -3,95 +3,133 @@
 $font-family-sans-serif:  Roboto, Arimo, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $white:    #fff !default;
-$gray-100: #fbfbfb !default; //Dicta
-$gray-200: #f6f6f6 !default; //Dicta
-$gray-300: #e3e3e3 !default; //Dicta
-$gray-400: #cfd3d8 !default; //Dicta
-$gray-500: #4A5057 !default; //Dicta
+$gray-100: #fbfbfb; //Dicta
+$gray-200: #f6f6f6; //Dicta
+$gray-300: #e3e3e3; //Dicta
+$gray-400: #cfd3d8; //Dicta
+$gray-500: #4A5057; //Dicta
 $black:    #000 !default;
 
 
-$blue:    #007ee5 !default; //Dicta
-$indigo:  #6610f2 !default;
-$purple:  #bd10e0 !default; //Dicta
-$pink:    #e83e8c !default;
-$red:     #f00522 !default; //Dicta
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue:    #007ee5; //Dicta
+$purple:  #bd10e0; //Dicta
+$red:     #f00522; //Dicta
 
-
-$colors: () !default;
-$colors: map-merge((
-        "blue":       $blue,
-        "indigo":     $indigo,
-        "purple":     $purple,
-        "pink":       $pink,
-        "red":        $red,
-        "orange":     $orange,
-        "yellow":     $yellow,
-        "green":      $green,
-        "teal":       $teal,
-        "cyan":       $cyan,
-        "white":      $white,
+$colors: (
         "gray":       $gray-300,
         "gray-dark":  $gray-500
-), $colors);
+);
 
-$primary:       $blue !default;
-$secondary:     $gray-500 !default; //Dicta
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         $gray-100 !default; //Dicta
-$dark:          $gray-400 !default; //Dicta
+//$primary:       $blue !default;
+$secondary:     $gray-500; //Dicta
+//$success:       $green !default;
+//$info:          $cyan !default;
+//$warning:       $yellow !default;
+//$danger:        $red !default;
+$light:         $gray-100; //Dicta
+$dark:          $gray-400; //Dicta
 
-$theme-colors: () !default;
-$theme-colors: map-merge((
-        "primary":    $primary,
-        "secondary":  $secondary,
-        "success":    $success,
-        "info":       $info,
-        "warning":    $warning,
-        "danger":     $danger,
-        "light":      $light,
-        "dark":       $dark
-), $theme-colors);
+//$theme-colors: () !default;
+//$theme-colors: map-merge((
+//        "primary":    $primary,
+//        "secondary":  $secondary,
+//        "success":    $success,
+//        "info":       $info,
+//        "warning":    $warning,
+//        "danger":     $danger,
+//        "light":      $light,
+//        "dark":       $dark
+//), $theme-colors);
 // stylelint-enable
 
 
-$body-color:                $black !default; //Dicta
+$body-color:                  $black; //Dicta
 
 //$line-height-lg:              36px !default; //Dicta
 //$line-height-sm:              20px !default; //Dicta
 
-$border-width:                1px !default;
-$border-color:                $gray-400 !default; //Dicta
+$border-width:                1px;
+$border-color:                $gray-400; //Dicta
 
-$border-radius:               2px !default; //Dicta
-$border-radius-lg:            3px !default; //Dicta
-$border-radius-sm:            1px !default; //Dicta
+$border-radius:               2px; //Dicta
+$border-radius-lg:            3px; //Dicta
+$border-radius-sm:            2px; //Dicta
 
-$h1-font-size:                32px !default; //Dicta
-$h2-font-size:                22px !default; //Dicta
-$h3-font-size:                18px !default; //Dicta
-$table-border-color:          $gray-400 !default; //Dicta
-$btn-box-shadow:              1px 1px 2px 0px rgba($black, .035) !default; //Dicta
+$h1-font-size:                32px; //Dicta
+$h2-font-size:                22px; //Dicta
+$h3-font-size:                18px; //Dicta
+$table-border-color:          $gray-400; //Dicta
+$btn-box-shadow:              1px 1px 2px 0px rgba($black, .035); //Dicta
 
-$input-color:                           $black !default; //Dicta
-$input-border-color:                    $black !default; //Dicta
-$input-box-shadow:                      none !default; //Dicta
+$input-color:                           $black; //Dicta
+$input-border-color:                    $black; //Dicta
+$input-box-shadow:                      none; //Dicta
 
-$dropdown-border-color:             none !default; //Dicta
-$dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .175) !default; //Dicta
+$dropdown-border-color:             none; //Dicta
+$dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .175); //Dicta
 
-$component-active-color:      $white !default;
-$component-active-bg:         theme-color("primary") !default;
+$dropdown-link-active-color:        $white; //Dicta
+$dropdown-link-active-bg:           $blue; //Dicta
 
-$dropdown-link-active-color:        $component-active-color !default; //Dicta
-$dropdown-link-active-bg:           $component-active-bg !default; //Dicta
+$input-btn-padding-y:         0.21875rem;
+$input-btn-padding-y-sm:      0;
+$input-btn-padding-y-lg:      0;
+//$input-btn-padding-x:         1.875rem;
+$input-btn-padding-x-sm:         .94rem;
+$input-btn-padding-x-lg:         1.875rem;
+$input-btn-font-size: 0.875rem;
+
+$icon-sizes: (
+  "large": 24px,
+  "medium": 16px,
+  "small": 12px,
+  "x-small": 10px
+);
+
+@each $size, $value in $icon-sizes {
+  .icon-size-#{$size} {
+    font-size: $value;
+  }
+}
+$grid-breakpoints: (
+  "xl": 1200px
+);
+
+$container-max-widths: (
+  xl: 1230px
+);
+
+.he {
+  text-align: right;
+}
+
+.he .custom-control {
+  padding-left: 0;
+  padding-right: 1.5rem;
+}
+.he .custom-control-label::before {
+  right: -1.5rem;
+  left: initial;
+}
+.he .custom-control-label::after {
+  right: -1.5rem;
+  left: initial;
+}
+
+.he .custom-switch {
+  padding-left: 0;
+  padding-right: 2.25rem;
+}
+.he .custom-switch .custom-control-label::before {
+  left: 0;
+  right: -2.25rem;
+}
+.he .custom-switch .custom-control-label::after {
+  right: calc(-2.25rem + 2px);
+}
+
+.he .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(-0.75rem);
+}
 
 @import '~bootstrap/scss/bootstrap.scss';

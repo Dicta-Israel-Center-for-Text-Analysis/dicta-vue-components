@@ -1,9 +1,10 @@
 <template>
-  <div class="custom-control custom-checkbox">
+  <div class="custom-control" :class="asSwitch ? 'custom-switch' : 'custom-checkbox'">
     <input type="checkbox"
            class="custom-control-input"
            :id="id"
            :checked="checked"
+           :disabled="disabled"
            :indeterminate.prop="indeterminate"
            @change="$emit('change', $event.target.checked)">
     <label class="custom-control-label" :for="id">
@@ -24,7 +25,7 @@ export default {
     prop: 'checked',
     event: 'change'
   },
-  props: ['checked', 'indeterminate']
+  props: ['checked', 'indeterminate', 'disabled', 'asSwitch']
 }
 </script>
 

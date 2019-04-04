@@ -19,8 +19,12 @@ for (const icon of icons) {
   Vue.component('i-' + icon, {
     functional: true,
     render (createElement, context) {
+      let classes = [(regular.includes(icon) ? 'far' : 'fas') + ' fa-' + icon, context.data.class]
+      if (context.props && context.props.size) {
+        classes.push('icon-size-' + context.props.size)
+      }
       return createElement('i', {
-        class: [(regular.includes(icon) ? 'far' : 'fas') + ' fa-' + icon, context.data.class],
+        class: classes,
         style: context.data.style,
         on: context.listeners
       })
