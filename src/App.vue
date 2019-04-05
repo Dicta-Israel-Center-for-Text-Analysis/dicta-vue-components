@@ -164,6 +164,34 @@
         </div>
         <div class="row mt-3">
           <div class="col-12">
+            <h2>Inputs</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="form-group">
+              <label for="input1">Input</label>
+              <input id="input1" class="form-control">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="input2">Large Input</label>
+              <input id="input2" class="form-control form-control-lg">
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="input3">Invalid Input</label>
+              <input id="input3" class="form-control form-control-lg is-invalid">
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
             <h2>Checkboxes, Switches, Radios</h2>
           </div>
         </div>
