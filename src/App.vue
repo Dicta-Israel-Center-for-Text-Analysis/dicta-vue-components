@@ -12,6 +12,11 @@
             <h3>H3</h3>
             <p>P</p>
             <small>small</small>
+            <h1>עברית</h1>
+            <h2>עברית</h2>
+            <h3>עברית</h3>
+            <p>עברית</p>
+            <small>עברית</small>
             <ul>
               <li>Unordered list</li>
               <li>Unordered list</li>
@@ -20,6 +25,7 @@
               <li>Ordered list</li>
               <li>Ordered list</li>
             </ol>
+            <a href="#">Link</a>
           </div>
         </div>
         <hr>
@@ -32,7 +38,7 @@
           <div class="col"><i-share-square></i-share-square><br>i-share-square</div>
           <div class="col"><i-search-plus></i-search-plus><br>i-search-plus</div>
           <div class="col"><i-search-minus></i-search-minus><br>i-search-minus</div>
-          <div class="col"></div>
+          <div class="col"><i-angle-down></i-angle-down><br>i-angle-down</div>
         </div>
         <div class="row">
           <div class="col"><i-reply></i-reply><br>i-reply</div>
@@ -53,6 +59,10 @@
           <div class="col"><i-caret-up></i-caret-up><br>i-caret-up</div>
           <div class="col"><i-caret-left></i-caret-left><br>i-caret-left</div>
           <div class="col"><i-caret-right></i-caret-right><br>i-caret-right</div>
+        </div>
+        <div class="row">
+          <div class="col"><i-arrow-alt-circle-left></i-arrow-alt-circle-left><br>i-arrow-alt-circle-left</div>
+          <div class="col"></div>
         </div>
         <div class="row mt-3">
           <div class="col-12"><h3>Icon sizes</h3></div>
@@ -239,6 +249,16 @@
           </div>
         </div>
         <input class="form-control">
+        <div class="row mt-3">
+          <div class="col">
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+            <p>
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+          </div>
+        </div>
       </div>
     </div>
     <Footer :hebrew="hebrew"></Footer>

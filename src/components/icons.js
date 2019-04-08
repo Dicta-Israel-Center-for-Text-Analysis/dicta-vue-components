@@ -8,12 +8,12 @@ const icons = [
   'search-plus', 'search-minus',
   'reply', 'share',
   'clone', 'keyboard', 'envelope',
-  'arrow-left', 'arrow-right', 'arrow-up', 'times', 'check',
+  'arrow-left', 'arrow-right', 'arrow-up', 'times', 'check', 'angle-down', 'arrow-alt-circle-left',
   'angle-left', 'angle-right', 'caret-down', 'caret-up', 'caret-left', 'caret-right'
 ]
 
 // these are the exceptions, and they come from the font awesome regular set
-const regular = ['clone', 'keyboard', 'envelope']
+const regular = ['clone', 'keyboard', 'envelope', 'arrow-alt-circle-left']
 
 for (const icon of icons) {
   Vue.component('i-' + icon, {
