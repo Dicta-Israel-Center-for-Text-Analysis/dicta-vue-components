@@ -248,7 +248,25 @@
             <radio v-model="radio2" :disabled="true" :value="'d'">Disabled</radio>
           </div>
         </div>
-        <input class="form-control">
+        <div class="row mt-3">
+          <div class="col-12">
+            <h2>Dropdowns</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <d-dropdown class="w-100"
+                        :options="['First', 'Second', 'Third', 'Fourth']"
+                        v-model="dropdown1"/>
+          </div>
+          <div class="col he" dir="rtl">
+            <d-dropdown class="w-100"
+                        :options="['ראשון', 'שני', 'שלישי', 'רביעי']"
+                        v-model="dropdown2"/>
+          </div>
+          <div class="col-6">
+          </div>
+        </div>
         <div class="row mt-3">
           <div class="col">
             <p>
@@ -270,10 +288,12 @@ import Header from './components/commonHeader'
 import Footer from './components/commonFooter'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
+import DDropdown from './DDropdown'
 
 export default {
   name: 'App',
   components: {
+    DDropdown,
     Radio,
     Checkbox,
     Footer,
@@ -282,7 +302,9 @@ export default {
   data () {
     return {
       radio2: 'a',
-      hebrew: false
+      hebrew: false,
+      dropdown1: 'Please select',
+      dropdown2: 'נא לבחור'
     }
   }
 }

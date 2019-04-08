@@ -65,12 +65,6 @@ $input-color:                           $black; //Dicta
 $input-border-color:                    $black; //Dicta
 $input-box-shadow:                      none; //Dicta
 
-$dropdown-border-color:             none; //Dicta
-$dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .175); //Dicta
-
-$dropdown-link-active-color:        $white; //Dicta
-$dropdown-link-active-bg:           $blue; //Dicta
-
 $input-btn-padding-y:         0.21875rem;
 $input-btn-padding-y-sm:      0;
 $input-btn-padding-y-lg:      0;
@@ -99,7 +93,7 @@ $container-max-widths: (
   xl: 1230px
 );
 
-.he {
+.he, .he .dropdown-menu, .he .dropdown-item {
   text-align: right;
 }
 
@@ -132,4 +126,49 @@ $container-max-widths: (
   transform: translateX(-0.75rem);
 }
 
+// section for dropdowns
+$dropdown-border-color:             none; //Dicta
+$dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .3); //Dicta
+
+$dropdown-link-active-color:        $white; //Dicta
+$dropdown-link-active-bg:           $gray-300; //Dicta
+$dropdown-link-hover-color: $black;
+$dropdown-link-hover-bg: $gray-200;
+
+.dropdown-menu {
+  box-shadow: $dropdown-box-shadow;
+}
+@mixin button-outline-dropdown($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+  color: $color;
+  border-color: $color;
+
+  &:hover {
+    color: $color-hover;
+    background-color: $active-background;
+    border-color: $active-border;
+  }
+
+  &.disabled,
+  &:disabled {
+    color: $color;
+    background-color: transparent;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: color-yiq($active-background);
+    background-color: $active-background;
+    border-color: $active-border;
+
+    &:focus {
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+    }
+  }
+}
+//end dropdowns
 @import '~bootstrap/scss/bootstrap.scss';
+
+.btn-outline-dropdown {
+  @include button-outline-dropdown($black, $black, $gray-300, transparent)
+}

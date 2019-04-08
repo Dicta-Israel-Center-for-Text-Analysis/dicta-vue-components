@@ -4,13 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "lint": "vue-cli-service lint",
     "build-app": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib src/export.js",
-    "lint": "vue-cli-service lint"
+    "build-lib": "vue-cli-service build --target lib src/export.js"
   },
-  "main": "dist/dicta-vue-components.umd.min.js",
   "dependencies": {
     "bootstrap": "^4.2.1",
+    "bootstrap-vue": "^2.0.0-rc.13",
     "vue": "^2.5.21"
   },
   "devDependencies": {
@@ -21,9 +21,10 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.5.21",
     "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-bootstrap-vue": "^0.2.0",
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
@@ -49,5 +50,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "main": "dist/dicta-vue-components.umd.min.js"
 }
