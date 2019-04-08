@@ -26,6 +26,8 @@ for (const icon of icons) {
       return createElement('i', {
         class: classes,
         style: context.data.style,
+        attrs: context.data.attrs,
+        directives: context.data.directives,
         on: context.listeners
       })
     }
