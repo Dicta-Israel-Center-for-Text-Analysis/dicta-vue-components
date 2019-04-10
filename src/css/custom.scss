@@ -45,9 +45,6 @@ $dark:          $gray-400; //Dicta
 
 $body-color:                  $black; //Dicta
 
-//$line-height-lg:              36px !default; //Dicta
-//$line-height-sm:              20px !default; //Dicta
-
 $border-width:                1px;
 $border-color:                $gray-400; //Dicta
 
@@ -59,25 +56,50 @@ $h1-font-size:                32px; //Dicta
 $h2-font-size:                22px; //Dicta
 $h3-font-size:                18px; //Dicta
 $table-border-color:          $gray-400; //Dicta
-$btn-box-shadow:              1px 1px 2px 0px rgba($black, .035); //Dicta
+$enable-shadows: true;
+$btn-box-shadow:              1px 1px 2px 0px rgba($black, 0.35); //Dicta
 
-$input-color:                           $black; //Dicta
-$input-border-color:                    $black; //Dicta
-$input-box-shadow:                      none; //Dicta
+$input-color:                 $black; //Dicta
+$input-border-color:          $black; //Dicta
+$input-box-shadow:            none;   //Dicta
 
-$input-btn-padding-y:         0.21875rem;
-$input-btn-padding-y-sm:      0;
-$input-btn-padding-y-lg:      0;
-//$input-btn-padding-x:         1.875rem;
-$input-btn-padding-x-sm:         .94rem;
-$input-btn-padding-x-lg:         1.875rem;
-$input-btn-font-size: 0.875rem;
+$input-btn-padding-y:             0.21875rem; // 3.5px
+$input-btn-padding-y-lg:          0.3125rem; // 5px
+
+$btn-padding-x-sm:            .94rem;
+$btn-padding-y-sm:            0;
+$btn-padding-x:               1.125rem;
+$btn-padding-x-lg:            1.875rem;
+
+$input-btn-font-size:         0.875rem;   //14px
+$input-btn-font-size-lg:      1rem;
+
+$input-padding-x:             0.625rem;   // 10px
+$input-padding-x-lg:          0.625rem;
+
+$tooltip-bg: $gray-500;
+$tooltip-arrow-color: transparent;
+$tooltip-padding-x: 15px;
+$tooltip-padding-y: 0;
+$tooltip-font-size: 14px;
+$tooltip-opacity: 1;
+
+.custom-control.custom-switch .custom-control-label {
+  &::before {
+    background-color: $gray-300;
+    border: none;
+  }
+  &::after {
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  }
+}
 
 $icon-sizes: (
-  "large": 24px,
-  "medium": 16px,
-  "small": 12px,
-  "x-small": 10px
+        "large": 24px,
+        "medium": 16px,
+        "small": 12px,
+        "x-small": 10px
 );
 
 @each $size, $value in $icon-sizes {
@@ -86,11 +108,11 @@ $icon-sizes: (
   }
 }
 $grid-breakpoints: (
-  "xl": 1200px
+        "xl": 1200px
 );
 
 $container-max-widths: (
-  xl: 1230px
+        xl: 1230px
 );
 
 .he, .he .dropdown-menu, .he .dropdown-item {
@@ -162,13 +184,39 @@ $dropdown-link-hover-bg: $gray-200;
     border-color: $active-border;
 
     &:focus {
-        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+      box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
     }
   }
 }
 //end dropdowns
+
 @import '~bootstrap/scss/bootstrap.scss';
 
 .btn-outline-dropdown {
   @include button-outline-dropdown($black, $black, $gray-300, transparent)
+}
+
+.btn-link {
+  color: $black;
+
+  &:hover {
+    color: $black;
+    background-color: $gray-300;
+    text-decoration: none;
+  }
+
+  &:focus,
+  &.focus {
+    text-decoration: none;
+    background-color: $gray-400;
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &.disabled {
+    color: $btn-link-disabled-color;
+    pointer-events: none;
+  }
+
+  // No need for an active state here
 }
