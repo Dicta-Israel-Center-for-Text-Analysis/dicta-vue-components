@@ -220,3 +220,7 @@ $dropdown-link-hover-bg: $gray-200;
 
   // No need for an active state here
 }
+
+.form-control:hover {
+  border-color: $input-focus-border-color;
+}
