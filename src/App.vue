@@ -284,13 +284,31 @@
               ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
               est laborum."
             </p>
-            <p>
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nulla ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-              mollit anim id est laborum."
-            </p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <h2>Notifications</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+            <b-card>
+              <p>
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla ariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum."
+              </p>
+              <b-btn @click="notification = 3">Show Notification</b-btn>
+              <b-alert variant="notification"
+                       :show="notification"
+                       @dismissed="notification = 0"
+                       fade
+                       class="notification"
+              >המילה נוספה למאגר</b-alert>
+            </b-card>
           </div>
         </div>
       </div>
@@ -304,7 +322,7 @@ import Header from './components/commonHeader'
 import Footer from './components/commonFooter'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
-import DDropdown from './DDropdown'
+import DDropdown from './components/DDropdown'
 
 export default {
   name: 'App',
@@ -320,7 +338,8 @@ export default {
       radio2: 'a',
       hebrew: false,
       dropdown1: 'Please select',
-      dropdown2: 'נא לבחור'
+      dropdown2: 'נא לבחור',
+      notification: 0
     }
   }
 }

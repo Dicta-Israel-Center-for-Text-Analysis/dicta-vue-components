@@ -224,3 +224,25 @@ $dropdown-link-hover-bg: $gray-200;
 .form-control:hover {
   border-color: $input-focus-border-color;
 }
+
+.alert-notification {
+  color: #fff;
+  background-color: $gray-500;
+  border-radius: 3px;
+  //border-color: $border;
+
+  hr {
+    //border-top-color: darken($border, 5%);
+  }
+
+  .alert-link {
+    //color: darken($color, 10%);
+  }
+}
+
+.notification {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  margin-bottom: 0;
+}
