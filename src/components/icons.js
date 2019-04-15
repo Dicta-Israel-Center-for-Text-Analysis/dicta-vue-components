@@ -20,7 +20,7 @@ function install (Vue) {
       functional: true,
       render (createElement, context) {
         const solid = (context.props && context.props.solid) || !regular.includes(icon)
-        let classes = [(solid ? 'fas' : 'far') + ' fa-' + icon, context.data.class]
+        let classes = [(solid ? 'fas' : 'far') + ' fa-' + icon, context.data.class, context.data.staticClass]
         if (context.props && context.props.size) {
           classes.push('icon-size-' + context.props.size)
         }
