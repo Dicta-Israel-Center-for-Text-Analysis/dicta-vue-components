@@ -6,6 +6,7 @@ const icons = [
   'search-plus', 'search-minus',
   'reply', 'share', 'star',
   'clone', 'keyboard', 'envelope',
+  'user',
   'arrow-left', 'arrow-right', 'arrow-up', 'times', 'check', 'angle-down', 'arrow-alt-circle-left',
   'angle-left', 'angle-right', 'caret-down', 'caret-up', 'caret-left', 'caret-right'
 ]
