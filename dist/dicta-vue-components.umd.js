@@ -799,7 +799,7 @@ radio_component.options.__file = "radio.vue"
 // CONCATENATED MODULE: ./src/components/icons.js
 // by default, we use icons from the font awesome solid set
 // exceptions below
-var icons = ['info-circle', 'download', 'upload', 'pencil-alt', 'share-square', 'search-plus', 'search-minus', 'reply', 'share', 'star', 'clone', 'keyboard', 'envelope', 'user', 'arrow-left', 'arrow-right', 'arrow-up', 'times', 'check', 'angle-down', 'arrow-alt-circle-left', 'angle-left', 'angle-right', 'caret-down', 'caret-up', 'caret-left', 'caret-right']; // these are the exceptions, and they come from the font awesome regular set
+var icons = ['info-circle', 'download', 'upload', 'pencil-alt', 'share-square', 'search-plus', 'search-minus', 'reply', 'share', 'star', 'clone', 'keyboard', 'envelope', 'user', 'user-circle', 'cog', 'arrow-left', 'arrow-right', 'arrow-up', 'times', 'check', 'angle-down', 'arrow-alt-circle-left', 'angle-left', 'angle-right', 'caret-down', 'caret-up', 'caret-left', 'caret-right']; // these are the exceptions, and they come from the font awesome regular set
 
 var regular = ['clone', 'keyboard', 'envelope', 'arrow-alt-circle-left', 'star'];
 
