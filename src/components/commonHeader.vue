@@ -51,7 +51,7 @@
 import { tools } from './toolList'
 
 export default {
-  name: 'Header',
+  name: 'dicta-header',
   props: {
     hebrew: {
       default: false
@@ -92,12 +92,16 @@ export default {
 }
 </script>
 <style scoped>
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .top-bar {
     font-size: 13px;
     line-height: 1.5;
     font-family: Roboto, Arimo, sans-serif;
     margin: 5px auto;
-    max-width: 1200px;
+    max-width: 1140px;
     display: flex;
     justify-content: space-between;
   }
