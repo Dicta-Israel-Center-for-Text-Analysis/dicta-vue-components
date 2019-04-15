@@ -2,7 +2,7 @@
   <div id="app">
     <Header :hebrew="hebrew" @lang-changed="hebrew = !hebrew"></Header>
     <div class="main-content">
-      <div class="container">
+      <div class="container offset-scrollbar">
         <div class="row">
           <div class="col">
             <hr>
@@ -61,8 +61,9 @@
           <div class="col"><i-caret-right></i-caret-right><br>i-caret-right</div>
         </div>
         <div class="row">
+          <div class="col" style="flex: none;width: 12.5%"><i-star></i-star><br>i-star</div>
+          <div class="col" style="flex: none;width: 12.5%"><i-star :solid="true"></i-star><br>i-star :solid="true"</div>
           <div class="col"><i-arrow-alt-circle-left></i-arrow-alt-circle-left><br>i-arrow-alt-circle-left</div>
-          <div class="col"></div>
         </div>
         <div class="row mt-3">
           <div class="col-12"><h3>Icon sizes</h3></div>
@@ -357,6 +358,10 @@ export default {
   .main-content {
     flex: 1;
     overflow: auto;
+  }
+
+  .container.offset-scrollbar {
+    padding-left: calc((100vw - 100%)/2 + 15px);
   }
 
   @mixin swatch {
