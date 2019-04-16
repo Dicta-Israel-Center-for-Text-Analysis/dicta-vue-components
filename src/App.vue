@@ -64,6 +64,7 @@
           <div class="col" style="flex: none;width: 12.5%"><i-user></i-user><br>i-user</div>
           <div class="col" style="flex: none;width: 12.5%"><i-user-circle></i-user-circle><br>i-user-circle</div>
           <div class="col" style="flex: none;width: 12.5%"><i-cog></i-cog><br>i-cog</div>
+          <div class="col" style="flex: none;width: 12.5%"><i-file></i-file><br>i-file</div>
           <div class="col" style="flex: none;width: 12.5%"><i-star></i-star><br>i-star</div>
           <div class="col" style="flex: none;width: 12.5%"><i-star :solid="true"></i-star><br>i-star :solid="true"</div>
           <div class="col"><i-arrow-alt-circle-left></i-arrow-alt-circle-left><br>i-arrow-alt-circle-left</div>
