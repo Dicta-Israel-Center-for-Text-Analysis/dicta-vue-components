@@ -132,7 +132,7 @@
             <button class="btn btn-outline-primary">Outline Primary</button>
           </div>
           <div class="col-auto">
-            <button class="btn btn-dark">Dark</button>
+            <button class="btn btn-secondary">Secondary</button>
           </div>
           <div class="col-auto">
             <button class="btn btn-light">Light</button>
@@ -152,7 +152,7 @@
             <button disabled class="btn btn-outline-primary">Outline Primary</button>
           </div>
           <div class="col-auto">
-            <button disabled class="btn btn-dark">Dark</button>
+            <button disabled class="btn btn-secondary">Secondary</button>
           </div>
           <div class="col-auto">
             <button disabled class="btn btn-light">Light</button>

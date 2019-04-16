@@ -3,11 +3,12 @@
 $font-family-sans-serif:  Roboto, Arimo, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $white:    #fff !default;
-$gray-100: #fbfbfb; //Dicta
-$gray-200: #f6f6f6; //Dicta
-$gray-300: #e3e3e3; //Dicta
-$gray-400: #cfd3d8; //Dicta
-$gray-500: #4A5057; //Dicta
+$gray-100: #fbfbfb; //Dicta footer background
+$gray-200: #f6f6f6; //Dicta background
+$gray-300: #e3e3e3; //Dicta border, secondary
+$gray-350: #b5b5b5; //Dicta focused button link
+$gray-400: #8d8d8d; //Dicta gray text
+$gray-500: #4A5057; //Dicta notification
 $black:    #000 !default;
 
 
@@ -21,13 +22,13 @@ $colors: (
 );
 
 //$primary:       $blue !default;
-$secondary:     $gray-500; //Dicta
+$secondary:     $gray-300; //Dicta
 //$success:       $green !default;
 //$info:          $cyan !default;
 //$warning:       $yellow !default;
 //$danger:        $red !default;
 $light:         $gray-100; //Dicta
-$dark:          $gray-400; //Dicta
+$dark:          $gray-500; //Dicta
 
 //$theme-colors: () !default;
 //$theme-colors: map-merge((
@@ -46,7 +47,7 @@ $dark:          $gray-400; //Dicta
 $body-color:                  $black; //Dicta
 
 $border-width:                1px;
-$border-color:                $gray-400; //Dicta
+$border-color:                $gray-300; //Dicta
 
 $border-radius:               2px; //Dicta
 $border-radius-lg:            3px; //Dicta
@@ -55,7 +56,7 @@ $border-radius-sm:            2px; //Dicta
 $h1-font-size:                32px; //Dicta
 $h2-font-size:                22px; //Dicta
 $h3-font-size:                18px; //Dicta
-$table-border-color:          $gray-400; //Dicta
+$table-border-color:          $gray-300; //Dicta
 $enable-shadows: true;
 $btn-box-shadow:              1px 1px 2px 0px rgba($black, 0.35); //Dicta
 
@@ -208,7 +209,7 @@ $dropdown-link-hover-bg: $gray-200;
   &:focus,
   &.focus {
     text-decoration: none;
-    background-color: $gray-400;
+    background-color: $gray-350;
     box-shadow: none;
   }
 
@@ -245,4 +246,12 @@ $dropdown-link-hover-bg: $gray-200;
   bottom: 10px;
   right: 10px;
   margin-bottom: 0;
+}
+
+.btn-secondary {
+  box-shadow: none;
+}
+
+.btn-outline-primary, .btn-outline-light{
+  box-shadow: $btn-box-shadow;
 }
