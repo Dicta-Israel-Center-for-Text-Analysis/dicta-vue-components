@@ -85,173 +85,202 @@ $tooltip-padding-y: 0;
 $tooltip-font-size: 14px;
 $tooltip-opacity: 1;
 
-.custom-control.custom-switch .custom-control-label {
-  &::before {
-    background-color: $gray-300;
-    border: none;
+// modals
+
+$modal-content-border-color:        none;
+$modal-content-box-shadow-xs:       0 0 8px 0 rgba($black, .25);
+$modal-content-box-shadow-sm-up:    0 0 8px 0 rgba($black, .25);
+
+$modal-backdrop-opacity:            .3;
+$modal-header-border-color:         none;
+$modal-footer-border-color:         none;
+$modal-header-padding-y:            0.5rem;
+
+.modal-header {
+  background-color: $gray-300;
+}
+.he {
+  .modal-header, .modal-footer {
+    direction: rtl;
   }
-  &::after {
-    background-color: #fff;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
+  .modal-footer > :not(:last-child) {
+    margin-left: .25rem;
+    margin-right: 0;
+  }
+  .modal-footer > :not(:first-child) {
+    margin-left: 0;
+    margin-right: .25rem;
   }
 }
 
-$icon-sizes: (
-        "large": 24px,
-        "medium": 16px,
-        "small": 12px,
-        "x-small": 10px
-);
-
-@each $size, $value in $icon-sizes {
-  .icon-size-#{$size} {
-    font-size: $value;
-  }
-}
-//$grid-breakpoints: (
-//        "xl": 1200px
-//);
-//
-//$container-max-widths: (
-//        xl: 1230px
-//);
-
-.he, .he .dropdown-menu, .he .dropdown-item {
-  text-align: right;
-}
-
-.he .custom-control {
-  padding-left: 0;
-  padding-right: 1.5rem;
-}
-.he .custom-control-label::before {
-  right: -1.5rem;
-  left: initial;
-}
-.he .custom-control-label::after {
-  right: -1.5rem;
-  left: initial;
-}
-
-.he .custom-switch {
-  padding-left: 0;
-  padding-right: 2.25rem;
-}
-.he .custom-switch .custom-control-label::before {
-  left: 0;
-  right: -2.25rem;
-}
-.he .custom-switch .custom-control-label::after {
-  right: calc(-2.25rem + 2px);
-}
-
-.he .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  transform: translateX(-0.75rem);
-}
-
-// section for dropdowns
-$dropdown-border-color:             none; //Dicta
-$dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .3); //Dicta
-
-$dropdown-link-active-color:        $white; //Dicta
-$dropdown-link-active-bg:           $gray-300; //Dicta
-$dropdown-link-hover-color: $black;
-$dropdown-link-hover-bg: $gray-200;
-
-.dropdown-menu {
-  box-shadow: $dropdown-box-shadow;
-}
-@mixin button-outline-dropdown($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
-  color: $color;
-  border-color: $color;
-
-  &:hover {
-    color: $color-hover;
-    background-color: $active-background;
-    border-color: $active-border;
-  }
-
-  &.disabled,
-  &:disabled {
-    color: $color;
-    background-color: transparent;
-  }
-
-  &:not(:disabled):not(.disabled):active,
-  &:not(:disabled):not(.disabled).active,
-  .show > &.dropdown-toggle {
-    color: color-yiq($active-background);
-    background-color: $active-background;
-    border-color: $active-border;
-
-    &:focus {
-      box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+  .custom-control.custom-switch .custom-control-label {
+    &::before {
+      background-color: $gray-300;
+      border: none;
+    }
+    &::after {
+      background-color: #fff;
+      box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5);
     }
   }
-}
-//end dropdowns
 
-@import '~bootstrap/scss/bootstrap.scss';
+  $icon-sizes: (
+          "large": 24px,
+          "medium": 16px,
+          "small": 12px,
+          "x-small": 10px
+  );
 
-.btn-outline-dropdown {
-  @include button-outline-dropdown($black, $black, $gray-300, transparent)
-}
+  @each $size, $value in $icon-sizes {
+    .icon-size-#{$size} {
+      font-size: $value;
+    }
+  }
+  //$grid-breakpoints: (
+  //        "xl": 1200px
+  //);
+  //
+  //$container-max-widths: (
+  //        xl: 1230px
+  //);
 
-.btn-link {
-  color: $black;
-
-  &:hover {
-    color: $black;
-    background-color: $gray-300;
-    text-decoration: none;
+  .he, .he .dropdown-menu, .he .dropdown-item {
+    text-align: right;
+    direction: rtl;
   }
 
-  &:focus,
-  &.focus {
-    text-decoration: none;
-    background-color: $gray-350;
+  .he .custom-control {
+    padding-left: 0;
+    padding-right: 1.5rem;
+  }
+  .he .custom-control-label::before {
+    right: -1.5rem;
+    left: initial;
+  }
+  .he .custom-control-label::after {
+    right: -1.5rem;
+    left: initial;
+  }
+
+  .he .custom-switch {
+    padding-left: 0;
+    padding-right: 2.25rem;
+  }
+  .he .custom-switch .custom-control-label::before {
+    left: 0;
+    right: -2.25rem;
+  }
+  .he .custom-switch .custom-control-label::after {
+    right: calc(-2.25rem + 2px);
+  }
+
+  .he .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    transform: translateX(-0.75rem);
+  }
+
+  // section for dropdowns
+  $dropdown-border-color:             none; //Dicta
+  $dropdown-box-shadow:               0px 1px 4px 0px rgba($black, .3); //Dicta
+
+  $dropdown-link-active-color:        $white; //Dicta
+  $dropdown-link-active-bg:           $gray-300; //Dicta
+  $dropdown-link-hover-color: $black;
+  $dropdown-link-hover-bg: $gray-200;
+
+  .dropdown-menu {
+    box-shadow: $dropdown-box-shadow;
+  }
+  @mixin button-outline-dropdown($color, $color-hover: color-yiq($color), $active-background: $color, $active-border: $color) {
+    color: $color;
+    border-color: $color;
+
+    &:hover {
+      color: $color-hover;
+      background-color: $active-background;
+      border-color: $active-border;
+    }
+
+    &.disabled,
+    &:disabled {
+      color: $color;
+      background-color: transparent;
+    }
+
+    &:not(:disabled):not(.disabled):active,
+    &:not(:disabled):not(.disabled).active,
+    .show > &.dropdown-toggle {
+      color: color-yiq($active-background);
+      background-color: $active-background;
+      border-color: $active-border;
+
+      &:focus {
+        box-shadow: 0 0 0 $btn-focus-width rgba($color, .5);
+      }
+    }
+  }
+  //end dropdowns
+
+  @import '~bootstrap/scss/bootstrap.scss';
+
+  .btn-outline-dropdown {
+    @include button-outline-dropdown($black, $black, $gray-300, transparent)
+  }
+
+  .btn-link {
+    color: $black;
+
+    &:hover {
+      color: $black;
+      background-color: $gray-300;
+      text-decoration: none;
+    }
+
+    &:focus,
+    &.focus {
+      text-decoration: none;
+      background-color: $gray-350;
+      box-shadow: none;
+    }
+
+    &:disabled,
+    &.disabled {
+      color: $btn-link-disabled-color;
+      pointer-events: none;
+    }
+
+    // No need for an active state here
+  }
+
+  .form-control:hover {
+    border-color: $input-focus-border-color;
+  }
+
+  .alert-notification {
+    color: #fff;
+    background-color: $gray-500;
+    border-radius: 3px;
+    //border-color: $border;
+
+    hr {
+      //border-top-color: darken($border, 5%);
+    }
+
+    .alert-link {
+      //color: darken($color, 10%);
+    }
+  }
+
+  .notification {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    margin-bottom: 0;
+  }
+
+  .btn-secondary {
     box-shadow: none;
   }
 
-  &:disabled,
-  &.disabled {
-    color: $btn-link-disabled-color;
-    pointer-events: none;
+  .btn-outline-primary, .btn-outline-light{
+    box-shadow: $btn-box-shadow;
   }
-
-  // No need for an active state here
-}
-
-.form-control:hover {
-  border-color: $input-focus-border-color;
-}
-
-.alert-notification {
-  color: #fff;
-  background-color: $gray-500;
-  border-radius: 3px;
-  //border-color: $border;
-
-  hr {
-    //border-top-color: darken($border, 5%);
-  }
-
-  .alert-link {
-    //color: darken($color, 10%);
-  }
-}
-
-.notification {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  margin-bottom: 0;
-}
-
-.btn-secondary {
-  box-shadow: none;
-}
-
-.btn-outline-primary, .btn-outline-light{
-  box-shadow: $btn-box-shadow;
-}

@@ -282,7 +282,6 @@
             <p>
               "Lorem ipsum
               <i-info-circle v-b-tooltip.hover title="Tooltip"></i-info-circle>
-              <i-info-circle v-if="false" v-b-tooltip.hover title="Tooltip"></i-info-circle>
               dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
               consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -316,6 +315,30 @@
             </b-card>
           </div>
         </div>
+        <div class="row mt-3">
+          <div class="col">
+            <h2>Dialogs</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <b-button v-b-modal.modal-1>Launch demo modal</b-button>
+
+            <b-modal id="modal-1" ok-title="Download">
+              <template slot="modal-header"><div><i-download></i-download> Download file</div></template>
+              <p class="my-4">Hello from modal!</p>
+            </b-modal>
+          </div>
+          <div class="col-3 he">
+            <b-button v-b-modal.modal-2>Launch modal בעברית</b-button>
+
+            <b-modal id="modal-2" ok-title="הורד" cancel-title="ביטול">
+              <template slot="modal-header"><div><i-download></i-download> הורדת קובץ</div></template>
+              <p class="my-4">שלום מהדיאלוג!</p>
+            </b-modal>
+          </div>
+        </div>
+        <div class="row mt-3"></div>
       </div>
     </div>
     <Footer :hebrew="hebrew"></Footer>
