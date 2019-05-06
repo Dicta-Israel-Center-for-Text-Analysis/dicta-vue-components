@@ -138,7 +138,16 @@
             <button class="btn btn-light">Light</button>
           </div>
           <div class="col-auto">
+            <button class="btn btn-link text-primary">Link</button>
+          </div>
+          <div class="col-auto">
             <button class="btn btn-link">Link</button>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-link text-underline">Link</button>
+          </div>
+          <div class="col-auto bg-primary">
+            <button class="btn btn-link-white">Link</button>
           </div>
         </div>
         <div class="row mt-3">
