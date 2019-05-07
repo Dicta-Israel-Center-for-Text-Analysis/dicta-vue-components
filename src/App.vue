@@ -386,7 +386,7 @@ export default {
   #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100vh;
+    height: calc(100vh - 1px);
     display: flex;
     flex-direction: column;
   }

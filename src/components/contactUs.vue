@@ -1,6 +1,7 @@
 <template>
   <b-modal id="contact-us"
            ref="contact-modal"
+           centered
            :ok-title="hebrew ? 'שלח' : 'Send'"
            :cancel-title="hebrew ? 'ביטול' : 'Cancel'"
            @ok="submit"

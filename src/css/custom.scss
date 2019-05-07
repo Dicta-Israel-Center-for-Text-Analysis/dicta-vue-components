@@ -91,7 +91,7 @@ $modal-content-border-color:        none;
 $modal-content-box-shadow-xs:       0 0 8px 0 rgba($black, .25);
 $modal-content-box-shadow-sm-up:    0 0 8px 0 rgba($black, .25);
 
-$modal-backdrop-opacity:            .3;
+$modal-backdrop-opacity:            .03;
 $modal-header-border-color:         none;
 $modal-footer-border-color:         none;
 $modal-header-padding-y:            0.5rem;
@@ -300,3 +300,16 @@ $modal-header-padding-y:            0.5rem;
   .text-underline {
     text-decoration: underline !important;
   }
+  .custom-control-input:not(:disabled) ~ .custom-control-label {
+    cursor: pointer;
+  }
+  // a way to make the dialogs default to centered
+  //@media (min-width: 576px) {
+  //  .modal-dialog {
+  //    display: flex;
+  //    flex-direction: column;
+  //    height: 100%;
+  //    margin: auto;
+  //    justify-content: center;
+  //  }
+  //}
