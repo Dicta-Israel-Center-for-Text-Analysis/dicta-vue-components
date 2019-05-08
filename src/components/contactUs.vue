@@ -1,13 +1,14 @@
 <template>
   <b-modal id="contact-us"
            ref="contact-modal"
+           class="contact-us"
            centered
            :ok-title="hebrew ? 'שלח' : 'Send'"
            :cancel-title="hebrew ? 'ביטול' : 'Cancel'"
            @ok="submit"
   >
     <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צור קשר' : 'Contact Us' }}</div></template>
-    <form ref="contact-form" id="contact-form" class='form' action="https://localhost/formspree.io/dicta@dicta.org.il" method="POST">
+    <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" action="https://formspree.io/dicta@dicta.org.il" method="POST">
       <div class='row'>
         <div class='col-12'>
           <b-form-group
@@ -15,6 +16,7 @@
             label-for="name"
           >
             <b-form-input required name="name"/>
+            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
       </div>
@@ -25,6 +27,7 @@
             label-for="_replyto"
           >
             <b-form-input required name="_replyto" type='email'/>
+            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
       </div>
@@ -34,7 +37,8 @@
             :label="hebrew ? 'תואר' : 'Description'"
             label-for="message"
           >
-            <b-textarea name="message" required></b-textarea>
+            <b-textarea name="message" rows="4" required></b-textarea>
+            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
       </div>
@@ -47,11 +51,14 @@ export default {
   name: 'contactUs',
   props: ['hebrew'],
   data () {
-    return {}
+    return {
+      submitted: false
+    }
   },
   methods: {
     submit (bvModalEvt) {
       bvModalEvt.preventDefault()
+      this.submitted = true
       if (this.$refs['contact-form'].checkValidity()) {
         this.$refs['contact-form'].submit()
         this.$nextTick(() => {
@@ -63,4 +70,7 @@ export default {
 }
 </script>
 <style scoped>
+  .contact-us {
+    font-size: 1rem;
+  }
 </style>
