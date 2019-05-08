@@ -303,6 +303,13 @@ $modal-header-padding-y:            0.5rem;
   .custom-control-input:not(:disabled) ~ .custom-control-label {
     cursor: pointer;
   }
+  .frame {
+    border: 1px solid $gray-300;
+  }
+  .raised-frame {
+    box-shadow: $dropdown-box-shadow;
+    border-radius: $border-radius;
+  }
   // a way to make the dialogs default to centered
   //@media (min-width: 576px) {
   //  .modal-dialog {

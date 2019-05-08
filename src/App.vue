@@ -347,6 +347,27 @@
             </b-modal>
           </div>
         </div>
+        <div class="row mt-3">
+          <div class="col">
+            <h2>Frames</h2>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <div class="frame p-3">
+              <h3>Frame</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="raised-frame p-3">
+              <h3>Raised Frame</h3>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </div>
+          </div>
+        </div>
         <div class="row mt-3"></div>
       </div>
     </div>

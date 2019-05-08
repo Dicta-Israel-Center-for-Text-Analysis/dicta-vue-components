@@ -1,14 +1,14 @@
 import dHeader from '@/components/commonHeader'
 import dFooter from '@/components/commonFooter'
 import dBootstrap from '@/css/custom.scss'
-import dCheckbox from '@/components/checkbox'
-import dRadio from '@/components/radio'
 import dIcons from '@/components/icons'
+import dDropdown from '@/components/DDropdown'
 
 function install (Vue) {
   dIcons.install(Vue)
   Vue.component('dicta-header', dHeader)
   Vue.component('dicta-footer', dFooter)
+  Vue.component('dicta-dropdown', dDropdown)
 }
 
 export default {
@@ -16,6 +16,5 @@ export default {
   dHeader,
   dFooter,
   dBootstrap,
-  dCheckbox,
-  dRadio
+  dDropdown
 }

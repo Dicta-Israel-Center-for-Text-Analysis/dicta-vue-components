@@ -1,5 +1,6 @@
 <template>
   <b-dropdown no-caret
+              class="d-dropdown"
               menu-class="w-100"
               variant="outline-dropdown">
     <template slot="button-content">
@@ -24,7 +25,7 @@
 </template>
 <script>
 export default {
-  name: 'd-dropdown',
+  name: 'dicta-dropdown',
   props: {
     value: {},
     options: {}
@@ -38,7 +39,13 @@ export default {
 <style lang="scss">
   .dropdown-check {
     display: inline-block;
-    margin-left: -5px;
+    margin-inline-start: -14px;
+    margin-inline-end: 2px;
     width: 20px;
+  }
+  .d-dropdown /deep/ {
+    .btn:not(:disabled):not(.disabled).dropdown-toggle {
+      box-shadow: none;
+    }
   }
 </style>
