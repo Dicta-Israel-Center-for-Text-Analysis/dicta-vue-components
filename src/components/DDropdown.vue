@@ -5,21 +5,21 @@
               variant="outline-dropdown">
     <template slot="button-content">
       <div class="row justify-content-between">
-        <div class="col-auto">{{value}}</div>
+        <div class="col-auto">{{display(value)}}</div>
         <div class="col-auto">
           <i-angle-down></i-angle-down>
         </div>
       </div>
     </template>
     <b-dropdown-item v-for="option in options"
-                     :key="option"
+                     :key="display(option)"
                      @click="$emit('change', option)"
     >
                 <span class="dropdown-check">
-                  <small v-if="value === option">
+                  <small v-if="display(value) === display(option)">
                     <i-check></i-check>
                   </small>
-                </span>{{option}}
+                </span>{{display(option)}}
     </b-dropdown-item>
   </b-dropdown>
 </template>
@@ -28,11 +28,17 @@ export default {
   name: 'dicta-dropdown',
   props: {
     value: {},
-    options: {}
+    options: {},
+    displayField: {}
   },
   model: {
     prop: 'value',
     event: 'change'
+  },
+  methods: {
+    display (item) {
+      return this.displayField ? item[this.displayField] : item
+    }
   }
 }
 </script>

@@ -278,7 +278,24 @@
                         :options="['ראשון', 'שני', 'שלישי', 'רביעי']"
                         v-model="dropdown2"/>
           </div>
-          <div class="col-6">
+          <div class="col">
+            <d-dropdown class="w-100"
+                        :options="[{
+                          display: 'First',
+                          value: 1
+                        },
+                        {
+                          display: 'Second',
+                          value: 2
+                        },{
+                          display: 'Third',
+                          value: 3
+                        }]"
+                        display-field="display"
+                        v-model="dropdown3"/>
+            <p class="mt-1">Selection value: {{dropdown3.value ? dropdown3.value : 'None'}}</p>
+          </div>
+          <div class="col-3">
           </div>
         </div>
         <div class="row mt-3">
@@ -397,6 +414,7 @@ export default {
       hebrew: false,
       dropdown1: 'Please select',
       dropdown2: 'נא לבחור',
+      dropdown3: { display: 'Example using display-field' },
       notification: 0
     }
   }
