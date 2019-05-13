@@ -1,6 +1,6 @@
 {
   "name": "dicta-vue-components",
-  "version": "0.1.2",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -11,7 +11,7 @@
   "dependencies": {
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.13",
-    "vue": "^2.5.21"
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
