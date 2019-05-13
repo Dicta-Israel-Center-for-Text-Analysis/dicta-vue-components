@@ -1,12 +1,12 @@
 <template>
-  <div class="footer" :class="{he: hebrew}" :dir="hebrew ? 'rtl' : 'ltr'">
+  <div class="footer" :class="{he: computedHebrew}" :dir="computedHebrew ? 'rtl' : 'ltr'">
     <div class="container">
       <div class="footer-content">
-        <a v-if="hebrew" class="footer-item" href="http://dicta.org.il/aboutus-he.html" target="_blank">אודות</a>
+        <a v-if="computedHebrew" class="footer-item" href="http://dicta.org.il/aboutus-he.html" target="_blank">אודות</a>
         <a v-else class="footer-item" href="http://dicta.org.il/aboutus-en.html" target="_blank">About</a>
-        <a class="footer-item" v-b-modal.contact-us href="#contactus">{{ hebrew ? 'צור קשר' : 'Contact Us' }}</a>
-        <contact-us :hebrew="hebrew"></contact-us>
-        <a class="footer-item" href="http://dicta.org.il/tos.html" target="_blank">{{hebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
+        <a class="footer-item" v-b-modal.contact-us href="#contactus">{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
+        <contact-us :hebrew="computedHebrew"></contact-us>
+        <a class="footer-item" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
         <a href="https://www.facebook.com/dictatools" target="_blank"
                                     class="footer-item footer-icon"><i class="social-icon fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DictaTools?lang=he" target="_blank"
@@ -154,6 +154,14 @@ export default {
   props: ['hebrew'],
   data () {
     return {}
+  },
+  computed: {
+    computedHebrew () {
+      if (this.hebrew !== undefined) {
+        return this.hebrew
+      }
+      return this.$settings.hebrew
+    }
   }
 }
 </script>

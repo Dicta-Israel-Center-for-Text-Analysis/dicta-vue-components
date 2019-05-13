@@ -53,9 +53,7 @@ import { tools } from './toolList'
 export default {
   name: 'dicta-header',
   props: {
-    hebrew: {
-      default: false
-    },
+    hebrew: { },
     hebrewSupported: {
       default: true
     },
@@ -77,13 +75,19 @@ export default {
       if (!this.hebrewSupported) {
         return false
       }
-      return this.hebrew
+      if (this.hebrew !== undefined) {
+        return this.hebrew
+      }
+      return this.$settings.hebrew
     }
   },
   methods: {
     changeLanguage: function () {
-      // this.hebrew = !this.hebrew
-      this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
+      if (this.hebrew !== undefined) {
+        this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
+      } else {
+        this.$settings.hebrew = !this.$settings.hebrew
+      }
     },
     toggleDropDown: function () {
       this.menuOpen = !this.menuOpen

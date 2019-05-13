@@ -24,7 +24,7 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-bootstrap-vue": "^0.2.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,

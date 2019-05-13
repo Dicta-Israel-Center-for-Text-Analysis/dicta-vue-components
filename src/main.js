@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import './plugins/bootstrap-vue'
-import icons from './components/icons'
+import exported from './export'
 import App from './App.vue'
 
-Vue.use(icons)
+Vue.use(exported)
 
 Vue.config.productionTip = false
 

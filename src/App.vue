@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header :hebrew="hebrew" @lang-changed="hebrew = !hebrew"></Header>
+    <Header></Header>
     <div class="main-content">
       <div class="container offset-scrollbar">
         <div class="row">
@@ -388,7 +388,7 @@
         <div class="row mt-3"></div>
       </div>
     </div>
-    <Footer :hebrew="hebrew"></Footer>
+    <Footer></Footer>
   </div>
 </template>
 
