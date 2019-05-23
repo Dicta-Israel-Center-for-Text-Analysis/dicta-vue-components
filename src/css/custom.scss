@@ -88,8 +88,8 @@ $tooltip-opacity: 1;
 // modals
 
 $modal-content-border-color:        none;
-$modal-content-box-shadow-xs:       0 0 8px 0 rgba($black, .25);
-$modal-content-box-shadow-sm-up:    0 0 8px 0 rgba($black, .25);
+$modal-content-box-shadow-xs:       0 1px 4px 0 rgba(0, 0, 0, 0.3);
+$modal-content-box-shadow-sm-up:    0 1px 4px 0 rgba(0, 0, 0, 0.3);
 
 $modal-backdrop-opacity:            .03;
 $modal-header-border-color:         none;
