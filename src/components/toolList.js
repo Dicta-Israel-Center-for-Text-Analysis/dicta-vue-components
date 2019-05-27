@@ -24,7 +24,8 @@ export const tools = [
     hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
   },
   {
-    href: 'http://search.dicta.org.il/',
+    engHref: 'http://search.dicta.org.il/',
+    hebHref: 'http://search.dicta.org.il/he',
     logo: require('../assets/Logo_Search_Black_Circle.png'),
     engTitle: 'Search the Bible',
     engSubtitle: 'Easily search in the Bible',

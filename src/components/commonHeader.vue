@@ -33,7 +33,7 @@
         <div class="tool-bar" @keyup.esc="toggleDropDown">
           <ul class="tool-list">
             <li class="tool" v-for="tool in tools" :key="tool.logo">
-              <a :href="tool.href" class="tool-link" target="_blank">
+              <a :href="href in tool ? tool.href : (computedHebrew ? tool.hebHref : engHref)" class="tool-link" target="_blank">
                 <img class="logo" alt="logo" :src="tool.logo">
                 <div class="description">
                   <div class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</div>
