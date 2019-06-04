@@ -57,7 +57,7 @@ import ToolFooter from './toolFooter'
 
 export default {
   name: 'dicta-header',
-  components: {ToolFooter, ContactUs },
+  components: { ToolFooter, ContactUs },
   props: {
     hebrew: { },
     hebrewSupported: {
