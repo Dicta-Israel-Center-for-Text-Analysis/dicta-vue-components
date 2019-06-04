@@ -44,7 +44,7 @@
               </a>
             </li>
           </ul>
-          <tool-footer></tool-footer>
+          <tool-footer :hebrew="computedHebrew"></tool-footer>
         </div>
       </div>
     </div>
