@@ -393,7 +393,6 @@
 
 <script>
 import Header from './components/commonHeader'
-import Footer from './components/commonFooter'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
 import DDropdown from './components/DDropdown'
@@ -404,7 +403,6 @@ export default {
     DDropdown,
     Radio,
     Checkbox,
-    Footer,
     Header
   },
   data () {

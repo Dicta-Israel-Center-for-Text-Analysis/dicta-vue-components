@@ -20,7 +20,7 @@
           <a @click="changeLanguage" href="#">{{ computedHebrew ? 'English' : 'עברית' }}</a>
           <span class="spacer">|</span>
         </span>
-        <a v-b-modal.contact-us>{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
+        <a class="a-hover" v-b-modal.contact-us>{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
         <span class="spacer">|</span>
         <a href="#" @click="toggleDropDown" @keyup.esc="toggleDropDown">
           {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
@@ -34,8 +34,8 @@
         <div class="popup-back" @click="toggleDropDown"></div>
         <div class="tool-bar" @keyup.esc="toggleDropDown">
           <ul class="tool-list">
-            <li class="tool" v-for="tool in tools" :key="tool.logo">
-              <a :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : engHref)" class="tool-link" target="_blank">
+            <li class="tool" v-for="(tool, index) in tools" :key="index">
+              <a :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)" class="tool-link" target="_blank">
                 <img class="logo" alt="logo" :src="tool.logo">
                 <div class="description">
                   <div><span class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</span></div>
@@ -44,6 +44,7 @@
               </a>
             </li>
           </ul>
+          <tool-footer></tool-footer>
         </div>
       </div>
     </div>
@@ -52,10 +53,11 @@
 <script>
 import { tools } from './toolList'
 import ContactUs from './contactUs'
+import ToolFooter from './toolFooter'
 
 export default {
   name: 'dicta-header',
-  components: { ContactUs },
+  components: {ToolFooter, ContactUs },
   props: {
     hebrew: { },
     hebrewSupported: {
@@ -127,6 +129,10 @@ export default {
     cursor: pointer;
   }
 
+  .a-hover:hover {
+    text-decoration: underline!important;
+  }
+
   a:hover {
     color: black;
   }
@@ -141,7 +147,7 @@ export default {
     bottom: 0;
     left: 0;
     right: 0;
-    opacity: .2;
+    opacity: .11;
     background-color: black;
     z-index: 1000;
   }
@@ -151,7 +157,7 @@ export default {
     border: solid 1px #d8d8d8;
     box-sizing: border-box;
     background-color: white;
-    z-index: 100000;
+    z-index: 1999;
     width: 100%;
     position: absolute;
     top: 0;
@@ -164,7 +170,7 @@ export default {
     flex-wrap: wrap;
     justify-content: flex-start;
     max-width: 1170px;
-    margin: 18px auto 0;
+    margin: 18px auto;
   }
 
   .tool {

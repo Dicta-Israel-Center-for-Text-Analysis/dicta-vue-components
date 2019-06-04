@@ -4,15 +4,13 @@
       <div class="footer-content">
         <a v-if="computedHebrew" class="footer-item" href="http://dicta.org.il/aboutus-he.html" target="_blank">אודות</a>
         <a v-else class="footer-item" href="http://dicta.org.il/aboutus-en.html" target="_blank">About</a>
-        <a class="footer-item" v-b-modal.contact-us href="#contactus">{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
-        <contact-us :hebrew="computedHebrew"></contact-us>
         <a class="footer-item" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
         <a href="https://www.facebook.com/dictatools" target="_blank"
-                                    class="footer-item footer-icon"><i class="social-icon fab fa-facebook-f"></i></a>
+           class="footer-item footer-icon"><i class="social-icon fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DictaTools?lang=he" target="_blank"
-                                    class="footer-item footer-icon"><i class="social-icon fab fa-twitter"></i></a>
+           class="footer-item footer-icon"><i class="social-icon fab fa-twitter"></i></a>
         <a href="https://www.youtube.com/channel/UC4ickfqPHtDMAKIGvMBMQyw"
-                                    target="_blank" class="footer-item footer-icon"><i class="social-icon fab fa-youtube"></i></a>
+           target="_blank" class="footer-item footer-icon"><i class="social-icon fab fa-youtube"></i></a>
       </div>
     </div>
   </div>
@@ -147,10 +145,8 @@
 </template>
 
 <script>
-import ContactUs from './contactUs'
 export default {
-  name: 'dicta-footer',
-  components: { ContactUs },
+  name: 'tool-footer',
   props: ['hebrew'],
   data () {
     return {}
@@ -167,12 +163,11 @@ export default {
 </script>
 <style scoped>
   .footer {
-    background-color: #fbfbfb;
-    height: 49px;
+    background-color: #f6f6f6;
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px #d8d8d8;
   }
   .container {
     padding-right: 15px;
@@ -191,7 +186,7 @@ export default {
     font-weight: 500;
   }
   .footer-icon {
-    color: #fff;
+    color: #f6f6f6;
     height: 23px;
     width: 23px;
     display: inline-flex;
@@ -199,6 +194,10 @@ export default {
     justify-content: center;
     border-radius: 13px;
     background-color: black;
+  }
+  .footer-icon:hover {
+    text-decoration: none;
+    background-color: #4A5057;
   }
   a {
     color: black;
