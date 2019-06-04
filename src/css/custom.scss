@@ -296,6 +296,18 @@ $modal-header-padding-y:            0.5rem;
   .btn-outline-primary, .btn-outline-light{
     box-shadow: $btn-box-shadow;
   }
+  .btn-outline-primary:not(:disabled):not(.disabled):hover {
+    background: #fff !important;
+    border-color: lighten($primary, 20%);
+    color: lighten($primary, 20%);
+    box-shadow: $btn-box-shadow;
+  }
+  .btn-outline-primary:not(:disabled):not(.disabled):active {
+    background: #fff !important;
+    border-color: darken($primary, 10%) !important;
+    color: darken($primary, 10%) !important;
+    box-shadow: none !important;
+  }
 
   .text-underline {
     text-decoration: underline !important;
