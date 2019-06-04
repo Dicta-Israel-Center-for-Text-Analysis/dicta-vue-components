@@ -388,7 +388,6 @@
         <div class="row mt-3"></div>
       </div>
     </div>
-    <Footer></Footer>
   </div>
 </template>
 

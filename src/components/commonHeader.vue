@@ -5,12 +5,11 @@
       <span class="top-bar-left">
         <a href="http://dicta.org.il/index.html">
           <span class="dicta">DICTA</span>
-          &nbsp;
           <span class="dicta-tagline">
             {{
             computedHebrew ?
             'כלים דיגיטליים לעיבוד טקסטים בעברית' :
-            'Analytical tools for Hebrew texts'
+            '&nbsp;Analytical tools for Hebrew texts'
             }}
           </span>
         </a>
@@ -19,13 +18,16 @@
         <slot name="endContent"></slot>
         <span v-if="hebrewSupported && englishSupported">
           <a @click="changeLanguage" href="#">{{ computedHebrew ? 'English' : 'עברית' }}</a>
-          |
+          <span class="spacer">|</span>
         </span>
+        <a v-b-modal.contact-us>{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
+        <span class="spacer">|</span>
         <a href="#" @click="toggleDropDown" @keyup.esc="toggleDropDown">
           {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
         </a>
       </span>
       </div>
+      <contact-us :hebrew="computedHebrew"></contact-us>
     </div>
     <div>
       <div v-if="menuOpen" class="popup">
@@ -33,10 +35,10 @@
         <div class="tool-bar" @keyup.esc="toggleDropDown">
           <ul class="tool-list">
             <li class="tool" v-for="tool in tools" :key="tool.logo">
-              <a :href="'href' in tool ? tool.href : (computedHebrew ? tool.hebHref : engHref)" class="tool-link" target="_blank">
+              <a :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : engHref)" class="tool-link" target="_blank">
                 <img class="logo" alt="logo" :src="tool.logo">
                 <div class="description">
-                  <div class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</div>
+                  <div><span class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</span></div>
                   <div class="subtitle">{{computedHebrew ? tool.hebSubtitle : tool.engSubtitle}}</div>
                 </div>
               </a>
@@ -49,9 +51,11 @@
 </template>
 <script>
 import { tools } from './toolList'
+import ContactUs from './contactUs'
 
 export default {
   name: 'dicta-header',
+  components: { ContactUs },
   props: {
     hebrew: { },
     hebrewSupported: {
@@ -114,6 +118,10 @@ export default {
     font-size: 14px;
   }
 
+  .spacer {
+    padding: 0 8px;
+  }
+
   a {
     color: black;
     cursor: pointer;
@@ -135,7 +143,7 @@ export default {
     right: 0;
     opacity: .2;
     background-color: black;
-    z-index: 1;
+    z-index: 1000;
   }
 
   .tool-bar {
@@ -155,20 +163,27 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1170px;
+    margin: 18px auto 0;
   }
 
   .tool {
-    flex: 0 1 300px;
+    flex: 0 1 360px;
     list-style: none;
-    margin: 20px 20px;
+    margin: 10px 0;
     text-align: start;
+  }
+
+  /* holds both the logo and text */
+  .tool-link {
+    display: flex;
+    color: black;
+    text-decoration: none;
   }
 
   .logo {
     display: inline-block;
-    margin: 10px 7px;
+    margin: 2px 2px;
     height: 25px;
     width: 25px;
     background-color: white;
@@ -181,19 +196,16 @@ export default {
 
   a:hover .title {
     background-color: #d8d8d8;
-  }
-
-  .tool-link {
-    display: flex;
-    color: black;
-    text-decoration: none;
+    border-radius: 3px;
   }
 
   .title {
     font-size: 18px;
+    padding: 2px 5px;
   }
 
   .subtitle {
+    padding: 1px 5px;
     font-size: 13px;
   }
 </style>
