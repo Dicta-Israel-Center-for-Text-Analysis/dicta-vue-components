@@ -177,7 +177,6 @@ export default {
     flex-grow: 1;
     max-width: 1140px;
     display: flex;
-    justify-content: flex-end;
     font-size: 13px;
     line-height: 23px;
   }

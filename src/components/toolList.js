@@ -43,16 +43,16 @@ export const tools = [
   {
     href: 'https://nakdanpro.dicta.org.il/',
     logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
-    engTitle: 'Professional Nakdan',
-    engSubtitle: 'Add and edit nikud in Modern / Rabbinic / Poetry texts',
+    engTitle: 'Nakdan Pro',
+    engSubtitle: 'Professional tool for adding nikud',
     hebTitle: 'נקדן מקצועי',
-    hebSubtitle: 'הוספה ועריכה של ניקוד בטקסט מודרני / רבני / שירה'
+    hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
   },
   {
     href: 'https://segment.dicta.org.il/',
     logo: require('../assets/Logo Segmentation_Blue_Circle.png'),
     engTitle: 'Source Criticism',
-    engSubtitle: 'Josh will decide',
-    hebTitle: 'ג\'וש יחליט',
-    hebSubtitle: 'ג\'וש יחליט'
+    engSubtitle: 'Segment text based on style markers',
+    hebTitle: 'סיגמנטציה',
+    hebSubtitle: 'פילוח טקסטים לפי מאפיינים סגנוניים'
   }]

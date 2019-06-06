@@ -17,12 +17,12 @@
         <span class="top-bar-right">
         <slot name="endContent"></slot>
         <span v-if="hebrewSupported && englishSupported">
-          <a @click="changeLanguage" href="#">{{ computedHebrew ? 'English' : 'עברית' }}</a>
+          <a class="a-hover" @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>
           <span class="spacer">|</span>
         </span>
         <a class="a-hover" v-b-modal.contact-us>{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
         <span class="spacer">|</span>
-        <a href="#" @click="toggleDropDown" @keyup.esc="toggleDropDown">
+        <a class="a-hover" @click="toggleDropDown" @keyup.esc="toggleDropDown">
           {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
         </a>
       </span>
@@ -128,9 +128,14 @@ export default {
     color: black;
     cursor: pointer;
   }
-
+  .a-hover {
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 2px;
+    margin: -2px -3px 0 -3px;
+  }
   .a-hover:hover {
-    text-decoration: underline!important;
+    background-color: #e3e3e3;
   }
 
   a:hover {
