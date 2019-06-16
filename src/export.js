@@ -2,9 +2,10 @@ import dHeader from '@/components/commonHeader'
 import dBootstrap from '@/css/custom.scss'
 import dIcons from '@/components/icons'
 import dDropdown from '@/components/DDropdown'
-
-function install (Vue) {
+import state from '@/state'
+function install (Vue, options) {
   dIcons.install(Vue)
+  state.options = options || {}
   Vue.prototype.$settings = Vue.observable({ hebrew: false })
   Vue.component('dicta-header', dHeader)
   Vue.component('dicta-dropdown', dDropdown)

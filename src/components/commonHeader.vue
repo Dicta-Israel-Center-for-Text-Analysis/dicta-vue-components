@@ -54,6 +54,7 @@
 import { tools } from './toolList'
 import ContactUs from './contactUs'
 import ToolFooter from './toolFooter'
+import state from '@/state'
 
 export default {
   name: 'dicta-header',
@@ -93,6 +94,13 @@ export default {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
         this.$settings.hebrew = !this.$settings.hebrew
+        if (state.options.useBodyClass) {
+          if (this.$settings.hebrew) {
+            document.body.classList.add('he')
+          } else {
+            document.body.classList.remove('he')
+          }
+        }
       }
     },
     toggleDropDown: function () {
