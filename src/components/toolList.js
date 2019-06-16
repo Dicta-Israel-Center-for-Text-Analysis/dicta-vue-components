@@ -24,6 +24,14 @@ export const tools = [
     hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
   },
   {
+    href: 'https://nakdanpro.dicta.org.il/',
+    logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
+    engTitle: 'Nakdan Pro',
+    engSubtitle: 'Professional tool for adding nikud',
+    hebTitle: 'נקדן מקצועי',
+    hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
+  },
+  {
     engHref: 'https://search.dicta.org.il/',
     hebHref: 'https://search.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
@@ -39,14 +47,6 @@ export const tools = [
     engSubtitle: 'Find biblical references in texts',
     hebTitle: 'איזכורים תנ״כיים',
     hebSubtitle: 'איתור איזכורים תנ״כיים בכל טקסט נתון'
-  },
-  {
-    href: 'https://nakdanpro.dicta.org.il/',
-    logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
-    engTitle: 'Nakdan Pro',
-    engSubtitle: 'Professional tool for adding nikud',
-    hebTitle: 'נקדן מקצועי',
-    hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
   },
   {
     href: 'https://segment.dicta.org.il/',
