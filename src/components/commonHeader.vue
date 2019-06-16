@@ -20,7 +20,7 @@
           <a class="a-hover" @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>
           <span class="spacer">|</span>
         </span>
-        <a class="a-hover" v-b-modal.contact-us>{{ computedHebrew ? 'צור קשר' : 'Contact Us' }}</a>
+        <a class="a-hover" v-b-modal.contact-us>{{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}</a>
         <span class="spacer">|</span>
         <a class="a-hover" @click="toggleDropDown" @keyup.esc="toggleDropDown">
           {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
