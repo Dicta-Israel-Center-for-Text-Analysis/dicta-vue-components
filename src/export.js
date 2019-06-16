@@ -6,7 +6,7 @@ import state from '@/state'
 function install (Vue, options) {
   dIcons.install(Vue)
   state.options = options || {}
-  Vue.prototype.$settings = Vue.observable({ hebrew: false })
+  Vue.prototype.$settings = Vue.observable({ hebrew: !!state.options.hebrew })
   Vue.component('dicta-header', dHeader)
   Vue.component('dicta-dropdown', dDropdown)
 }

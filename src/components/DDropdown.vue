@@ -2,6 +2,7 @@
   <b-dropdown no-caret
               class="d-dropdown"
               menu-class="w-100"
+              :right="$settings.hebrew"
               variant="outline-dropdown">
     <template slot="button-content">
       <div class="row justify-content-between">
