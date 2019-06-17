@@ -121,28 +121,10 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI
 
 /***/ }),
 
-/***/ "2cbe":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_9f864c52_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("4d4d");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_9f864c52_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_9f864c52_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_9f864c52_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
-
-/***/ }),
-
 /***/ "3b4f":
 /***/ (function(module, exports) {
 
 module.exports = "data:image/png;base64,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"
-
-/***/ }),
-
-/***/ "4d4d":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -157,7 +139,7 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI
 
 /***/ }),
 
-/***/ "8df1":
+/***/ "92c4":
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
@@ -185,14 +167,14 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI
 
 /***/ }),
 
-/***/ "ac77":
+/***/ "ad1d":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_12f37642_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("8df1");
-/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_12f37642_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_12f37642_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_6f7943c8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("92c4");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_6f7943c8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_6f7943c8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* unused harmony reexport * */
- /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_12f37642_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_commonHeader_vue_vue_type_style_index_0_id_6f7943c8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -217,6 +199,67 @@ module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAAD6CAYAAACI
 
 /***/ }),
 
+/***/ "f015":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_02f382dd_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("f6d6");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_02f382dd_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_02f382dd_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+ /* unused harmony default export */ var _unused_webpack_default_export = (_node_modules_mini_css_extract_plugin_dist_loader_js_ref_6_oneOf_1_0_node_modules_css_loader_index_js_ref_6_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_oneOf_1_2_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_contactUs_vue_vue_type_style_index_0_id_02f382dd_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "f6d6":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+
+/***/ }),
+
+/***/ "f6fd":
+/***/ (function(module, exports) {
+
+// document.currentScript polyfill by Adam Miller
+
+// MIT license
+
+(function(document){
+  var currentScript = "currentScript",
+      scripts = document.getElementsByTagName('script'); // Live NodeList collection
+
+  // If browser needs currentScript polyfill, add get currentScript() to the document object
+  if (!(currentScript in document)) {
+    Object.defineProperty(document, currentScript, {
+      get: function(){
+
+        // IE 6-10 supports script readyState
+        // IE 10+ support stack trace
+        try { throw new Error(); }
+        catch (err) {
+
+          // Find the second match for the "at" string to get file src url from stack.
+          // Specifically works with the format of stack traces in IE.
+          var i, res = ((/.*at [^\(]*\((.*):.+:.+\)$/ig).exec(err.stack) || [false])[1];
+
+          // For all scripts on the page, if src matches or if ready state is interactive, return the script tag
+          for(i in scripts){
+            if(scripts[i].src == res || scripts[i].readyState == "interactive"){
+              return scripts[i];
+            }
+          }
+
+          // If no match, return null
+          return null;
+        }
+      }
+    });
+  }
+})(document);
+
+
+/***/ }),
+
 /***/ "fb15":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -227,6 +270,10 @@ __webpack_require__.r(__webpack_exports__);
 // This file is imported into lib/wc client bundles.
 
 if (typeof window !== 'undefined') {
+  if (true) {
+    __webpack_require__("f6fd")
+  }
+
   var i
   if ((i = window.document.currentScript) && (i = i.src.match(/(.+\/)[^/]+\.js(\?.*)?$/))) {
     __webpack_require__.p = i[1] // eslint-disable-line
@@ -236,14 +283,14 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"5033420d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/commonHeader.vue?vue&type=template&id=12f37642&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d21b6d64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/commonHeader.vue?vue&type=template&id=6f7943c8&scoped=true&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{attrs:{"dir":_vm.computedHebrew ? 'rtl' : 'ltr'}},[_c('div',{staticClass:"container"},[_c('div',{staticClass:"top-bar"},[_c('span',{staticClass:"top-bar-left"},[_c('a',{attrs:{"href":"http://dicta.org.il/index.html"}},[_c('span',{staticClass:"dicta"},[_vm._v("DICTA")]),_c('span',{staticClass:"dicta-tagline"},[_vm._v("\n          "+_vm._s(_vm.computedHebrew ?
           'כלים דיגיטליים לעיבוד טקסטים בעברית' :
-          ' Analytical tools for Hebrew texts')+"\n        ")])])]),_c('span',{staticClass:"top-bar-right"},[_vm._t("endContent"),(_vm.hebrewSupported && _vm.englishSupported)?_c('span',[_c('a',{staticClass:"a-hover",on:{"click":_vm.changeLanguage}},[_vm._v(_vm._s(_vm.computedHebrew ? 'English' : 'עברית'))]),_c('span',{staticClass:"spacer"},[_vm._v("|")])]):_vm._e(),_c('a',{directives:[{name:"b-modal",rawName:"v-b-modal.contact-us",modifiers:{"contact-us":true}}],staticClass:"a-hover"},[_vm._v(_vm._s(_vm.computedHebrew ? 'צור קשר' : 'Contact Us'))]),_c('span',{staticClass:"spacer"},[_vm._v("|")]),_c('a',{staticClass:"a-hover",on:{"click":_vm.toggleDropDown,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.toggleDropDown($event)}}},[_vm._v("\n        "+_vm._s(_vm.computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools')+"  "),_c('i',{staticClass:"fas fa-caret-down"})])],2)]),_c('contact-us',{attrs:{"hebrew":_vm.computedHebrew}})],1),_c('div',[(_vm.menuOpen)?_c('div',{staticClass:"popup"},[_c('div',{staticClass:"popup-back",on:{"click":_vm.toggleDropDown}}),_c('div',{staticClass:"tool-bar",on:{"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.toggleDropDown($event)}}},[_c('ul',{staticClass:"tool-list"},_vm._l((_vm.tools),function(tool,index){return _c('li',{key:index,staticClass:"tool"},[_c('a',{staticClass:"tool-link",attrs:{"href":tool.hasOwnProperty('href') ? tool.href : (_vm.computedHebrew ? tool.hebHref : tool.engHref),"target":"_blank"}},[_c('img',{staticClass:"logo",attrs:{"alt":"logo","src":tool.logo}}),_c('div',{staticClass:"description"},[_c('div',[_c('span',{staticClass:"title"},[_vm._v(_vm._s(_vm.computedHebrew ? tool.hebTitle : tool.engTitle))])]),_c('div',{staticClass:"subtitle"},[_vm._v(_vm._s(_vm.computedHebrew ? tool.hebSubtitle : tool.engSubtitle))])])])])}),0),_c('tool-footer',{attrs:{"hebrew":_vm.computedHebrew}})],1)]):_vm._e()])])}
+          ' Analytical tools for Hebrew texts')+"\n        ")])])]),_c('span',{staticClass:"top-bar-right"},[_vm._t("endContent"),(_vm.hebrewSupported && _vm.englishSupported)?_c('span',[_c('a',{staticClass:"a-hover",on:{"click":_vm.changeLanguage}},[_vm._v(_vm._s(_vm.computedHebrew ? 'English' : 'עברית'))]),_c('span',{staticClass:"spacer"},[_vm._v("|")])]):_vm._e(),_c('a',{directives:[{name:"b-modal",rawName:"v-b-modal.contact-us",modifiers:{"contact-us":true}}],staticClass:"a-hover"},[_vm._v(_vm._s(_vm.computedHebrew ? 'צרו קשר' : 'Contact Us'))]),_c('span',{staticClass:"spacer"},[_vm._v("|")]),_c('a',{staticClass:"a-hover",on:{"click":_vm.toggleDropDown,"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.toggleDropDown($event)}}},[_vm._v("\n        "+_vm._s(_vm.computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools')+"  "),_c('i',{staticClass:"fas fa-caret-down"})])],2)]),_c('contact-us',{attrs:{"hebrew":_vm.computedHebrew}})],1),_c('div',[(_vm.menuOpen)?_c('div',{staticClass:"popup"},[_c('div',{staticClass:"popup-back",on:{"click":_vm.toggleDropDown}}),_c('div',{staticClass:"tool-bar",on:{"keyup":function($event){if(!$event.type.indexOf('key')&&_vm._k($event.keyCode,"esc",27,$event.key,["Esc","Escape"])){ return null; }return _vm.toggleDropDown($event)}}},[_c('ul',{staticClass:"tool-list"},_vm._l((_vm.tools),function(tool,index){return _c('li',{key:index,staticClass:"tool"},[_c('a',{staticClass:"tool-link",attrs:{"href":tool.hasOwnProperty('href') ? tool.href : (_vm.computedHebrew ? tool.hebHref : tool.engHref),"target":"_blank"}},[_c('img',{staticClass:"logo",attrs:{"alt":"logo","src":tool.logo}}),_c('div',{staticClass:"description"},[_c('div',[_c('span',{staticClass:"title"},[_vm._v(_vm._s(_vm.computedHebrew ? tool.hebTitle : tool.engTitle))])]),_c('div',{staticClass:"subtitle"},[_vm._v(_vm._s(_vm.computedHebrew ? tool.hebSubtitle : tool.engSubtitle))])])])])}),0),_c('tool-footer',{attrs:{"hebrew":_vm.computedHebrew}})],1)]):_vm._e()])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/commonHeader.vue?vue&type=template&id=12f37642&scoped=true&
+// CONCATENATED MODULE: ./src/components/commonHeader.vue?vue&type=template&id=6f7943c8&scoped=true&
 
 // CONCATENATED MODULE: ./src/components/toolList.js
 var tools = [{
@@ -268,6 +315,13 @@ var tools = [{
   hebTitle: 'השוואת גרסאות',
   hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
 }, {
+  href: 'https://nakdanpro.dicta.org.il/',
+  logo: __webpack_require__("b5ce"),
+  engTitle: 'Nakdan Pro',
+  engSubtitle: 'Professional tool for adding nikud',
+  hebTitle: 'נקדן מקצועי',
+  hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
+}, {
   engHref: 'https://search.dicta.org.il/',
   hebHref: 'https://search.dicta.org.il/he',
   logo: __webpack_require__("a14c"),
@@ -283,26 +337,19 @@ var tools = [{
   hebTitle: 'איזכורים תנ״כיים',
   hebSubtitle: 'איתור איזכורים תנ״כיים בכל טקסט נתון'
 }, {
-  href: 'https://nakdanpro.dicta.org.il/',
-  logo: __webpack_require__("b5ce"),
-  engTitle: 'Nakdan Pro',
-  engSubtitle: 'Professional tool for adding nikud',
-  hebTitle: 'נקדן מקצועי',
-  hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
-}, {
   href: 'https://segment.dicta.org.il/',
   logo: __webpack_require__("9897"),
-  engTitle: 'Stylistic Decomposition',
-  engSubtitle: 'Decompose text based on stylistic markers',
-  hebTitle: 'פירוק סגנוני',
-  hebSubtitle: 'פירוק טקסטים לפי מאפיינים סגנוניים'
+  engTitle: 'Stylistic Segmentation',
+  engSubtitle: 'Partition text using stylistic markers',
+  hebTitle: 'פילוח סגנוני',
+  hebSubtitle: 'חלוקת טקסט לפי מאפיינים סגנוניים'
 }];
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"5033420d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/contactUs.vue?vue&type=template&id=9f864c52&scoped=true&
-var contactUsvue_type_template_id_9f864c52_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-modal',{ref:"contact-modal",staticClass:"contact-us",attrs:{"id":"contact-us","centered":"","ok-title":_vm.hebrew ? 'שלח' : 'Send',"cancel-title":_vm.hebrew ? 'ביטול' : 'Cancel'},on:{"ok":_vm.submit}},[_c('template',{slot:"modal-header"},[_c('div',[_c('i-envelope'),_vm._v(" "+_vm._s(_vm.hebrew ? 'צור קשר' : 'Contact Us'))],1)]),_c('form',{ref:"contact-form",staticClass:"form",class:{'was-validated': _vm.submitted},attrs:{"id":"contact-form","action":"https://formspree.io/dicta@dicta.org.il","method":"POST"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'שם' : 'Name',"label-for":"name"}},[_c('b-form-input',{attrs:{"required":"","name":"name"}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)]),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'דואר אלקטרוני' : 'Email',"label-for":"_replyto"}},[_c('b-form-input',{attrs:{"required":"","name":"_replyto","type":"email"}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)]),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'תואר' : 'Description',"label-for":"message"}},[_c('b-textarea',{attrs:{"name":"message","rows":"4","required":""}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)])])],2)}
-var contactUsvue_type_template_id_9f864c52_scoped_true_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d21b6d64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/contactUs.vue?vue&type=template&id=02f382dd&scoped=true&
+var contactUsvue_type_template_id_02f382dd_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-modal',{ref:"contact-modal",staticClass:"contact-us",attrs:{"id":"contact-us","centered":"","ok-title":_vm.hebrew ? 'שלח' : 'Send',"cancel-title":_vm.hebrew ? 'ביטול' : 'Cancel'},on:{"ok":_vm.submit}},[_c('template',{slot:"modal-header"},[_c('div',[_c('i-envelope'),_vm._v(" "+_vm._s(_vm.hebrew ? 'צרו קשר' : 'Contact Us'))],1)]),_c('form',{ref:"contact-form",staticClass:"form",class:{'was-validated': _vm.submitted},attrs:{"id":"contact-form","action":"https://formspree.io/dicta@dicta.org.il","method":"POST"}},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'שם' : 'Name',"label-for":"name"}},[_c('b-form-input',{attrs:{"required":"","name":"name"}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)]),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'דואר אלקטרוני' : 'Email',"label-for":"_replyto"}},[_c('b-form-input',{attrs:{"required":"","name":"_replyto","type":"email"}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)]),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-12"},[_c('b-form-group',{attrs:{"label":_vm.hebrew ? 'תואר' : 'Description',"label-for":"message"}},[_c('b-textarea',{attrs:{"name":"message","rows":"4","required":""}}),_c('b-form-invalid-feedback',[_vm._v(_vm._s(_vm.hebrew ? 'שדה חובה' : 'Required field'))])],1)],1)])])],2)}
+var contactUsvue_type_template_id_02f382dd_scoped_true_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/contactUs.vue?vue&type=template&id=9f864c52&scoped=true&
+// CONCATENATED MODULE: ./src/components/contactUs.vue?vue&type=template&id=02f382dd&scoped=true&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/contactUs.vue?vue&type=script&lang=js&
 //
@@ -379,8 +426,8 @@ var contactUsvue_type_template_id_9f864c52_scoped_true_staticRenderFns = []
 });
 // CONCATENATED MODULE: ./src/components/contactUs.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_contactUsvue_type_script_lang_js_ = (contactUsvue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/contactUs.vue?vue&type=style&index=0&id=9f864c52&scoped=true&lang=css&
-var contactUsvue_type_style_index_0_id_9f864c52_scoped_true_lang_css_ = __webpack_require__("2cbe");
+// EXTERNAL MODULE: ./src/components/contactUs.vue?vue&type=style&index=0&id=02f382dd&scoped=true&lang=css&
+var contactUsvue_type_style_index_0_id_02f382dd_scoped_true_lang_css_ = __webpack_require__("f015");
 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
@@ -488,18 +535,17 @@ function normalizeComponent (
 
 var component = normalizeComponent(
   components_contactUsvue_type_script_lang_js_,
-  contactUsvue_type_template_id_9f864c52_scoped_true_render,
-  contactUsvue_type_template_id_9f864c52_scoped_true_staticRenderFns,
+  contactUsvue_type_template_id_02f382dd_scoped_true_render,
+  contactUsvue_type_template_id_02f382dd_scoped_true_staticRenderFns,
   false,
   null,
-  "9f864c52",
+  "02f382dd",
   null
   
 )
 
-component.options.__file = "contactUs.vue"
 /* harmony default export */ var contactUs = (component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"5033420d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/toolFooter.vue?vue&type=template&id=4f57249d&scoped=true&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d21b6d64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/toolFooter.vue?vue&type=template&id=4f57249d&scoped=true&
 var toolFootervue_type_template_id_4f57249d_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"footer",class:{he: _vm.computedHebrew},attrs:{"dir":_vm.computedHebrew ? 'rtl' : 'ltr'}},[_c('div',{staticClass:"container"},[_c('div',{staticClass:"footer-content"},[(_vm.computedHebrew)?_c('a',{staticClass:"footer-item",attrs:{"href":"http://dicta.org.il/aboutus-he.html","target":"_blank"}},[_vm._v("אודות")]):_c('a',{staticClass:"footer-item",attrs:{"href":"http://dicta.org.il/aboutus-en.html","target":"_blank"}},[_vm._v("About")]),_c('a',{staticClass:"footer-item",attrs:{"href":"http://dicta.org.il/tos.html","target":"_blank"}},[_vm._v(_vm._s(_vm.computedHebrew ? 'תנאים ושרותים' : 'Terms of service'))]),_vm._m(0),_vm._m(1),_vm._m(2)])])])}
 var toolFootervue_type_template_id_4f57249d_scoped_true_staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"footer-item footer-icon",attrs:{"href":"https://www.facebook.com/dictatools","target":"_blank"}},[_c('i',{staticClass:"social-icon fab fa-facebook-f"})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"footer-item footer-icon",attrs:{"href":"https://twitter.com/DictaTools?lang=he","target":"_blank"}},[_c('i',{staticClass:"social-icon fab fa-twitter"})])},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"footer-item footer-icon",attrs:{"href":"https://www.youtube.com/channel/UC4ickfqPHtDMAKIGvMBMQyw","target":"_blank"}},[_c('i',{staticClass:"social-icon fab fa-youtube"})])}]
 
@@ -694,8 +740,11 @@ var toolFooter_component = normalizeComponent(
   
 )
 
-toolFooter_component.options.__file = "toolFooter.vue"
 /* harmony default export */ var toolFooter = (toolFooter_component.exports);
+// CONCATENATED MODULE: ./src/state.js
+/* harmony default export */ var state = ({
+  options: {}
+});
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/commonHeader.vue?vue&type=script&lang=js&
 //
 //
@@ -752,6 +801,7 @@ toolFooter_component.options.__file = "toolFooter.vue"
 
 
 
+
 /* harmony default export */ var commonHeadervue_type_script_lang_js_ = ({
   name: 'dicta-header',
   components: {
@@ -796,6 +846,14 @@ toolFooter_component.options.__file = "toolFooter.vue"
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he');
       } else {
         this.$settings.hebrew = !this.$settings.hebrew;
+
+        if (state.options.useBodyClass) {
+          if (this.$settings.hebrew) {
+            document.body.classList.add('he');
+          } else {
+            document.body.classList.remove('he');
+          }
+        }
       }
     },
     toggleDropDown: function toggleDropDown() {
@@ -805,8 +863,8 @@ toolFooter_component.options.__file = "toolFooter.vue"
 });
 // CONCATENATED MODULE: ./src/components/commonHeader.vue?vue&type=script&lang=js&
  /* harmony default export */ var components_commonHeadervue_type_script_lang_js_ = (commonHeadervue_type_script_lang_js_); 
-// EXTERNAL MODULE: ./src/components/commonHeader.vue?vue&type=style&index=0&id=12f37642&scoped=true&lang=css&
-var commonHeadervue_type_style_index_0_id_12f37642_scoped_true_lang_css_ = __webpack_require__("ac77");
+// EXTERNAL MODULE: ./src/components/commonHeader.vue?vue&type=style&index=0&id=6f7943c8&scoped=true&lang=css&
+var commonHeadervue_type_style_index_0_id_6f7943c8_scoped_true_lang_css_ = __webpack_require__("ad1d");
 
 // CONCATENATED MODULE: ./src/components/commonHeader.vue
 
@@ -823,12 +881,11 @@ var commonHeader_component = normalizeComponent(
   staticRenderFns,
   false,
   null,
-  "12f37642",
+  "6f7943c8",
   null
   
 )
 
-commonHeader_component.options.__file = "commonHeader.vue"
 /* harmony default export */ var commonHeader = (commonHeader_component.exports);
 // EXTERNAL MODULE: ./src/css/custom.scss
 var custom = __webpack_require__("eac2");
@@ -843,7 +900,7 @@ var regular = ['clone', 'keyboard', 'envelope', 'arrow-alt-circle-left', 'star']
 
 function install(Vue) {
   var _loop = function _loop() {
-    var icon = icons[_i];
+    var icon = _icons[_i];
     Vue.component('i-' + icon, {
       functional: true,
       render: function render(createElement, context) {
@@ -865,7 +922,7 @@ function install(Vue) {
     });
   };
 
-  for (var _i = 0; _i < icons.length; _i++) {
+  for (var _i = 0, _icons = icons; _i < _icons.length; _i++) {
     _loop();
   }
 }
@@ -873,14 +930,15 @@ function install(Vue) {
 /* harmony default export */ var components_icons = ({
   install: install
 });
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules//.cache//vue-loader","cacheIdentifier":"5033420d-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DDropdown.vue?vue&type=template&id=0ee1b613&
-var DDropdownvue_type_template_id_0ee1b613_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-dropdown',{staticClass:"d-dropdown",attrs:{"no-caret":"","menu-class":"w-100","variant":"outline-dropdown"}},[_c('template',{slot:"button-content"},[_c('div',{staticClass:"row justify-content-between"},[_c('div',{staticClass:"col-auto"},[_vm._v(_vm._s(_vm.display(_vm.value)))]),_c('div',{staticClass:"col-auto"},[_c('i-angle-down')],1)])]),_vm._l((_vm.options),function(option){return _c('b-dropdown-item',{key:_vm.display(option),on:{"click":function($event){return _vm.$emit('change', option)}}},[_c('span',{staticClass:"dropdown-check"},[(_vm.display(_vm.value) === _vm.display(option))?_c('small',[_c('i-check')],1):_vm._e()]),_vm._v(_vm._s(_vm.display(option))+"\n  ")])})],2)}
-var DDropdownvue_type_template_id_0ee1b613_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"d21b6d64-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DDropdown.vue?vue&type=template&id=ded65830&
+var DDropdownvue_type_template_id_ded65830_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('b-dropdown',{staticClass:"d-dropdown",attrs:{"no-caret":"","menu-class":"w-100","right":_vm.$settings.hebrew,"variant":"outline-dropdown"}},[_c('template',{slot:"button-content"},[_c('div',{staticClass:"row justify-content-between"},[_c('div',{staticClass:"col-auto"},[_vm._v(_vm._s(_vm.display(_vm.value)))]),_c('div',{staticClass:"col-auto"},[_c('i-angle-down')],1)])]),_vm._l((_vm.options),function(option){return _c('b-dropdown-item',{key:_vm.display(option),on:{"click":function($event){return _vm.$emit('change', option)}}},[_c('span',{staticClass:"dropdown-check"},[(_vm.display(_vm.value) === _vm.display(option))?_c('small',[_c('i-check')],1):_vm._e()]),_vm._v(_vm._s(_vm.display(option))+"\n  ")])})],2)}
+var DDropdownvue_type_template_id_ded65830_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DDropdown.vue?vue&type=template&id=0ee1b613&
+// CONCATENATED MODULE: ./src/components/DDropdown.vue?vue&type=template&id=ded65830&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DDropdown.vue?vue&type=script&lang=js&
+//
 //
 //
 //
@@ -939,8 +997,8 @@ var DDropdownvue_type_style_index_0_lang_scss_ = __webpack_require__("6c8f");
 
 var DDropdown_component = normalizeComponent(
   components_DDropdownvue_type_script_lang_js_,
-  DDropdownvue_type_template_id_0ee1b613_render,
-  DDropdownvue_type_template_id_0ee1b613_staticRenderFns,
+  DDropdownvue_type_template_id_ded65830_render,
+  DDropdownvue_type_template_id_ded65830_staticRenderFns,
   false,
   null,
   null,
@@ -948,7 +1006,6 @@ var DDropdown_component = normalizeComponent(
   
 )
 
-DDropdown_component.options.__file = "DDropdown.vue"
 /* harmony default export */ var DDropdown = (DDropdown_component.exports);
 // CONCATENATED MODULE: ./src/export.js
 
@@ -956,10 +1013,12 @@ DDropdown_component.options.__file = "DDropdown.vue"
 
 
 
-function export_install(Vue) {
+
+function export_install(Vue, options) {
   components_icons.install(Vue);
+  state.options = options || {};
   Vue.prototype.$settings = Vue.observable({
-    hebrew: false
+    hebrew: !!state.options.hebrew
   });
   Vue.component('dicta-header', commonHeader);
   Vue.component('dicta-dropdown', DDropdown);
