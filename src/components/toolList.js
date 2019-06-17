@@ -51,8 +51,8 @@ export const tools = [
   {
     href: 'https://segment.dicta.org.il/',
     logo: require('../assets/Logo Segmentation_Blue_Circle.png'),
-    engTitle: 'Stylistic Decomposition',
-    engSubtitle: 'Decompose text based on stylistic markers',
-    hebTitle: 'פירוק סגנוני',
-    hebSubtitle: 'פירוק טקסטים לפי מאפיינים סגנוניים'
+    engTitle: 'Stylistic Segmentation',
+    engSubtitle: 'Partition text using stylistic markers',
+    hebTitle: 'פילוח סגנוני',
+    hebSubtitle: 'חלוקת טקסט לפי מאפיינים סגנוניים'
   }]
