@@ -170,7 +170,7 @@ export default {
     border: solid 1px #d8d8d8;
     box-sizing: border-box;
     background-color: white;
-    z-index: 1999;
+    z-index: 1039; /* behind dialogs */
     width: 100%;
     position: absolute;
     top: 0;
