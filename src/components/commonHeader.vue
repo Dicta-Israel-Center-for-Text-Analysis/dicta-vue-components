@@ -111,7 +111,6 @@ export default {
     },
     dismissPopup (evt) {
       if (this.menuOpen && evt.target !== this.$refs['openTools']) {
-        console.log(evt)
         this.menuOpen = false
         document.body.removeEventListener('click', this.dismissPopup)
       }
