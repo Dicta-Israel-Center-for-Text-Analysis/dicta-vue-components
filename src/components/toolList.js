@@ -8,9 +8,9 @@ export const tools = [
     hebSubtitle: 'ניקוד טקסט מודרני / רבני / שירה'
   },
   {
-    href: 'https://classify.dicta.org.il',
+    href: 'https://tiberias.dicta.org.il',
     logo: require('../assets/Logo Classify_Blue_Circle.png'),
-    engTitle: 'Bible Classification',
+    engTitle: 'Tiberias: Bible Classification',
     engSubtitle: 'Categorization, based on key styles markers',
     hebTitle: 'סיווג טקסטים',
     hebSubtitle: 'השוואת טקסטים בהתבסס על מאפיינים סיגונוניים'
