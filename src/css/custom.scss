@@ -333,3 +333,13 @@ $modal-header-padding-y:            0.5rem;
   //    justify-content: center;
   //  }
   //}
+
+  // override position of X in invalid form input in Hebrew
+ .he {
+   .was-validated .form-control:invalid,
+   .was-validated .form-control:valid, .form-control.is-invalid, .form-control.is-valid {
+     background-position-x: calc(0.375em + 0.1875rem);
+     padding-right: 0.625rem;
+     padding-left: calc(1.5em + 0.4375rem);
+   }
+ }

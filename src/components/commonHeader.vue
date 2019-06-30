@@ -3,7 +3,7 @@
     <div class="container">
       <div class="top-bar">
       <span class="top-bar-left">
-        <a href="http://dicta.org.il/index.html">
+        <a :href="'http://dicta.org.il/index' + (computedHebrew ? '-he.html' : '.html')">
           <span class="dicta">DICTA</span>
           <span class="dicta-tagline">
             {{
@@ -22,7 +22,7 @@
         </span>
         <a class="a-hover" v-b-modal.contact-us>{{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}</a>
         <span class="spacer">|</span>
-        <a class="a-hover" @click="toggleDropDown" @keyup.esc="toggleDropDown">
+        <a class="a-hover" @click="toggleDropDown" @keyup.esc="toggleDropDown" ref="openTools">
           {{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}} &nbsp;<i class="fas fa-caret-down"></i>
         </a>
       </span>
@@ -89,7 +89,7 @@ export default {
     }
   },
   methods: {
-    changeLanguage: function () {
+    changeLanguage () {
       if (this.hebrew !== undefined) {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
@@ -103,9 +103,22 @@ export default {
         }
       }
     },
-    toggleDropDown: function () {
+    toggleDropDown () {
       this.menuOpen = !this.menuOpen
+      if (this.menuOpen) {
+        document.body.addEventListener('click', this.dismissPopup)
+      }
+    },
+    dismissPopup (evt) {
+      if (this.menuOpen && evt.target !== this.$refs['openTools']) {
+        console.log(evt)
+        this.menuOpen = false
+        document.body.removeEventListener('click', this.dismissPopup)
+      }
     }
+  },
+  beforeDestroy () {
+    this.dismissPopup()
   }
 }
 </script>
