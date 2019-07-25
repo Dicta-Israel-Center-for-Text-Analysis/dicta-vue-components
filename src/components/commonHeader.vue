@@ -112,12 +112,12 @@ export default {
     },
     dismissPopup (evt) {
       // delay the closing to allow the click event to occur
-      this.$nextTick(() => {
+      setTimeout(() => {
         if (this.menuOpen && evt.target !== this.$refs['openTools']) {
           this.menuOpen = false
           document.body.removeEventListener('mouseup', this.dismissPopup)
         }
-      })
+      }, 1)
     }
   },
   beforeDestroy () {
