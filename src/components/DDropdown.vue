@@ -59,5 +59,8 @@ export default {
 
   .dicta-dropdown-toggle.dropdown-toggle {
     background-color: white;
+    &:hover {
+      background-color: #e3e3e3;
+    }
   }
 </style>
