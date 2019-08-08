@@ -1,8 +1,9 @@
 <template>
   <b-dropdown no-caret
-              class="d-dropdown"
+              class="dicta-dropdown"
               menu-class="w-100"
               :right="$settings.hebrew"
+              toggle-class="dicta-dropdown-toggle"
               variant="outline-dropdown">
     <template slot="button-content">
       <div class="row justify-content-between">
@@ -16,7 +17,7 @@
                      :key="display(option)"
                      @click="$emit('change', option)"
     >
-                <span class="dropdown-check">
+                <span class="dicta-dropdown-check">
                   <small v-if="display(value) === display(option)">
                     <i-check></i-check>
                   </small>
@@ -44,15 +45,19 @@ export default {
 }
 </script>
 <style lang="scss">
-  .dropdown-check {
+  .dicta-dropdown-check {
     display: inline-block;
     margin-inline-start: -14px;
     margin-inline-end: 2px;
     width: 20px;
   }
-  .d-dropdown /deep/ {
+  .dicta-dropdown {
     .btn:not(:disabled):not(.disabled).dropdown-toggle {
       box-shadow: none;
     }
+  }
+
+  .dicta-dropdown-toggle.dropdown-toggle {
+    background-color: white;
   }
 </style>
