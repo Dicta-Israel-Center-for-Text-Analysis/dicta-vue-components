@@ -31,16 +31,9 @@ $light:         $gray-100; //Dicta
 $dark:          $gray-500; //Dicta
 
 //$theme-colors: () !default;
-//$theme-colors: map-merge((
-//        "primary":    $primary,
-//        "secondary":  $secondary,
-//        "success":    $success,
-//        "info":       $info,
-//        "warning":    $warning,
-//        "danger":     $danger,
-//        "light":      $light,
-//        "dark":       $dark
-//), $theme-colors);
+$theme-colors: (
+  "background":    $gray-200
+);
 // stylelint-enable
 
 
@@ -324,7 +317,7 @@ $small-font-size: 14px;
   }
   .raised-frame {
     box-shadow: $dropdown-box-shadow;
-    border-radius: $border-radius;
+    border-radius: 4px;
   }
   // a way to make the dialogs default to centered
   //@media (min-width: 576px) {

@@ -55,6 +55,10 @@ export default {
     .btn:not(:disabled):not(.disabled).dropdown-toggle {
       box-shadow: none;
     }
+    .col-auto {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .dicta-dropdown-toggle.dropdown-toggle {
