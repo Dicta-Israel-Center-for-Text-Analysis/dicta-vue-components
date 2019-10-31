@@ -59,6 +59,9 @@ export default {
       padding-left: 10px;
       padding-right: 10px;
     }
+    .dropdown-item {
+      font-size: 14px;
+    }
   }
 
   .dicta-dropdown-toggle.dropdown-toggle {
