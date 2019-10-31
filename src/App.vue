@@ -92,6 +92,15 @@
             <div class="swatch-dark bg-secondary">Secondary</div>
           </div>
           <div class="col">
+            <div class="swatch-light bg-light">Light</div>
+          </div>
+          <div class="col">
+            <div class="swatch-light bg-background">Background</div>
+          </div>
+          <div class="col">
+            <div class="swatch-dark bg-dark">Dark</div>
+          </div>
+          <div class="col">
             <div class="swatch-dark bg-success">Success</div>
           </div>
           <div class="col">
@@ -102,12 +111,6 @@
           </div>
           <div class="col">
             <div class="swatch-dark bg-danger">Danger</div>
-          </div>
-          <div class="col">
-            <div class="swatch-light bg-light">Light</div>
-          </div>
-          <div class="col">
-            <div class="swatch-dark bg-dark">Dark</div>
           </div>
           <div class="col-2"></div>
         </div>
