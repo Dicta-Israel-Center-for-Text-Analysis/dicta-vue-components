@@ -27,7 +27,7 @@ export const tools = [
     href: 'https://nakdanpro.dicta.org.il/',
     logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
     engTitle: 'Nakdan Pro',
-    engSubtitle: 'Professional tool for adding nikud',
+    engSubtitle: 'Enhanced Nakdan interface for efficient nikud',
     hebTitle: 'נקדן מקצועי',
     hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
   },
