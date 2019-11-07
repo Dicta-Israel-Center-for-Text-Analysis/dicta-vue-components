@@ -3,7 +3,7 @@ export const tools = [
     href: 'https://nakdan.dicta.org.il/',
     logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
     engTitle: 'Nakdan',
-    engSubtitle: 'Add nikud to Modern / Rabbinic / Poetry text',
+    engSubtitle: 'Add nikud to modern / rabbinic / poetic text',
     hebTitle: 'נקדן אוטומטי',
     hebSubtitle: 'ניקוד טקסט מודרני / רבני / שירה'
   },
@@ -11,7 +11,7 @@ export const tools = [
     href: 'https://tiberias.dicta.org.il',
     logo: require('../assets/Logo Classify_Blue_Circle.png'),
     engTitle: 'Tiberias: Bible Classification',
-    engSubtitle: 'Categorization, based on key styles markers',
+    engSubtitle: 'Categorize text based on key style markers',
     hebTitle: 'סיווג טקסטים',
     hebSubtitle: 'השוואת טקסטים בהתבסס על מאפיינים סיגונוניים'
   },
@@ -34,10 +34,10 @@ export const tools = [
   {
     href: 'https://pasuk.dicta.org.il/',
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
-    engTitle: 'Pasuk Finder',
-    engSubtitle: 'Find biblical references in texts',
+    engTitle: 'Footnote Maker',
+    engSubtitle: 'Automatically find biblical and talmudic references',
     hebTitle: 'הערות שוליים',
-    hebSubtitle: 'איתור איזכורים תנ״כיים בכל טקסט נתון'
+    hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט נתון'
   },
   {
     engHref: 'https://search.dicta.org.il/',
@@ -59,7 +59,7 @@ export const tools = [
   {
     href: '',
     logo: require('../assets/Logo Acronyms_Blue_Circle.png'),
-    engTitle: 'Abbreviations Expander',
+    engTitle: 'Abbreviation Expander',
     engSubtitle: 'Automatic context aware abbreviation expansion',
     hebTitle: 'פיענוח ראשי תיבות',
     hebSubtitle: 'זיהוי ופיענוח ראשי תיבות באופן אוטומטי'
