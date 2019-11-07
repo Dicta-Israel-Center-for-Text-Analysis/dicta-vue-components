@@ -44,7 +44,7 @@ export const tools = [
     hebHref: 'https://search.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
     engTitle: 'Search the Bible',
-    engSubtitle: 'Easily search in the Bible',
+    engSubtitle: 'Intuitively search in the Bible',
     hebTitle: 'חיפוש בתנ״ך',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתנ״ך'
   },
@@ -59,8 +59,8 @@ export const tools = [
   {
     href: '',
     logo: require('../assets/Logo Acronyms_Blue_Circle.png'),
-    engTitle: 'Acronym Decoder',
-    engSubtitle: 'Automatically identify and decode acronyms',
+    engTitle: 'Abbreviations Expander',
+    engSubtitle: 'Automatic context aware abbreviation expansion',
     hebTitle: 'פיענוח ראשי תיבות',
     hebSubtitle: 'זיהוי ופיענוח ראשי תיבות באופן אוטומטי'
   },
@@ -69,7 +69,7 @@ export const tools = [
     hebHref: 'https://talmudsearch.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
     engTitle: 'Search the Talmud',
-    engSubtitle: 'Easily search in the Talmud',
+    engSubtitle: 'Intuitively search in the Talmud',
     hebTitle: 'חיפוש בתלמוד',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתלמוד'
   }]
