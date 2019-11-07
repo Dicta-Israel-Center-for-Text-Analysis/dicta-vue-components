@@ -19,7 +19,7 @@ export const tools = [
     href: 'https://synoptic.dicta.org.il/',
     logo: require('../assets/Logo Synoptic_Blue_Circle.png'),
     engTitle: 'Synopsis Builder',
-    engSubtitle: 'Aligns versions of the same text',
+    engSubtitle: 'Align alternate versions of the same text',
     hebTitle: 'השוואת גרסאות',
     hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
   },
