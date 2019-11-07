@@ -67,7 +67,7 @@ export const tools = [
   {
     engHref: 'https://talmudsearch.dicta.org.il/',
     hebHref: 'https://talmudsearch.dicta.org.il/he',
-    logo: require('../assets/Logo Search_Blue_Circle.png'),
+    logo: require('../assets/Logo Search_Talmud_Blue_Circle.png'),
     engTitle: 'Search the Talmud',
     engSubtitle: 'Intuitively search the Talmud',
     hebTitle: 'חיפוש בתלמוד',
