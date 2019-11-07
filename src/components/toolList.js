@@ -44,7 +44,7 @@ export const tools = [
     hebHref: 'https://search.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
     engTitle: 'Search the Bible',
-    engSubtitle: 'Intuitively search in the Bible',
+    engSubtitle: 'Intuitively search the Bible',
     hebTitle: 'חיפוש בתנ״ך',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתנ״ך'
   },
@@ -69,7 +69,7 @@ export const tools = [
     hebHref: 'https://talmudsearch.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
     engTitle: 'Search the Talmud',
-    engSubtitle: 'Intuitively search in the Talmud',
+    engSubtitle: 'Intuitively search the Talmud',
     hebTitle: 'חיפוש בתלמוד',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתלמוד'
   }]
