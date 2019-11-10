@@ -391,11 +391,13 @@
         <div class="row mt-3"></div>
       </div>
     </div>
+    <MobileFooter></MobileFooter>
   </div>
 </template>
 
 <script>
 import Header from './components/commonHeader'
+import MobileFooter from './components/mobileFooter'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
 import DDropdown from './components/DDropdown'
@@ -406,7 +408,8 @@ export default {
     DDropdown,
     Radio,
     Checkbox,
-    Header
+    Header,
+    MobileFooter
   },
   data () {
     return {

@@ -32,7 +32,7 @@ export const tools = [
     hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
   },
   {
-    href: 'https://pasuk.dicta.org.il/',
+    href: 'https://footnote.dicta.org.il/',
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
     engTitle: 'Footnote Maker',
     engSubtitle: 'Automatically find biblical and talmudic references',
@@ -57,7 +57,7 @@ export const tools = [
     hebSubtitle: 'חלוקת טקסט לפי מאפיינים סגנוניים'
   },
   {
-    href: '',
+    href: 'http://abbreviation.dicta.org.il/',
     logo: require('../assets/Logo Acronyms_Blue_Circle.png'),
     engTitle: 'Abbreviation Expander',
     engSubtitle: 'Automatic context aware abbreviation expansion',

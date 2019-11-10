@@ -1,5 +1,5 @@
 <template>
-  <div :dir="computedHebrew ? 'rtl' : 'ltr'">
+  <div :dir="computedHebrew ? 'rtl' : 'ltr'" class="d-none d-sm-block">
     <div class="container">
       <div class="top-bar">
       <span class="top-bar-left">
@@ -44,7 +44,6 @@
               </a>
             </li>
           </ul>
-          <tool-footer :hebrew="computedHebrew"></tool-footer>
         </div>
       </div>
     </div>
@@ -53,12 +52,11 @@
 <script>
 import { tools } from './toolList'
 import ContactUs from './contactUs'
-import ToolFooter from './toolFooter'
 import state from '@/state'
 
 export default {
   name: 'dicta-header',
-  components: { ToolFooter, ContactUs },
+  components: { ContactUs },
   props: {
     hebrew: { },
     hebrewSupported: {
