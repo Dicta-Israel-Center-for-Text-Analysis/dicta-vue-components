@@ -38,7 +38,7 @@
           <li class="dicta-tools-item">
             <a
               class="text-body title"
-              :href="'http://dicta.org.il/aboutus' + (computedHebrew ? '-he.html' : '.html')"
+              :href="'http://dicta.org.il/aboutus' + (computedHebrew ? '-he.html' : '-en.html')"
               target="_blank"
             >{{ computedHebrew ? 'אודות דיקטה' : 'About Us' }}</a>
           </li>
