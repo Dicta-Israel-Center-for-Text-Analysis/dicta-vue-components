@@ -53,7 +53,7 @@
         </ul>
       </div>
     </div>
-    <div class="dicta-tools-popup-footer bg-secondary">
+    <div class="dicta-tools-popup-footer">
       <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon">
         <i class="social-icon fab fa-facebook-f"></i>
       </a>
@@ -118,6 +118,12 @@ export default {
       }
       return this.$settings.hebrew
     }
+  },
+  mounted () {
+    document.addEventListener("backbutton", this.yourCallBackFunction, false);
+  },
+  beforeDestroy () {
+    document.removeEventListener("backbutton", this.yourCallBackFunction);
   },
   methods: {
     changeLanguage () {
@@ -254,9 +260,6 @@ ul {
   height: 50px;
   display: flex;
   align-items: center;
-  position: fixed;
-  width:100%;
-  bottom: 0;
 }
 .footer-item {
   margin: 0 0 0 11px;
