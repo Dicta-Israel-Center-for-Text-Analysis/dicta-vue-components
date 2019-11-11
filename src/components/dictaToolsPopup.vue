@@ -33,7 +33,7 @@
           </li>
         </ul>
       </div>
-      <div class="dicta-other-buttons">
+      <div class="dicta-other-buttons bg-primary">
         <ul class="list-unstyled">
           <li class="dicta-tools-item">
             <a
