@@ -120,7 +120,7 @@ export default {
     }
   },
   methods: {
-     changeLanguage () {
+    changeLanguage () {
       if (this.hebrew !== undefined) {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
@@ -140,12 +140,10 @@ export default {
 
 <style scoped lang="scss">
 /* DocumentSettingsGenre-specific CSS goes here */
-.bg-background {
-  background: #f6f6f6;
-}
+
 #dicta-tools-popup {
   position: absolute;
-  top: 0px;
+  bottom: 50px;
   left: 0px;
   height: 100%;
   width: 100%;
@@ -235,7 +233,7 @@ ul {
   height: 50px;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px gray;
+  border-bottom: solid 1px #d8d8d8;
 }
 
 .v-center {
@@ -265,7 +263,7 @@ ul {
 }
 [dir="rtl"]{
  .footer-item {
-    margin: 0 11px 0 0;   
+    margin: 0 11px 0 0;
  }
 }
 .footer-icon {
