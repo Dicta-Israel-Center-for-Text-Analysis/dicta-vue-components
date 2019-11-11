@@ -52,26 +52,26 @@
           </li>
         </ul>
       </div>
-    </div>
-    <div class="dicta-tools-popup-footer">
-      <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon">
-        <i class="social-icon fab fa-facebook-f"></i>
-      </a>
-      <a
-        href="https://twitter.com/DictaTools"
-        target="_blank"
-        class="footer-item footer-icon"
-      >
-        <i class="social-icon fab fa-twitter"></i>
-      </a>
-      <a
-        href="https://www.youtube.com/channel/UC4ickfqPHtDMAKIGvMBMQyw"
-        target="_blank"
-        class="footer-item footer-icon"
-      >
-        <i class="social-icon fab fa-youtube"></i>
-      </a>
-    </div>
+      <div class="dicta-tools-popup-footer mt-5">
+        <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon">
+          <i class="social-icon fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://twitter.com/DictaTools"
+          target="_blank"
+          class="footer-item footer-icon"
+        >
+          <i class="social-icon fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/channel/UC4ickfqPHtDMAKIGvMBMQyw"
+          target="_blank"
+          class="footer-item footer-icon"
+        >
+          <i class="social-icon fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>  
     <mobile-contact-us :hebrew="computedHebrew" :contact-us-mode="contactUsMode"></mobile-contact-us>
   </div>
 </template>
@@ -251,7 +251,7 @@ ul {
 }
 
 .dicta-tools-popup-items-container {
-  height: calc(100% - 100px);
+  height: calc(100% - 50px);
   overflow-y: auto;
   margin-top: 50px;
 }
