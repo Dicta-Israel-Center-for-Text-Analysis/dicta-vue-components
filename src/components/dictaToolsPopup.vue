@@ -143,7 +143,7 @@ export default {
 
 #dicta-tools-popup {
   position: absolute;
-  bottom: 50px;
+  bottom: 0;
   left: 0px;
   height: 100%;
   width: 100%;
