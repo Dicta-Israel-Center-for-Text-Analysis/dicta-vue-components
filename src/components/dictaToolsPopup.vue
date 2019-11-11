@@ -53,7 +53,7 @@
         </ul>
       </div>
     </div>
-    <div class="dicta-tools-popup-footer">
+    <div class="dicta-tools-popup-footer bg-secondary">
       <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon">
         <i class="social-icon fab fa-facebook-f"></i>
       </a>
@@ -248,7 +248,7 @@ ul {
 }
 
 .dicta-tools-popup-items-container {
-  height: calc(100% - 50px);
+  height: calc(100% - 100px);
   overflow-y: auto;
 }
 
