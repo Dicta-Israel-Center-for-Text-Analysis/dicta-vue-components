@@ -143,7 +143,7 @@ export default {
 
 #dicta-tools-popup {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0px;
   height: 100%;
   width: 100%;
@@ -256,6 +256,9 @@ ul {
   height: 50px;
   display: flex;
   align-items: center;
+  position: fixed;
+  width:100%;
+  bottom: 0;
 }
 .footer-item {
   margin: 0 0 0 11px;
