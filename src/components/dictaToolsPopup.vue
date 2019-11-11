@@ -1,5 +1,5 @@
 <template>
-  <div id="dicta-tools-popup" class="bg-background" v-show="showDictaToolsPopup">
+  <div id="dicta-tools-popup" class="bg-background position-fixed h-100 w-100" v-show="showDictaToolsPopup">
     <div class="dicta-tools-popup-header bg-secondary position-fixed w-100">
       <div class="container">
         <div class="row">
@@ -142,12 +142,9 @@ export default {
 /* DocumentSettingsGenre-specific CSS goes here */
 
 #dicta-tools-popup {
-  position: absolute;
-  top: 0;
-  left: 0px;
-  height: 100%;
-  width: 100%;
   z-index: 999;
+  left: 0;
+  top: 0;
 }
 
 .tool-list {
