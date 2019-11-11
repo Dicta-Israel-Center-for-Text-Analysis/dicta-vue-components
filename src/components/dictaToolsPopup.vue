@@ -1,6 +1,6 @@
 <template>
   <div id="dicta-tools-popup" class="bg-background" v-show="showDictaToolsPopup">
-    <div class="dicta-tools-popup-header bg-secondary">
+    <div class="dicta-tools-popup-header bg-secondary position-fixed w-100">
       <div class="container">
         <div class="row">
           <div class="col-6 text-right">
@@ -250,6 +250,7 @@ ul {
 .dicta-tools-popup-items-container {
   height: calc(100% - 100px);
   overflow-y: auto;
+  margin-top: 50px;
 }
 
 .dicta-tools-popup-footer {
