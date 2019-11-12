@@ -7,7 +7,7 @@
             <div class="v-center">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</div>
           </div>
           <div class="col-6 left-items">
-            <span @click="dictaToolsMode.showDictaToolsPopup = false" style="cursor: pointer">
+            <span id="close-menu" @click="dictaToolsMode.showDictaToolsPopup = false" style="cursor: pointer">
               <i-times />
             </span>
           </div>
@@ -71,7 +71,7 @@
           <i class="social-icon fab fa-youtube"></i>
         </a>
       </div>
-    </div>  
+    </div>
     <mobile-contact-us :hebrew="computedHebrew" :contact-us-mode="contactUsMode"></mobile-contact-us>
   </div>
 </template>
@@ -80,7 +80,6 @@
 import state from '@/state'
 import { tools } from './toolList'
 import MobileContactUs from './mobileContactUs'
-
 export default {
   name: 'DictaToolsPopup',
   components: { MobileContactUs },
@@ -119,11 +118,19 @@ export default {
       return this.$settings.hebrew
     }
   },
-  mounted () {
-    document.addEventListener("backbutton", this.yourCallBackFunction, false);
+  watch: {
+    showDictaToolsPopup: function (val) {
+      // do something when the data changes.
+      if (val) {
+        history.pushState(null, null, location.href)
+        window.onpopstate = function () {
+          history.go(1)
+          document.getElementById('close-menu').click();
+        }
+      }
+    }
   },
-  beforeDestroy () {
-    document.removeEventListener("backbutton", this.yourCallBackFunction);
+  mounted () {
   },
   methods: {
     changeLanguage () {
