@@ -185,13 +185,14 @@ export default {
   display: flex;
   color: black;
   text-decoration: none;
+  align-items: center;
 }
 
 .logo {
   display: inline-block;
   margin: 2px 2px;
-  height: 25px;
-  width: 25px;
+  height: 40px;
+  width: auto;
   background-color: white;
   align-self: flex-start;
 }
@@ -229,7 +230,7 @@ a:hover .title {
   min-height: 50px;
   border-bottom: solid 1px #d8d8d8;
   margin: 0;
-  padding: 14px 10px;
+  padding: 7px 10px;
   position: relative;
   display: flex;
   &::after {
