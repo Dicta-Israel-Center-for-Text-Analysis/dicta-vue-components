@@ -35,6 +35,8 @@ export default {
       }
     }
   },
+  mounted () {
+  },
   computed: {
     computedHebrew () {
       return this.$settings.hebrew

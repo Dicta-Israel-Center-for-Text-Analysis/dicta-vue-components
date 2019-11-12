@@ -7,7 +7,7 @@
             <div class="v-center">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</div>
           </div>
           <div class="col-6 left-items">
-            <span id="close-menu" @click="dictaToolsMode.showDictaToolsPopup = false" style="cursor: pointer">
+            <span id="close-menu" @click="closeMenu()" style="cursor: pointer">
               <i-times />
             </span>
           </div>
@@ -122,17 +122,23 @@ export default {
     showDictaToolsPopup: function (val) {
       // do something when the data changes.
       if (val) {
-        history.pushState(null, null, location.href)
-        window.onpopstate = function () {
-          history.go(1)
-          document.getElementById('close-menu').click();
+        if(this.dictaToolsMode.showDictaToolsPopup){
+        // history.pushState(null, null, location.href)
+        window.onpopstate = function (e) {
+          e.preventDefault()
+          // history.go(1)
+          document.getElementById('close-menu').click()
         }
-      }
+        }
+      } 
     }
   },
   mounted () {
   },
   methods: {
+    closeMenu () {
+      this.dictaToolsMode.showDictaToolsPopup = false
+    },
     changeLanguage () {
       if (this.hebrew !== undefined) {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
