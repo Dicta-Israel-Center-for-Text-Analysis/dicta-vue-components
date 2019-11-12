@@ -53,20 +53,20 @@
         </ul>
       </div>
       <div class="dicta-tools-popup-footer mt-5">
-        <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon">
+        <a href="https://www.facebook.com/dictatools" target="_blank" class="footer-item footer-icon rounded-circle">
           <i class="social-icon fab fa-facebook-f"></i>
         </a>
         <a
           href="https://twitter.com/DictaTools"
           target="_blank"
-          class="footer-item footer-icon"
+          class="footer-item footer-icon rounded-circle"
         >
           <i class="social-icon fab fa-twitter"></i>
         </a>
         <a
           href="https://www.youtube.com/channel/UC4ickfqPHtDMAKIGvMBMQyw"
           target="_blank"
-          class="footer-item footer-icon"
+          class="footer-item footer-icon rounded-circle"
         >
           <i class="social-icon fab fa-youtube"></i>
         </a>
@@ -286,15 +286,13 @@ ul {
 }
 .footer-icon {
   color: #f6f6f6;
-  height: 23px;
-  width: 23px;
+  height: 40px;
+  width: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 13px;
   background-color: black;
-  font-size: 12px;
-  padding-top: 1px;
+  font-size: 16px;
 }
 .footer-icon:hover {
   text-decoration: none;
