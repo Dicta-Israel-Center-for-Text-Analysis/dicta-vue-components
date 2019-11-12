@@ -122,15 +122,15 @@ export default {
     showDictaToolsPopup: function (val) {
       // do something when the data changes.
       if (val) {
-        if(this.dictaToolsMode.showDictaToolsPopup){
-        // history.pushState(null, null, location.href)
-        window.onpopstate = function (e) {
-          e.preventDefault()
-          // history.go(1)
-          document.getElementById('close-menu').click()
+        if (this.dictaToolsMode.showDictaToolsPopup) {
+          history.pushState(null, null, location.href)
+          window.onpopstate = function (e) {
+            e.preventDefault()
+            // history.go(1)
+            document.getElementById('close-menu').click()
+          }
         }
-        }
-      } 
+      }
     }
   },
   mounted () {
