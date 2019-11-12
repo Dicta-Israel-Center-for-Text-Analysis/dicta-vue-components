@@ -227,7 +227,7 @@ a:hover .title {
     }
 }
 .dicta-tools-item {
-  min-height: 50px;
+  min-height: 59px;
   border-bottom: solid 1px #d8d8d8;
   margin: 0;
   padding: 7px 10px;
