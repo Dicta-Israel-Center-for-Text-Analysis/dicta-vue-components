@@ -43,9 +43,11 @@
             >{{ computedHebrew ? 'אודות דיקטה' : 'About Us' }}</a>
           </li>
           <li class="dicta-tools-item">
-            <span class="title">
-              <a @click="contactUsMode.showMobileContactUs = true">{{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}</a>
-              </span>
+            <a
+              class="text-body title"
+              @click="contactUsMode.showMobileContactUs = true">
+              {{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}
+            </a>
           </li>
           <li class="dicta-tools-item" v-if="hebrewSupported && englishSupported">
             <span class="title">
