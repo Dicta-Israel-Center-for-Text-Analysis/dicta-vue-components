@@ -21,7 +21,7 @@ export const tools = [
     engTitle: 'Synopsis Builder',
     engSubtitle: 'Align alternate versions of a text',
     hebTitle: 'השוואת גרסאות',
-    hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
+    hebSubtitle: 'השוואה בין גרסאות של טקסט'
   },
   {
     href: 'https://nakdanpro.dicta.org.il/',
@@ -37,7 +37,7 @@ export const tools = [
     engTitle: 'Footnote Maker',
     engSubtitle: 'Mark biblical and talmudic references',
     hebTitle: 'הערות שוליים',
-    hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט נתון'
+    hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט'
   },
   {
     engHref: 'https://search.dicta.org.il/',
