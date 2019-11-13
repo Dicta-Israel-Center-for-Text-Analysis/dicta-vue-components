@@ -16,7 +16,7 @@
     </div>
     <div class="dicta-tools-popup-items-container">
       <div class="dicta-tools">
-        <ul class="tool-list">
+        <ul class="tool-list list-unstyled p-0 m-0">
           <li class="tool dicta-tools-item" v-for="(tool, index) in tools" :key="index">
             <a
               :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)"
@@ -34,7 +34,7 @@
         </ul>
       </div>
       <div class="dicta-other-buttons">
-        <ul class="list-unstyled">
+        <ul class="list-unstyled p-0 m-0">
           <li class="dicta-tools-item">
             <a
               class="text-body title"
@@ -167,7 +167,6 @@ export default {
 }
 
 .tool-list {
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -240,10 +239,6 @@ a:hover .title {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
   }
-}
-ul {
-  padding: 0;
-  margin: 0;
 }
 
 .dicta-tools-popup-header {
