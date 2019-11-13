@@ -12,7 +12,7 @@
                     </div>
                     <div class="col-8 left-items">
                       <a class="a-hover" @click="toggleTools" ref="openTools">
-                        <span class="mx-1">{{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}}</span><span @click="dictaToolsMode.showDictaToolsPopup = true" style="cursor: pointer"><i class="fas fa-bars"></i></span>
+                        <span @click="dictaToolsMode.showDictaToolsPopup = true"><span class="mx-1">{{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}}</span><i class="fas fa-bars"></i></span>
                       </a>
                     </div>
                 </div>

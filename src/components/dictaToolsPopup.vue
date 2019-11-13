@@ -126,6 +126,7 @@ export default {
           window.onpopstate = function (e) {
             e.preventDefault()
             document.getElementById('close-menu').click()
+            document.getElementById('close-contact').click()
           }
         }
       }
@@ -227,7 +228,6 @@ a:hover .title {
   min-height: 59px;
   border-bottom: solid 1px #d8d8d8;
   margin: 0;
-  padding: 7px 10px;
   position: relative;
   display: flex;
   align-items: center;
@@ -238,6 +238,10 @@ a:hover .title {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
   }
+  a{
+    padding: 7px 10px;
+    width: 100%;
+   }
 }
 
 .dicta-tools-popup-header {
