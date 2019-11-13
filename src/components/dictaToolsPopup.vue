@@ -120,13 +120,11 @@ export default {
   },
   watch: {
     showDictaToolsPopup: function (val) {
-      // do something when the data changes.
       if (val) {
         if (this.dictaToolsMode.showDictaToolsPopup) {
           history.pushState(null, null, location.href)
           window.onpopstate = function (e) {
             e.preventDefault()
-            // history.go(1)
             document.getElementById('close-menu').click()
           }
         }
@@ -232,6 +230,7 @@ a:hover .title {
   padding: 7px 10px;
   position: relative;
   display: flex;
+  align-items: center;
   &::after {
     top: 14px;
     font-size: 20px;

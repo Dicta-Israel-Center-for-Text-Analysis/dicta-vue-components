@@ -11,7 +11,7 @@ export const tools = [
     href: 'https://tiberias.dicta.org.il',
     logo: require('../assets/Logo Classify_Blue_Circle.png'),
     engTitle: 'Tiberias: Bible Classification',
-    engSubtitle: 'Categorize text based on key style markers',
+    engSubtitle: 'Categorize text using stylistic markers',
     hebTitle: 'סיווג טקסטים',
     hebSubtitle: 'השוואת טקסטים בהתבסס על מאפיינים סיגונוניים'
   },
@@ -19,7 +19,7 @@ export const tools = [
     href: 'https://synoptic.dicta.org.il/',
     logo: require('../assets/Logo Synoptic_Blue_Circle.png'),
     engTitle: 'Synopsis Builder',
-    engSubtitle: 'Align alternate versions of the same text',
+    engSubtitle: 'Align alternate versions of a text',
     hebTitle: 'השוואת גרסאות',
     hebSubtitle: 'השוואה בין גרסאות של אותו טקסט'
   },
@@ -35,7 +35,7 @@ export const tools = [
     href: 'https://footnote.dicta.org.il/',
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
     engTitle: 'Footnote Maker',
-    engSubtitle: 'Automatically find biblical and talmudic references',
+    engSubtitle: 'Mark biblical and talmudic references',
     hebTitle: 'הערות שוליים',
     hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט נתון'
   },
@@ -44,7 +44,7 @@ export const tools = [
     hebHref: 'https://search.dicta.org.il/he',
     logo: require('../assets/Logo Search_Blue_Circle.png'),
     engTitle: 'Search the Bible',
-    engSubtitle: 'Intuitively search the Bible',
+    engSubtitle: 'Find what you\'re really looking for in the Bible',
     hebTitle: 'חיפוש בתנ״ך',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתנ״ך'
   },
@@ -60,7 +60,7 @@ export const tools = [
     href: 'http://abbreviation.dicta.org.il/',
     logo: require('../assets/Logo Acronyms_Blue_Circle.png'),
     engTitle: 'Abbreviation Expander',
-    engSubtitle: 'Automatic context aware abbreviation expansion',
+    engSubtitle: 'Context aware expansion of abbreviation',
     hebTitle: 'פיענוח ראשי תיבות',
     hebSubtitle: 'זיהוי ופיענוח ראשי תיבות באופן אוטומטי'
   },
@@ -69,7 +69,7 @@ export const tools = [
     hebHref: 'https://talmudsearch.dicta.org.il/he',
     logo: require('../assets/Logo Search_Talmud_Blue_Circle.png'),
     engTitle: 'Search the Talmud',
-    engSubtitle: 'Intuitively search the Talmud',
+    engSubtitle: 'Find what you\'re really looking for in the Talmud',
     hebTitle: 'חיפוש בתלמוד',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתלמוד'
   }]
