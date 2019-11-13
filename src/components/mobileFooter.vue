@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" />
+        <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
     </footer>
 </template>
 <script>
@@ -28,6 +28,11 @@ import DictaToolsPopup from './dictaToolsPopup'
 export default {
   name: 'mobile-footer',
   components: { DictaToolsPopup },
+  props: {
+    englishSupported: {
+      default: true
+    }
+  },  
   data () {
     return {
       dictaToolsMode: {

@@ -43,7 +43,9 @@
             >{{ computedHebrew ? 'אודות דיקטה' : 'About Us' }}</a>
           </li>
           <li class="dicta-tools-item">
-            <span class="title" @click="contactUsMode.showMobileContactUs = true">{{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}</span>
+            <span class="title">
+              <a @click="contactUsMode.showMobileContactUs = true">{{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}</a>
+              </span>
           </li>
           <li class="dicta-tools-item" v-if="hebrewSupported && englishSupported">
             <span class="title">
@@ -210,11 +212,12 @@ a:hover .title {
 }
 [dir="rtl"]{
     .dicta-tools-item {
-        &::after {
-            left: 15px;
-            content: "\f104";
-      }
+      text-align: right;
+      &::after {
+          left: 15px;
+          content: "\f104";
     }
+  }
 }
 [dir="ltr"]{
     .dicta-tools-item {
@@ -237,6 +240,9 @@ a:hover .title {
     position: absolute;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+  }
+  span{
+    display: block;
   }
   a{
     padding: 7px 10px;
