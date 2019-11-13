@@ -7,7 +7,7 @@
             <div class="v-center"><h3 class="m-0">{{ hebrew ? 'צרו קשר' : 'Contact Us' }}</h3></div>
           </div>
           <div class="col-6 left-items">
-            <span @click="contactUsMode.showMobileContactUs = false" style="cursor: pointer"><i-times /></span>
+            <span id="close-menu" @click="contactUsMode.showMobileContactUs = false" style="cursor: pointer"><i-times /></span>
           </div>
         </div>
       </div>
