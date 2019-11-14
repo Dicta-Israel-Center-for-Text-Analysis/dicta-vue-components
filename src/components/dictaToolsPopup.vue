@@ -124,14 +124,17 @@ export default {
   },
   watch: {
     showDictaToolsPopup: function (val) {
-      window.onpopstate = function (e) {
-        document.getElementById('close-menu').click()
-        document.getElementById('close-contact').click()
+      if(val){
+        console.log('showPopup')
+        history.pushState(null, null, location.href)
+        window.onpopstate = function (e) {
+          document.getElementById('close-menu').click()
+          document.getElementById('close-contact').click()
+        }
       }
     }
   },
   mounted () {
-    history.pushState(null, null, location.href)
   },
   methods: {
     closeMenu () {
