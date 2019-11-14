@@ -11,8 +11,8 @@
                         </div>
                     </div>
                     <div class="col-8 left-items">
-                      <a class="a-hover" @click="toggleTools" ref="openTools">
-                        <span @click="dictaToolsMode.showDictaToolsPopup = true"><span class="mx-1">{{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}}</span><i class="fas fa-bars"></i></span>
+                      <a @click="dictaToolsMode.showDictaToolsPopup = true" class="a-hover" ref="openTools">
+                        <span class="mx-1">{{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}}</span><i class="fas fa-bars"></i>
                       </a>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default {
     englishSupported: {
       default: true
     }
-  },  
+  },
   data () {
     return {
       dictaToolsMode: {
@@ -48,9 +48,6 @@ export default {
     }
   },
   methods: {
-    toggleTools () {
-      this.showDictaToolsPopup = !(this.showDictaToolsPopup)
-    }
   }
 }
 </script>
