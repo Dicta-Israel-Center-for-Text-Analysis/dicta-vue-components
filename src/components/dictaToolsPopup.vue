@@ -124,8 +124,7 @@ export default {
   },
   watch: {
     showDictaToolsPopup: function (val) {
-      if(val){
-        console.log('showPopup')
+      if (val) {
         history.pushState(null, null, location.href)
         window.onpopstate = function (e) {
           document.getElementById('close-menu').click()
