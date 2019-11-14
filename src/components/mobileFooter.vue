@@ -52,6 +52,9 @@ export default {
 }
 </script>
 <style scoped>
+  footer{
+    margin-top:40px;
+  }
  .footer-wrap {
     height: 50px;
     display: flex;
