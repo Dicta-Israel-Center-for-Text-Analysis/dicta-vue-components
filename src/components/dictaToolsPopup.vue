@@ -51,9 +51,7 @@
             </a>
           </li>
           <li class="dicta-tools-item" v-if="hebrewSupported && englishSupported">
-            <span class="title">
-                <a @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>
-            </span>
+            <a class="text-body title" @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>
           </li>
         </ul>
       </div>
