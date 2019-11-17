@@ -376,8 +376,8 @@ var tools = [{
   logo: __webpack_require__("b53d"),
   engTitle: 'Citation Finder',
   engSubtitle: 'Find biblical and talmudic citations',
-  hebTitle: 'הערות שוליים',
-  hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט'
+  hebTitle: 'איתור אזכורים',
+  hebSubtitle: 'איתור אזכורים תנ״כיים ותלמודיים בכל טקסט'
 }, {
   engHref: 'https://search.dicta.org.il/',
   hebHref: 'https://search.dicta.org.il/he',
