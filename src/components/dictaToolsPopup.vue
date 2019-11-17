@@ -1,5 +1,6 @@
 <template>
   <div id="dicta-tools-popup" class="bg-background position-fixed h-100 w-100" v-show="showDictaToolsPopup">
+    <span id="close-menu" @click="closeMenu()" style="visibility: hidden"></span>
     <div class="dicta-tools-popup-header bg-secondary position-fixed w-100">
       <div class="container">
         <div class="row">
@@ -7,7 +8,7 @@
             <div class="v-center">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</div>
           </div>
           <div class="col-6 left-items">
-            <span id="close-menu" @click="closeMenu()" style="cursor: pointer">
+            <span @click="goBack()" style="cursor: pointer">
               <i-times />
             </span>
           </div>
@@ -138,6 +139,10 @@ export default {
   methods: {
     closeMenu () {
       this.dictaToolsMode.showDictaToolsPopup = false
+    },
+    goBack () {
+      window.history.go(-1)
+      this.closeMenu()
     },
     changeLanguage () {
       if (this.hebrew !== undefined) {

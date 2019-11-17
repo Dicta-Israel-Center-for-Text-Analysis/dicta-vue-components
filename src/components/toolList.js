@@ -34,8 +34,8 @@ export const tools = [
   {
     href: 'https://footnote.dicta.org.il/',
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
-    engTitle: 'Footnote Maker',
-    engSubtitle: 'Mark biblical and talmudic references',
+    engTitle: 'Citation Finder',
+    engSubtitle: 'Find biblical and talmudic citations',
     hebTitle: 'הערות שוליים',
     hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט'
   },
