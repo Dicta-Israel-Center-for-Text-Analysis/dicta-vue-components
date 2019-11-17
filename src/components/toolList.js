@@ -36,8 +36,8 @@ export const tools = [
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
     engTitle: 'Citation Finder',
     engSubtitle: 'Find biblical and talmudic citations',
-    hebTitle: 'הערות שוליים',
-    hebSubtitle: 'איתור איזכורים תנ״כיים ותלמודיים בכל טקסט'
+    hebTitle: 'איתור אזכורים',
+    hebSubtitle: 'איתור אזכורים תנ״כיים ותלמודיים בכל טקסט'
   },
   {
     engHref: 'https://search.dicta.org.il/',
