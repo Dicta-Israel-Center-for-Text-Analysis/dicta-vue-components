@@ -32,7 +32,7 @@ export const tools = [
     hebSubtitle: 'נקדן עם ממשק מותאם לאנשי מקצוע'
   },
   {
-    href: 'https://footnote.dicta.org.il/',
+    href: 'https://citation.dicta.org.il/',
     logo: require('../assets/Logo Pasuk Finder_Blue_Circle.png'),
     engTitle: 'Citation Finder',
     engSubtitle: 'Find biblical and talmudic citations',
