@@ -44,6 +44,7 @@
               </a>
             </li>
           </ul>
+          <tool-footer :hebrew="computedHebrew"></tool-footer>
         </div>
       </div>
     </div>
@@ -52,11 +53,12 @@
 <script>
 import { tools } from './toolList'
 import ContactUs from './contactUs'
+import ToolFooter from './toolFooter'
 import state from '@/state'
 
 export default {
   name: 'dicta-header',
-  components: { ContactUs },
+  components: { ToolFooter, ContactUs },
   props: {
     hebrew: { },
     hebrewSupported: {
