@@ -36,12 +36,18 @@
       </div>
       <div class="dicta-other-buttons">
         <ul class="list-unstyled p-0 m-0">
+          <li class="dicta-tools-item" v-if="howDialog.length">
+            <a class="text-body title" @click="openHowItWorks">{{ computedHebrew ? 'How it Works' : 'איך זה עובד' }}</a>
+          </li>
           <li class="dicta-tools-item">
             <a
               class="text-body title"
               :href="'http://dicta.org.il/aboutus' + (computedHebrew ? '-he.html' : '-en.html')"
               target="_blank"
             >{{ computedHebrew ? 'אודות דיקטה' : 'About Us' }}</a>
+          </li>
+          <li class="dicta-tools-item">
+            <a class="text-body title" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
           </li>
           <li class="dicta-tools-item">
             <a
@@ -102,6 +108,9 @@ export default {
     },
     englishSupported: {
       default: true
+    },
+    howDialog: {
+      default: ''
     }
   },
   computed: {
@@ -155,6 +164,9 @@ export default {
           }
         }
       }
+    },
+    openHowItWorks () {
+      this.$bvModal.show(this.howDialog)
     }
   }
 }
