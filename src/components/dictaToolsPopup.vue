@@ -166,7 +166,7 @@ export default {
       }
     },
     openHowItWorks () {
-      this.$emit('showHowDialog')
+      this.$parent.$emit('showHowDialog')
     }
   }
 }
