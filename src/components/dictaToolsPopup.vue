@@ -37,7 +37,7 @@
       <div class="dicta-other-buttons">
         <ul class="list-unstyled p-0 m-0">
           <li class="dicta-tools-item" v-if="howDialog.length">
-            <a class="text-body title" @click="openHowItWorks">{{ computedHebrew ? 'How it Works' : 'איך זה עובד' }}</a>
+            <a class="text-body title" @click="openHowItWorks">{{ computedHebrew ? 'איך זה עובד' : 'How it Works' }}</a>
           </li>
           <li class="dicta-tools-item">
             <a
@@ -166,7 +166,7 @@ export default {
       }
     },
     openHowItWorks () {
-      this.$bvModal.show(this.howDialog)
+      this.$emit('showHowDialog')
     }
   }
 }
