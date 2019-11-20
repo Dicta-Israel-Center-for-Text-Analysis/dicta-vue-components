@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
+        <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported" :howDialog="howDialog"/>
     </footer>
 </template>
 <script>
@@ -30,6 +30,9 @@ export default {
   components: { DictaToolsPopup },
   props: {
     englishSupported: {
+      default: true
+    },
+    howDialog: {
       default: true
     }
   },
