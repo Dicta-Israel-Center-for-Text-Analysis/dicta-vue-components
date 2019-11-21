@@ -33,7 +33,7 @@ export default {
       default: true
     },
     howDialog: {
-      default: true
+      default: false
     }
   },
   data () {
