@@ -49,7 +49,8 @@ export const tools = [
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתנ״ך'
   },
   {
-    href: 'https://segment.dicta.org.il/',
+    engHref: 'https://segment.dicta.org.il/',
+    hebHref: 'https://segment.dicta.org.il/he',
     logo: require('../assets/Logo Segmentation_Blue_Circle.png'),
     engTitle: 'Stylistic Segmentation',
     engSubtitle: 'Partition text using stylistic markers',
