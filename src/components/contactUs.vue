@@ -8,7 +8,7 @@
            @ok="submit"
   >
     <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div></template>
-    <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" action="https://formspree.io/dicta@dicta.org.il" method="POST">
+    <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" target="_blank" action="https://formspree.io/dicta@dicta.org.il" method="POST">
       <div class='row'>
         <div class='col-12'>
           <b-form-group
