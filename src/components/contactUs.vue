@@ -6,6 +6,7 @@
            :ok-title="hebrew ? 'שלח' : 'Send'"
            :cancel-title="hebrew ? 'ביטול' : 'Cancel'"
            @ok="submit"
+           @hide="resetData"
   >
     <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div></template>
     <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" target="_blank" action="https://formspree.io/dicta@dicta.org.il" method="POST">
@@ -15,7 +16,7 @@
             :label="hebrew ? 'שם' : 'Name'"
             label-for="name"
           >
-            <b-form-input required name="name"/>
+            <b-form-input v-model="name" required name="name"/>
             <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
@@ -26,7 +27,7 @@
             :label="hebrew ? 'דואר אלקטרוני' : 'Email'"
             label-for="_replyto"
           >
-            <b-form-input required name="_replyto" type='email'/>
+            <b-form-input v-model="email" required name="_replyto" type='email'/>
             <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
@@ -37,7 +38,7 @@
             :label="hebrew ? 'תואר' : 'Description'"
             label-for="message"
           >
-            <b-textarea name="message" rows="4" required></b-textarea>
+            <b-textarea v-model="description" name="message" rows="4" required></b-textarea>
             <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
           </b-form-group>
         </div>
@@ -52,10 +53,19 @@ export default {
   props: ['hebrew'],
   data () {
     return {
+      name: '',
+      email: '',
+      description: '',
       submitted: false
     }
   },
   methods: {
+    resetData () {
+      this.name = ''
+      this.email = ''
+      this.description = ''
+      this.submitted = false
+    },
     submit (bvModalEvt) {
       bvModalEvt.preventDefault()
       this.submitted = true
