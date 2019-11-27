@@ -6,7 +6,7 @@
            :ok-title="hebrew ? 'שלח' : 'Send'"
            :cancel-title="hebrew ? 'ביטול' : 'Cancel'"
            @ok="submit"
-           @hide="resetData"
+           @cancel="resetData"
   >
     <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div></template>
     <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" target="_blank" action="https://formspree.io/dicta@dicta.org.il" method="POST">
@@ -73,6 +73,7 @@ export default {
         this.$refs['contact-form'].submit()
         this.$nextTick(() => {
           this.$refs['contact-modal'].hide()
+          this.resetData()
         })
       }
     }
