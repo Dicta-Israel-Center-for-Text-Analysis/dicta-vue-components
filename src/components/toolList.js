@@ -63,7 +63,7 @@ export const tools = [
     engTitle: 'Abbreviation Expander',
     engSubtitle: 'Context aware expansion of abbreviation',
     hebTitle: 'פיענוח ראשי תיבות',
-    hebSubtitle: 'זיהוי ופיענוח ראשי תיבות באופן אוטומטי'
+    hebSubtitle: 'זיהוי ופיענוח ראשי תיבות בטקסטים רבניים'
   },
   {
     engHref: 'https://talmudsearch.dicta.org.il/',
