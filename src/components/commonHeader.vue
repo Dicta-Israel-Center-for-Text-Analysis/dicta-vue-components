@@ -94,6 +94,7 @@ export default {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
         this.$settings.hebrew = !this.$settings.hebrew
+        localStorage.setItem("USE_HEBREW", this.$settings.hebrew)
         if (state.options.useBodyClass) {
           if (this.$settings.hebrew) {
             document.body.classList.add('he')
