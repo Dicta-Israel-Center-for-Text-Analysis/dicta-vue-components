@@ -156,7 +156,7 @@ export default {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
         this.$settings.hebrew = !this.$settings.hebrew
-        this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, '3y', '/', '.netlify.com')
+        this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', 'netlify.com')
         if (state.options.useBodyClass) {
           if (this.$settings.hebrew) {
             document.body.classList.add('he')
