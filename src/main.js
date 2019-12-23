@@ -2,8 +2,10 @@ import Vue from 'vue'
 import './plugins/bootstrap-vue'
 import exported from './export'
 import App from './App.vue'
+import VueCookies from 'vue-cookies'
 
 Vue.use(exported)
+Vue.use(VueCookies)
 
 Vue.config.productionTip = false
 
