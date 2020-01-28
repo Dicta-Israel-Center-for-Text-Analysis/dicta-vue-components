@@ -31,11 +31,11 @@
     </div>
     <div>
       <div v-if="menuOpen" class="popup">
-        <div class="popup-back" @click="toggleDropDown"></div>
+        <div class="popup-back" @click="toggleDropDown" ></div>
         <div class="tool-bar" @keyup.esc="toggleDropDown">
           <ul class="tool-list">
             <li class="tool" v-for="(tool, index) in tools" :key="index">
-              <a :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)" class="tool-link" target="_blank">
+              <a @contextmenu="viewDropDown" :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)" class="tool-link" target="_blank">
                 <img class="logo" alt="logo" :src="tool.logo">
                 <div class="description">
                   <div><span class="title">{{computedHebrew ? tool.hebTitle : tool.engTitle}}</span></div>
@@ -104,11 +104,14 @@ export default {
         }
       }
     },
+    viewDropDown (e) {
+      this.menuOpen = true
+    },
     toggleDropDown () {
       this.menuOpen = !this.menuOpen
       if (this.menuOpen) {
         // on mouseup rather than on click because click has often been captured, e.g. by the b-dropdown in nakdanpro
-        document.body.addEventListener('mouseup', this.dismissPopup)
+        //document.body.addEventListener('mouseup', this.dismissPopup)
       }
     },
     dismissPopup (evt) {
