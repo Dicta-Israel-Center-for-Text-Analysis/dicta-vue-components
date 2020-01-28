@@ -111,7 +111,7 @@ export default {
       this.menuOpen = !this.menuOpen
       if (this.menuOpen) {
         // on mouseup rather than on click because click has often been captured, e.g. by the b-dropdown in nakdanpro
-        //document.body.addEventListener('mouseup', this.dismissPopup)
+        // document.body.addEventListener('mouseup', this.dismissPopup)
       }
     },
     dismissPopup (evt) {

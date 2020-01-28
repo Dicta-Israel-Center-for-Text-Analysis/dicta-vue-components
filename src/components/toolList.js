@@ -13,7 +13,7 @@ export const tools = [
     engTitle: 'Tiberias: Bible Classification',
     engSubtitle: 'Categorize text using stylistic markers',
     hebTitle: 'סיווג טקסטים',
-    hebSubtitle: 'השוואת טקסטים בהתבסס על מאפיינים סיגונוניים'
+    hebSubtitle: 'השוואת טקסטים בהתבסס על מאפיינים סיגנוניים'
   },
   {
     href: 'https://synoptic.dicta.org.il/',
@@ -73,4 +73,12 @@ export const tools = [
     engSubtitle: 'Find what you\'re really looking for in the Talmud',
     hebTitle: 'חיפוש בתלמוד',
     hebSubtitle: 'מנוע חיפוש אינטואיטיבי לתלמוד'
+  },
+  {
+    href: 'http://wordplay.dicta.org.il/',
+    logo: require('../assets/Logo Charuzit_Blue_Circle.png'),
+    engTitle: 'Charuzit - Beta version',
+    engSubtitle: 'Find rhymes, assonance, and alliteration',
+    hebTitle: 'חרוזית - גירסת בטא',
+    hebSubtitle: 'איתור חרוזים, מצלול ואליטרציה'
   }]
