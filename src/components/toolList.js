@@ -1,7 +1,7 @@
 export const tools = [
   {
     engHref: 'https://nakdan.dicta.org.il/?lang=en',
-    hebHref: 'https://nakdan.dicta.org.il/',    
+    hebHref: 'https://nakdan.dicta.org.il/',
     logo: require('../assets/Logo Nakdan_Blue_Circle.png'),
     engTitle: 'Nakdan',
     engSubtitle: 'Add nikud to modern / rabbinic / poetic text',
