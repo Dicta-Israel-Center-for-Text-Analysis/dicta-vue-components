@@ -1,6 +1,6 @@
 <template>
   <div :dir="computedHebrew ? 'rtl' : 'ltr'">
-    <Promotions v-if="showPromotions" :hebrew="computedHebrew" :tool="'nakdan'"></Promotions>
+    <Promotions v-if="showPromotions !== ''" :hebrew="computedHebrew" :tool="showPromotions"></Promotions>
     <div class="container d-none d-sm-block">
       <div class="top-bar">
       <span class="top-bar-left">
@@ -70,7 +70,7 @@ export default {
       default: true
     },
     showPromotions: {
-      default: true
+      default: 'nakdan'
     }
   },
   data () {
