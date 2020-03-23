@@ -9,6 +9,7 @@
     "build-lib": "vue-cli-service build --target lib src/export.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.13",
     "vue": "^2.6.10",

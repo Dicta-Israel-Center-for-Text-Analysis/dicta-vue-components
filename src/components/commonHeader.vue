@@ -1,5 +1,6 @@
 <template>
   <div :dir="computedHebrew ? 'rtl' : 'ltr'" class="d-none d-sm-block">
+    <Promotions v-if="showPromotions" :hebrew="computedHebrew" :tool="'nakdan'"></Promotions>
     <div class="container">
       <div class="top-bar">
       <span class="top-bar-left">
@@ -54,17 +55,21 @@
 import { tools } from './toolList'
 import ContactUs from './contactUs'
 import ToolFooter from './toolFooter'
+import Promotions from './promotions'
 import state from '@/state'
 
 export default {
   name: 'dicta-header',
-  components: { ToolFooter, ContactUs },
+  components: { ToolFooter, ContactUs, Promotions },
   props: {
     hebrew: { },
     hebrewSupported: {
       default: true
     },
     englishSupported: {
+      default: true
+    },
+    showPromotions: {
       default: true
     }
   },
