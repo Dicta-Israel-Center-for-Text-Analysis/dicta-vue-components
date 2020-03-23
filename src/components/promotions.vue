@@ -3,7 +3,7 @@
     <div class="container d-flex justify-content-between">
       <div>
           {{hebrew ? currentPromotion.hebrew : currentPromotion.english}}
-          <a class="text-white" href="" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
+          <a class="text-white" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
       </div>
       <div @click="closePromotion">
         <i class="fas fa-times"></i>
