@@ -1,7 +1,7 @@
 <template>
-  <div :dir="computedHebrew ? 'rtl' : 'ltr'" class="d-none d-sm-block">
+  <div :dir="computedHebrew ? 'rtl' : 'ltr'">
     <Promotions v-if="showPromotions" :hebrew="computedHebrew" :tool="'nakdan'"></Promotions>
-    <div class="container">
+    <div class="container d-none d-sm-block">
       <div class="top-bar">
       <span class="top-bar-left">
         <a :href="'http://dicta.org.il/index' + (computedHebrew ? '-he.html' : '.html')">

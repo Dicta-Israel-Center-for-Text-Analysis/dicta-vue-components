@@ -1,13 +1,19 @@
 <template>
-  <div v-if="showPromotions" class="promotion text-white py-1 d-none d-md-block position-relative">
-    <div class="container d-flex justify-content-between">
-      <div>
+  <div v-if="showPromotions" class="promotion text-white py-1 position-relative">
+    <div v-if="promotionsData.desktop" class="container d-flex justify-content-between">
+      <div class=" d-none d-sm-block">
           {{hebrew ? currentPromotion.hebrew : currentPromotion.english}}
           <a class="text-white" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
       </div>
-      <div @click="closePromotion">
+      <div @click="closePromotion" class="d-none d-sm-block">
         <i class="fas fa-times"></i>
       </div>
+    </div>
+    <div  v-bind:class="{'text-right' : hebrew}" class="d-block d-sm-none container" v-if="promotionsData.mobile">
+        <div>{{hebrew ? currentPromotion.hebrew : currentPromotion.english}}</div>
+        <div>{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</div>
+        <a class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
+        <a class="rounded btn bg-white promotion-btn mx-2 my-2" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewMobileAction : currentPromotion.englishMobileAction}}</a>
     </div>
   </div>
 </template>
@@ -77,7 +83,12 @@ export default {
   background: #005999;
   z-index: 1;
   a {
+    font-size: 16px;
     text-decoration: underline;
+    &.promotion-btn {
+        text-decoration: none;
+        color: #005999;
+    }
   }
   i {
       cursor: pointer;
