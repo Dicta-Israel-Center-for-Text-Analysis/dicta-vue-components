@@ -55,7 +55,10 @@ export default {
       let self = this
       axios.get(requestUrl)
         .then(function (response) {
-          self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
+          var obj = JSON.parse((JSON.stringify(response.data)))
+          if (obj && typeof obj === 'object') {
+            self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
+          }
         })
     },
     filterHiddenPromotions () {
