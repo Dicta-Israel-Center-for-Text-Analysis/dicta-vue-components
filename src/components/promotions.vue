@@ -10,7 +10,7 @@
       </div>
     </div>
     <div v-bind:class="{'text-right' : hebrew}" class="py-1 d-block d-sm-none container" v-if="promotionsData.mobile">
-        <div>{{hebrew ? currentPromotion.hebrew : currentPromotion.english}}</div>
+        <div>{{hebrew ? currentPromotion.hebrewMobile : currentPromotion.englishMobile}}</div>
         <div>{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</div>
         <a class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
         <a class="rounded btn bg-white promotion-btn mx-2 my-2" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewMobileAction : currentPromotion.englishMobileAction}}</a>
