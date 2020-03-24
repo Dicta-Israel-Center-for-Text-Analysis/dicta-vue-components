@@ -9,7 +9,7 @@
         <i class="fas fa-times"></i>
       </div>
     </div>
-    <div  v-bind:class="{'text-right' : hebrew}" class="d-block d-sm-none container" v-if="promotionsData.mobile">
+    <div v-bind:class="{'text-right' : hebrew}" class="d-block d-sm-none container" v-if="promotionsData.mobile">
         <div>{{hebrew ? currentPromotion.hebrew : currentPromotion.english}}</div>
         <div>{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</div>
         <a class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
@@ -34,7 +34,9 @@ export default {
   },
   watch: {
     promotionsData () {
-      this.filterHiddenPromotions()
+      if (this.promotionsData) {
+        this.filterHiddenPromotions()
+      }
     }
   },
   methods: {

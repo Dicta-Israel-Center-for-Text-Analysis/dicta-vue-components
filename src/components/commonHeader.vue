@@ -70,7 +70,7 @@ export default {
       default: true
     },
     showPromotions: {
-      default: 'nakdan'
+      default: ''
     }
   },
   data () {
