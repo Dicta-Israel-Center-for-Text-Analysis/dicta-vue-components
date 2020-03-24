@@ -32,7 +32,7 @@
     </div>
     <div>
       <div v-if="menuOpen" class="popup">
-        <div class="popup-back" @click="toggleDropDown" ></div>
+        <div class="popup-back" v-bind:class="{'promotions-visible' : showPromotions !== ''}" @click="toggleDropDown" ></div>
         <div class="tool-bar" @keyup.esc="toggleDropDown">
           <ul class="tool-list">
             <li class="tool" v-for="(tool, index) in tools" :key="index">
@@ -134,7 +134,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
   .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -182,6 +182,9 @@ export default {
   .popup-back {
     position: fixed;
     top: 50px;
+    &.promotions-visible{
+      top: 64px;
+    }
     bottom: 0;
     left: 0;
     right: 0;
