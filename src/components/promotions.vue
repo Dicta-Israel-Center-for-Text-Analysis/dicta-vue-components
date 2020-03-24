@@ -1,15 +1,15 @@
 <template>
-  <div v-if="showPromotions" class="promotion text-white py-1 position-relative">
+  <div v-if="showPromotions" class="promotion text-white position-relative">
     <div v-if="promotionsData.desktop" class="container d-flex justify-content-between">
-      <div class=" d-none d-sm-block">
+      <div class=" d-none d-sm-block py-1 ">
           {{hebrew ? currentPromotion.hebrew : currentPromotion.english}}
           <a class="text-white" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
       </div>
-      <div @click="closePromotion" class="d-none d-sm-block">
+      <div @click="closePromotion" class="d-none d-sm-block py-1 ">
         <i class="fas fa-times"></i>
       </div>
     </div>
-    <div v-bind:class="{'text-right' : hebrew}" class="d-block d-sm-none container" v-if="promotionsData.mobile">
+    <div v-bind:class="{'text-right' : hebrew}" class="py-1 d-block d-sm-none container" v-if="promotionsData.mobile">
         <div>{{hebrew ? currentPromotion.hebrew : currentPromotion.english}}</div>
         <div>{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</div>
         <a class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
