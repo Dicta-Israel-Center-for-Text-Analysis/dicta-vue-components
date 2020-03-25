@@ -1,18 +1,18 @@
 <template>
-  <div v-if="showPromotions" class="promotion text-white position-relative">
+  <div v-if="showPromotions" id="promotions" class="promotion text-white position-relative">
     <div v-if="promotionsData.desktop" class="container d-flex justify-content-between">
       <div class=" d-none d-sm-block py-1 ">
           {{hebrew ? currentPromotion.hebrew : currentPromotion.english}}
-          <a class="text-white" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
+          <a id="promotion-link" class="text-white" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewAction : currentPromotion.englishAction}}</a>
       </div>
-      <div @click="closePromotion" class="d-none d-sm-block py-1 ">
+      <div @click="closePromotion" id="close-promotion" class="d-none d-sm-block py-1">
         <i class="fas fa-times"></i>
       </div>
     </div>
     <div v-bind:class="{'text-right' : hebrew}" class="py-1 d-block d-sm-none container" v-if="promotionsData.mobile">
         <div>{{hebrew ? currentPromotion.hebrewMobile : currentPromotion.englishMobile}}</div>
-        <a class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
-        <a class="rounded btn bg-white promotion-btn mx-2 my-2" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewMobileAction : currentPromotion.englishMobileAction}}</a>
+        <a id="mobile-promotion-close" class="rounded btn border my-2" @click="closePromotion">{{hebrew ? "סגור" : "Close"}}</a>
+        <a id="mobile-promotion-link" class="rounded btn bg-white promotion-btn mx-2 my-2" :href="currentPromotion.link" target="_blank">{{hebrew ? currentPromotion.hebrewMobileAction : currentPromotion.englishMobileAction}}</a>
     </div>
   </div>
 </template>
@@ -71,7 +71,9 @@ export default {
       this.getPromotion()
     },
     closePromotion () {
-      this.$cookies.set(this.currentPromotion.cookieName, 'true', -1, '/', 'dicta.org.il')
+      if (this.currentPromotion.cookieName) {
+        this.$cookies.set(this.currentPromotion.cookieName, 'true', -1, '/', 'dicta.org.il')
+      }
       this.promotionsData.ads[this.randomIndex].show = false
       this.removePromotion()
     }
