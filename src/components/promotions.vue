@@ -40,6 +40,7 @@ export default {
   },
   methods: {
     getPromotion () {
+      this.updateBodyClass()
       this.showPromotions = this.promotionsData.ads.length > 0
       if (this.showPromotions) {
         this.randomIndex = Math.floor(Math.random() * this.promotionsData.ads.length)
@@ -61,6 +62,13 @@ export default {
             self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
           }
         })
+    },
+    updateBodyClass () {
+      if (this.promotionsData.ads.length > 0) {
+        document.body.classList.add('promotions-displayed')
+      } else {
+        document.body.classList.remove('promotions-displayed')
+      }
     },
     filterHiddenPromotions () {
       this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true')
