@@ -33,8 +33,9 @@ export default {
   },
   watch: {
     promotionsData () {
-      if (this.promotionsData.ads) {
+      if (this.promotionsData && this.promotionsData.ads) {
         this.filterHiddenPromotions()
+        this.removePromotion()
       }
     }
   },
@@ -72,7 +73,6 @@ export default {
     },
     filterHiddenPromotions () {
       this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true')
-      this.getPromotion()
     },
     removePromotion () {
       this.promotionsData.ads = this.promotionsData.ads.filter(ad => ad.show)
