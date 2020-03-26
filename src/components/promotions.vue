@@ -33,7 +33,7 @@ export default {
   },
   watch: {
     promotionsData () {
-      if (this.promotionsData) {
+      if (this.promotionsData.ads) {
         this.filterHiddenPromotions()
       }
     }
