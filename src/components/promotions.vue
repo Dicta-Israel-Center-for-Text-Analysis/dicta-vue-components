@@ -29,17 +29,22 @@ export default {
       currentPromotion: {}
     }
   },
-  computed: {
-  },
-  watch: {
-    promotionsData () {
-      if (this.promotionsData && this.promotionsData.ads) {
-        this.filterHiddenPromotions()
-        this.removePromotion()
-      }
-    }
-  },
   methods: {
+    getData () {
+    // Performing a GET request
+      const requestUrl = 'https://dicta-israel-center-for-text-analysis.github.io/Promotions/list.json'
+      var self = this
+      axios.get(requestUrl)
+        .then(function (response) {
+          var obj = response.data
+          if (obj && typeof obj === 'object') {
+            self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
+          }
+          if (self.promotionsData && self.promotionsData.ads) {
+            self.filterHiddenPromotions()
+          }
+        })
+    },
     getPromotion () {
       this.updateBodyClass()
       this.showPromotions = this.promotionsData.ads.length > 0
@@ -47,22 +52,6 @@ export default {
         this.randomIndex = Math.floor(Math.random() * this.promotionsData.ads.length)
         this.currentPromotion = this.promotionsData.ads[this.randomIndex]
       }
-    },
-    getData () {
-    // Performing a GET request
-      const requestUrl = 'https://dicta-israel-center-for-text-analysis.github.io/Promotions/list.json'
-
-      axios.defaults.headers = {
-        'Content-Type': 'text/plain;charset=UTF-8'
-      }
-      let self = this
-      axios.get(requestUrl)
-        .then(function (response) {
-          var obj = JSON.parse((JSON.stringify(response.data)))
-          if (obj && typeof obj === 'object') {
-            self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
-          }
-        })
     },
     updateBodyClass () {
       if (this.promotionsData.ads.length > 0) {
@@ -72,18 +61,14 @@ export default {
       }
     },
     filterHiddenPromotions () {
-      this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true')
-    },
-    removePromotion () {
-      this.promotionsData.ads = this.promotionsData.ads.filter(ad => ad.show)
+      this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true').filter(ad => ad.show)
       this.getPromotion()
     },
     closePromotion () {
       if (this.currentPromotion.cookieName) {
-        this.$cookies.set(this.currentPromotion.cookieName, 'true', -1, '/', 'dicta.org.il')
+        this.$cookies.set(this.currentPromotion.cookieName, 'true', '30d', '/', 'dicta.org.il')
       }
-      this.promotionsData.ads[this.randomIndex].show = false
-      this.removePromotion()
+      this.showPromotions = false
     }
   },
   mounted () {
