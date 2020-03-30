@@ -33,15 +33,15 @@ export default {
     getData () {
     // Performing a GET request
       const requestUrl = 'https://dicta-israel-center-for-text-analysis.github.io/Promotions/list.json'
-      var self = this
       axios.get(requestUrl)
-        .then(function (response) {
+        .then((response) => {
           var obj = response.data
           if (obj && typeof obj === 'object') {
-            self.promotionsData = response.data.promotions.find(item => item.name === self.tool)
+            this.promotionsData = response.data.promotions.find(item => item.name === this.tool)
           }
-          if (self.promotionsData && self.promotionsData.ads) {
-            self.filterHiddenPromotions()
+          if (this.promotionsData && this.promotionsData.ads) {
+            this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true').filter(ad => ad.show)
+            this.getPromotion()
           }
         })
     },
@@ -59,10 +59,6 @@ export default {
       } else {
         document.body.classList.remove('promotions-displayed')
       }
-    },
-    filterHiddenPromotions () {
-      this.promotionsData.ads = this.promotionsData.ads.filter(ad => this.$cookies.get(ad.cookieName) !== 'true').filter(ad => ad.show)
-      this.getPromotion()
     },
     closePromotion () {
       if (this.currentPromotion.cookieName) {
