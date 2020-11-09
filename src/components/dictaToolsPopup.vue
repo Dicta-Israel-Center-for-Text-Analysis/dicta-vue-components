@@ -51,6 +51,7 @@
           </li>
           <li class="dicta-tools-item">
             <a
+              id="mobile-contact-us"
               class="text-body title"
               @click="contactUsMode.showMobileContactUs = true">
               {{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}
