@@ -99,7 +99,9 @@ export default {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
         this.$settings.hebrew = !this.$settings.hebrew
-        this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', 'dicta.org.il')
+        const dictaDomain = 'dicta.org.il'
+        const cookieDomainScope = window.location.host.endsWith(dictaDomain) ? dictaDomain : window.location.hostname
+        this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', cookieDomainScope)
         if (state.options.useBodyClass) {
           if (this.$settings.hebrew) {
             document.body.classList.add('he')
