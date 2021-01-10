@@ -159,7 +159,7 @@ export default {
         this.$settings.hebrew = !this.$settings.hebrew
         if (this.$cookies) {
           this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', 'dicta.org.il')
-        }  
+        }
         if (state.options.useBodyClass) {
           if (this.$settings.hebrew) {
             document.body.classList.add('he')
