@@ -3496,6 +3496,72 @@ var mobileFooter_component = normalizeComponent(
 )
 
 /* harmony default export */ var mobileFooter = (mobileFooter_component.exports);
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"32959ff6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/mobileMenu.vue?vue&type=template&id=fc14cb6a&
+var mobileMenuvue_type_template_id_fc14cb6a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mobile-menu"},[_c('a',{ref:"openTools",staticClass:"text-white",attrs:{"id":"mobile-toolbar-button"},on:{"click":function($event){_vm.dictaToolsMode.showDictaToolsPopup = true}}},[_c('i',{staticClass:"fas fa-bars"})]),_c('dicta-tools-popup',{attrs:{"dicta-tools-mode":_vm.dictaToolsMode,"englishSupported":_vm.englishSupported,"howDialog":_vm.howDialog}})],1)}
+var mobileMenuvue_type_template_id_fc14cb6a_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/mobileMenu.vue?vue&type=template&id=fc14cb6a&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/mobileMenu.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var mobileMenuvue_type_script_lang_js_ = ({
+  name: 'mobile-menu',
+  components: {
+    DictaToolsPopup: dictaToolsPopup
+  },
+  props: {
+    englishSupported: {
+      default: true
+    },
+    howDialog: {
+      default: false
+    }
+  },
+  data: function data() {
+    return {
+      dictaToolsMode: {
+        showDictaToolsPopup: false
+      }
+    };
+  },
+  mounted: function mounted() {},
+  computed: {
+    computedHebrew: function computedHebrew() {
+      return this.$settings.hebrew;
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/mobileMenu.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_mobileMenuvue_type_script_lang_js_ = (mobileMenuvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/mobileMenu.vue
+
+
+
+
+
+/* normalize component */
+
+var mobileMenu_component = normalizeComponent(
+  components_mobileMenuvue_type_script_lang_js_,
+  mobileMenuvue_type_template_id_fc14cb6a_render,
+  mobileMenuvue_type_template_id_fc14cb6a_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var mobileMenu = (mobileMenu_component.exports);
 // EXTERNAL MODULE: ./src/css/custom.scss
 var custom = __webpack_require__("eac2");
 var custom_default = /*#__PURE__*/__webpack_require__.n(custom);
@@ -3644,6 +3710,7 @@ var DDropdown_component = normalizeComponent(
 
 
 
+
 function export_install(Vue, options) {
   components_icons.install(Vue);
   state.options = options || {};
@@ -3651,6 +3718,7 @@ function export_install(Vue, options) {
     hebrew: !!state.options.hebrew
   });
   Vue.component('dicta-header', commonHeader);
+  Vue.component('mobile-menu', mobileMenu);
   Vue.component('mobile-footer', mobileFooter);
   Vue.component('dicta-dropdown', DDropdown);
 }
@@ -3659,6 +3727,7 @@ function export_install(Vue, options) {
   install: export_install,
   dHeader: commonHeader,
   mFooter: mobileFooter,
+  mMenu: mobileMenu,
   dBootstrap: custom_default.a,
   dDropdown: DDropdown
 });
