@@ -2,6 +2,7 @@
   <div id="app">
     <Header></Header>
     <div class="main-content">
+      <div class="bg-primary p-2 d-block d-sm-none"><MobileMenu></MobileMenu></div>
       <div class="container offset-scrollbar">
         <div class="row">
           <div class="col">
@@ -398,6 +399,7 @@
 <script>
 import Header from './components/commonHeader'
 import MobileFooter from './components/mobileFooter'
+import MobileMenu from './components/mobileMenu'
 import Checkbox from './components/checkbox'
 import Radio from './components/radio'
 import DDropdown from './components/DDropdown'
@@ -409,7 +411,8 @@ export default {
     Radio,
     Checkbox,
     Header,
-    MobileFooter
+    MobileFooter,
+    MobileMenu
   },
   data () {
     return {
