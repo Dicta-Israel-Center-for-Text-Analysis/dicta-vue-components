@@ -51,6 +51,7 @@
           </li>
           <li class="dicta-tools-item">
             <a
+              id="mobile-contact-us"
               class="text-body title"
               @click="contactUsMode.showMobileContactUs = true">
               {{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}
@@ -156,7 +157,9 @@ export default {
         this.$emit('lang-changed', this.hebrew ? 'en' : 'he')
       } else {
         this.$settings.hebrew = !this.$settings.hebrew
-        this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', 'dicta.org.il')
+        if (this.$cookies) {
+          this.$cookies.set('DICTA_USE_HEBREW', this.$settings.hebrew, -1, '/', 'dicta.org.il')
+        }
         if (state.options.useBodyClass) {
           if (this.$settings.hebrew) {
             document.body.classList.add('he')

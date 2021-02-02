@@ -13,7 +13,7 @@
       </div>
     </div>
     <div :class="[{'he': hebrew}, 'contact-us-content']" >
-      <form ref="contact-form" id="contact-form" class='form' :class="[{'was-validated': submitted}, 'h-100']" action="https://formspree.io/dicta@dicta.org.il" method="POST">
+      <form ref="contact-form" id="contact-form" class='form' :class="[{'was-validated': submitted}, 'h-100']" action="https://formspree.io/f/xvovdkvj" method="POST">
         <div class='row'>
           <div class='col-12'>
             <b-form-group

@@ -11,7 +11,7 @@
                         </div>
                     </div>
                     <div class="col-8 left-items">
-                      <a @click="dictaToolsMode.showDictaToolsPopup = true" class="a-hover" ref="openTools">
+                      <a id="mobile-toolbar-button" @click="dictaToolsMode.showDictaToolsPopup = true" class="a-hover" ref="openTools">
                         <span class="mx-1">{{ computedHebrew ? 'הכלים של DICTA' : 'DICTA Tools'}}</span><i class="fas fa-bars"></i>
                       </a>
                     </div>
