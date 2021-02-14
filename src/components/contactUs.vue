@@ -8,7 +8,7 @@
            @ok="submit"
            @cancel="resetData"
   >
-    <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div></template>
+    <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact us' }}</div></template>
     <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" target="_blank" action="https://formspree.io/f/xvovdkvj" method="POST">
       <div class='row'>
         <div class='col-12'>
@@ -35,7 +35,7 @@
       <div class='row'>
         <div class='col-12'>
           <b-form-group
-            :label="hebrew ? 'תואר' : 'Description'"
+            :label="hebrew ? 'תאור' : 'Message'"
             label-for="message"
           >
             <b-textarea v-model="description" name="message" rows="4" required></b-textarea>

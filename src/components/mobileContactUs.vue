@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div :class="[ hebrew ? 'text-right' : 'text-left', 'col-6']">
-            <div class="v-center"><h3 class="m-0">{{ hebrew ? 'צרו קשר' : 'Contact Us' }}</h3></div>
+            <div class="v-center"><h3 class="m-0">{{ hebrew ? 'צרו קשר' : 'Contact us' }}</h3></div>
           </div>
           <div class="col-6 left-items">
             <span id="close-contact" @click="contactUsMode.showMobileContactUs = false" style="cursor: pointer"><i-times /></span>
@@ -41,7 +41,7 @@
         <div class='row'>
           <div class='col-12'>
             <b-form-group
-              :label="hebrew ? 'תאור' : 'Description'"
+              :label="hebrew ? 'תאור' : 'Message'"
               label-for="message"
               label-class="mb-1"
             >
