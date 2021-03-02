@@ -215,16 +215,9 @@ export default {
   background-color: white;
   align-self: flex-start;
 }
-
 .description {
   display: inline-block;
 }
-
-a:hover .title {
-  background-color: #d8d8d8;
-  border-radius: 3px;
-}
-
 .title {
   font-size: 18px;
   padding: 2px 5px;
