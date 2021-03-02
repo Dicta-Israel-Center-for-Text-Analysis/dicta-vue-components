@@ -97,7 +97,7 @@ export default {
   }
   .contact-us-content {
     padding: 10px 5%;
-    height: calc(100% - 90px);
+    height: calc(100% - 105px);
   }
   .mobile-contact-us-header{
     height: 50px;
@@ -109,6 +109,10 @@ export default {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+  }
+  button {
+    font-size: 18px;
+    height: 42px;
   }
 
 </style>
