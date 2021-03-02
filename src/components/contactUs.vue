@@ -35,7 +35,7 @@
       <div class='row'>
         <div class='col-12'>
           <b-form-group
-            :label="hebrew ? 'תואר' : 'Description'"
+            :label="hebrew ? 'תיאור' : 'Description'"
             label-for="message"
           >
             <b-textarea v-model="description" name="message" rows="4" required></b-textarea>

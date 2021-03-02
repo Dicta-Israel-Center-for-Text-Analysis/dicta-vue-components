@@ -2,10 +2,10 @@
   <div id="dicta-tools-popup" class="bg-background position-fixed h-100 w-100" v-show="showDictaToolsPopup">
     <span id="close-menu" @click="closeMenu()" style="visibility: hidden"></span>
     <div class="dicta-tools-popup-header bg-secondary position-fixed w-100">
-      <div class="container">
+      <div class="container" :dir="computedHebrew ? 'rtl' : 'ltr'">
         <div class="row">
-          <div class="col-6 text-right">
-            <div class="v-center">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</div>
+          <div class="col-6" :class="[ computedHebrew ? 'text-right' : 'text-left']">
+            <h2 class="mb-0">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</h2>
           </div>
           <div class="col-6 left-items">
             <span @click="goBack()" style="cursor: pointer">
@@ -15,9 +15,18 @@
         </div>
       </div>
     </div>
-    <div class="dicta-tools-popup-items-container">
-      <div class="dicta-tools">
+    <div class="dicta-tools-popup-items-container" :dir="computedHebrew ? 'rtl' : 'ltr'">
+      <div class="dicta-tools" >
         <ul class="tool-list list-unstyled p-0 m-0">
+          <li class="tool dicta-tools-item contact-link border-top border-bottom border-primary">
+            <a
+              id="mobile-contact-us"
+              class="text-primary title"
+              @click="contactUsMode.showMobileContactUs = true">
+              {{ computedHebrew ? 'משוב' : 'Feedback' }}
+            </a>
+            <i class="far fa-envelope px-3 text-primary"></i>
+          </li>
           <li class="tool dicta-tools-item" v-for="(tool, index) in tools" :key="index">
             <a
               :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)"
@@ -48,14 +57,6 @@
           </li>
           <li class="dicta-tools-item">
             <a class="text-body title" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
-          </li>
-          <li class="dicta-tools-item">
-            <a
-              id="mobile-contact-us"
-              class="text-body title"
-              @click="contactUsMode.showMobileContactUs = true">
-              {{ computedHebrew ? 'צרו קשר' : 'Contact Us' }}
-            </a>
           </li>
           <li class="dicta-tools-item" v-if="hebrewSupported && englishSupported">
             <a class="text-body title" @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>
@@ -229,21 +230,21 @@ a:hover .title {
   padding: 2px 5px;
 }
 [dir="rtl"]{
-    .dicta-tools-item {
-      text-align: right;
-      &::after {
-          left: 15px;
-          content: "\f104";
+  .dicta-tools-item {
+    text-align: right;
+    &::after {
+      left: 15px;
+      content: "\f104";
     }
   }
 }
 [dir="ltr"]{
-    .dicta-tools-item {
-        &::after {
-            right: 15px;
-            content: "\f105";
-      }
+  .dicta-tools-item {
+    &::after {
+      right: 15px;
+      content: "\f105";
     }
+  }
 }
 .dicta-tools-item {
   min-height: 59px;
@@ -258,6 +259,15 @@ a:hover .title {
     position: absolute;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+  }
+  &.contact-link {
+    background-color: #d6ecff;
+    i {
+      font-size: 24px;
+    }
+    &::after {
+      content: '';
+    }
   }
   span{
     display: block;

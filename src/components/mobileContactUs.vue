@@ -1,10 +1,10 @@
 <template>
   <div id="mobile-contact-us" v-show="showMobileContactUs" class="h-100">
-    <div class="mobile-contact-us-header bg-secondary">
+    <div class="mobile-contact-us-header bg-secondary" :dir="hebrew ? 'rtl' : 'ltr'">
       <div class="container">
         <div class="row">
           <div :class="[ hebrew ? 'text-right' : 'text-left', 'col-6']">
-            <div class="v-center"><h3 class="m-0">{{ hebrew ? 'צרו קשר' : 'Contact Us' }}</h3></div>
+            <div class="v-center"><h3 class="m-0">{{ hebrew ? 'משוב' : 'Feedback' }}</h3></div>
           </div>
           <div class="col-6 left-items">
             <span id="close-contact" @click="contactUsMode.showMobileContactUs = false" style="cursor: pointer"><i-times /></span>
