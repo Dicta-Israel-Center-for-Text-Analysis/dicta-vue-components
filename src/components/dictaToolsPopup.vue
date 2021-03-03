@@ -4,10 +4,10 @@
     <div class="dicta-tools-popup-header bg-secondary position-fixed w-100">
       <div class="container" :dir="computedHebrew ? 'rtl' : 'ltr'">
         <div class="row">
-          <div class="col-6" :class="[ computedHebrew ? 'text-right' : 'text-left']">
+          <div class="col-9" :class="[ computedHebrew ? 'text-right' : 'text-left']">
             <h2 class="mb-0">{{ computedHebrew ? 'הכלים של דיקטה' : 'DICTA Tools' }}</h2>
           </div>
-          <div class="col-6 left-items">
+          <div class="col-3 left-items">
             <span @click="goBack()" style="cursor: pointer">
               <i-times />
             </span>
