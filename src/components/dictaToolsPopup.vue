@@ -18,11 +18,14 @@
     <div class="dicta-tools-popup-items-container" :dir="computedHebrew ? 'rtl' : 'ltr'">
       <div class="dicta-tools" >
         <ul class="tool-list list-unstyled p-0 m-0">
-          <li class="tool dicta-tools-item contact-link border-top border-bottom border-primary">
+          <li
+            class="tool dicta-tools-item contact-link border-top border-bottom border-primary"
+            @click="contactUsMode.showMobileContactUs = true"
+            >
             <a
               id="mobile-contact-us"
               class="text-primary title"
-              @click="contactUsMode.showMobileContactUs = true">
+            >
               {{ computedHebrew ? 'משוב' : 'Feedback' }}
             </a>
             <i class="far fa-envelope px-3 text-primary"></i>
@@ -45,9 +48,6 @@
       </div>
       <div class="dicta-other-buttons">
         <ul class="list-unstyled p-0 m-0">
-          <li class="dicta-tools-item" v-if="howDialog">
-            <a class="text-body title" @click="openHowItWorks">{{ computedHebrew ? 'איך זה עובד' : 'How it Works' }}</a>
-          </li>
           <li class="dicta-tools-item">
             <a
               class="text-body title"
@@ -110,9 +110,6 @@ export default {
     },
     englishSupported: {
       default: true
-    },
-    howDialog: {
-      default: false
     }
   },
   computed: {
@@ -169,9 +166,6 @@ export default {
           }
         }
       }
-    },
-    openHowItWorks () {
-      this.$parent.$emit('showHowDialog')
     }
   }
 }

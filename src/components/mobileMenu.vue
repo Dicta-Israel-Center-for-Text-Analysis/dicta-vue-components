@@ -1,9 +1,21 @@
 <template>
     <div class="mobile-menu">
-      <a id="mobile-toolbar-button" @click="dictaToolsMode.showDictaToolsPopup = true" class="text-white" ref="openTools">
+      <a
+        id="mobile-toolbar-button"
+        @click="dictaToolsMode.showDictaToolsPopup = true"
+        class="text-white"
+        >
         <i class="fas fa-bars"></i>
       </a>
-      <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported" :howDialog="howDialog"/>
+      <a
+        id="mobile-about-button"
+        v-if="howDialog"
+        class="text-white"
+        @click="openHowItWorks"
+        >
+        <i class="fa fa-info-circle mx-3"></i>
+      </a>
+      <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
     </div>
 </template>
 <script>
@@ -28,7 +40,10 @@ export default {
       }
     }
   },
-  mounted () {
+  methods: {
+    openHowItWorks () {
+      this.$emit('showHowDialog')
+    }
   },
   computed: {
     computedHebrew () {
