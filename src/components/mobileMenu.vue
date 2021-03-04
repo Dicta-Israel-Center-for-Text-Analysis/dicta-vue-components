@@ -1,12 +1,5 @@
 <template>
-    <div class="mobile-menu">
-      <a
-        id="mobile-toolbar-button"
-        @click="dictaToolsMode.showDictaToolsPopup = true"
-        class="text-white"
-        >
-        <i class="fas fa-bars"></i>
-      </a>
+    <div class="mobile-menu" :dir="computedHebrew ? 'ltr' : 'rtl'">
       <a
         id="mobile-about-button"
         v-if="howDialog"
@@ -14,6 +7,13 @@
         @click="openHowItWorks"
         >
         <i class="fa fa-info-circle mx-3"></i>
+      </a>
+      <a
+        id="mobile-toolbar-button"
+        @click="dictaToolsMode.showDictaToolsPopup = true"
+        class="text-white"
+        >
+        <i class="fas fa-bars"></i>
       </a>
       <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
     </div>
