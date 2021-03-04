@@ -3491,12 +3491,12 @@ var mobileFooter_component = normalizeComponent(
 )
 
 /* harmony default export */ var mobileFooter = (mobileFooter_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"32959ff6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/mobileMenu.vue?vue&type=template&id=40d666de&
-var mobileMenuvue_type_template_id_40d666de_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mobile-menu"},[_c('a',{staticClass:"text-white",attrs:{"id":"mobile-toolbar-button"},on:{"click":function($event){_vm.dictaToolsMode.showDictaToolsPopup = true}}},[_c('i',{staticClass:"fas fa-bars"})]),(_vm.howDialog)?_c('a',{staticClass:"text-white",attrs:{"id":"mobile-about-button"},on:{"click":_vm.openHowItWorks}},[_c('i',{staticClass:"fa fa-info-circle mx-3"})]):_vm._e(),_c('dicta-tools-popup',{attrs:{"dicta-tools-mode":_vm.dictaToolsMode,"englishSupported":_vm.englishSupported}})],1)}
-var mobileMenuvue_type_template_id_40d666de_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"32959ff6-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/mobileMenu.vue?vue&type=template&id=430fbea1&
+var mobileMenuvue_type_template_id_430fbea1_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"mobile-menu",attrs:{"dir":_vm.computedHebrew ? 'ltr' : 'rtl'}},[(_vm.howDialog)?_c('a',{staticClass:"text-white",attrs:{"id":"mobile-about-button"},on:{"click":_vm.openHowItWorks}},[_c('i',{staticClass:"fa fa-info-circle mx-3"})]):_vm._e(),_c('a',{staticClass:"text-white",attrs:{"id":"mobile-toolbar-button"},on:{"click":function($event){_vm.dictaToolsMode.showDictaToolsPopup = true}}},[_c('i',{staticClass:"fas fa-bars"})]),_c('dicta-tools-popup',{attrs:{"dicta-tools-mode":_vm.dictaToolsMode,"englishSupported":_vm.englishSupported}})],1)}
+var mobileMenuvue_type_template_id_430fbea1_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/mobileMenu.vue?vue&type=template&id=40d666de&
+// CONCATENATED MODULE: ./src/components/mobileMenu.vue?vue&type=template&id=430fbea1&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/mobileMenu.vue?vue&type=script&lang=js&
 //
@@ -3563,8 +3563,8 @@ var mobileMenuvue_type_template_id_40d666de_staticRenderFns = []
 
 var mobileMenu_component = normalizeComponent(
   components_mobileMenuvue_type_script_lang_js_,
-  mobileMenuvue_type_template_id_40d666de_render,
-  mobileMenuvue_type_template_id_40d666de_staticRenderFns,
+  mobileMenuvue_type_template_id_430fbea1_render,
+  mobileMenuvue_type_template_id_430fbea1_staticRenderFns,
   false,
   null,
   null,
