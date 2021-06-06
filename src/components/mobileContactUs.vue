@@ -77,6 +77,7 @@ export default {
       bvModalEvt.preventDefault()
       this.submitted = true
       if (this.$refs['contact-form'].checkValidity()) {
+        this.description = this.description + '\n {{' + this.siteUrl + '}}'
         this.$refs['contact-form'].submit()
         this.$nextTick(() => {
           this.contactUsMode.showMobileContactUs = false
