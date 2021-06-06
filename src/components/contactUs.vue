@@ -43,6 +43,7 @@
           </b-form-group>
         </div>
       </div>
+      <input type="hidden" name="_subject" :value="'New submission from' +siteUrl" />
     </form>
   </b-modal>
 </template>
@@ -56,7 +57,8 @@ export default {
       name: '',
       email: '',
       description: '',
-      submitted: false
+      submitted: false,
+      siteUrl: window.location.href
     }
   },
   methods: {

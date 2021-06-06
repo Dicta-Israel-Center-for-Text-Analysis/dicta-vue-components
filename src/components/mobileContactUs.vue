@@ -50,6 +50,7 @@
             </b-form-group>
           </div>
         </div>
+        <input type="hidden" name="_subject" :value="'New submission from' +siteUrl" />
       </form>
       <b-button class="align-bottom" variant="primary" @click="submit" block>{{ hebrew ? 'שלח' : 'Send'}}</b-button>
     </div>
@@ -62,7 +63,8 @@ export default {
   props: ['contactUsMode', 'hebrew'],
   data () {
     return {
-      submitted: false
+      submitted: false,
+      siteUrl: window.location.href
     }
   },
   computed: {
