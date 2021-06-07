@@ -43,7 +43,7 @@
           </b-form-group>
         </div>
       </div>
-      <input type="hidden" name="_subject" :value="'New submission from' +siteUrl" />
+      <input type="hidden" name="_subject" :value="'New submission from: ' +siteUrl" />
     </form>
   </b-modal>
 </template>
@@ -72,7 +72,7 @@ export default {
       bvModalEvt.preventDefault()
       this.submitted = true
       if (this.$refs['contact-form'].checkValidity()) {
-        this.description = this.description + '\n {{' + this.siteUrl + '}}'
+        this.description = this.description
         this.$refs['contact-form'].submit()
         this.$nextTick(() => {
           this.$refs['contact-modal'].hide()
