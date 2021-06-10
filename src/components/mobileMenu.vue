@@ -1,6 +1,8 @@
 <template>
     <div class="mobile-menu">
-      <span :dir="computedHebrew ? 'ltr' : 'rtl'">
+      <span
+        :dir="computedHebrew ? 'ltr' : 'rtl'"
+        :class="computedHebrew ? 'text-right' : 'text-left'">
         <a
           id="mobile-toolbar-button"
           @click="dictaToolsMode.showDictaToolsPopup = true"
