@@ -47,7 +47,7 @@
         </ul>
       </div>
       <div class="dicta-other-buttons">
-        <ul class="list-unstyled p-0 m-0">
+        <ul class="list-unstyled p-0 m-0" :class="computedHebrew ? 'text-right' : 'text-left'">
           <li class="dicta-tools-item">
             <a
               class="text-body title"
