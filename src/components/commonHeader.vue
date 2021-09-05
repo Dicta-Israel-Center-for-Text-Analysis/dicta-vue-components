@@ -4,7 +4,7 @@
     <div class="container d-none d-sm-block">
       <div class="top-bar">
       <span class="top-bar-left">
-        <a :href="'http://dicta.org.il/index' + (computedHebrew ? '-he.html' : '.html')">
+        <a :href="'http://dicta.org.il/' + (!computedHebrew ? '?lang=en' : '')">
           <span class="dicta">DICTA</span>
           <span class="dicta-tagline">
             {{
