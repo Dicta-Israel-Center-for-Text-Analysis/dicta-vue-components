@@ -51,12 +51,12 @@
           <li class="dicta-tools-item">
             <a
               class="text-body title"
-              :href="'http://dicta.org.il/aboutus' + (computedHebrew ? '-he.html' : '-en.html')"
+              :href="'https://dicta.org.il/about' + (!computedHebrew ? '?lang=en' : '')"
               target="_blank"
             >{{ computedHebrew ? 'אודות דיקטה' : 'About Us' }}</a>
           </li>
           <li class="dicta-tools-item">
-            <a class="text-body title" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
+            <a class="text-body title" href="https://dicta.org.il/tos" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
           </li>
           <li class="dicta-tools-item" v-if="hebrewSupported && englishSupported">
             <a class="text-body title" @click="changeLanguage">{{ computedHebrew ? 'English' : 'עברית' }}</a>

@@ -1,10 +1,10 @@
 <template>
-  <div class="footer" :class="{he: computedHebrew}" :dir="computedHebrew ? 'rtl' : 'ltr'">
+  <div class="footer" :class="{'he': computedHebrew}" :dir="computedHebrew ? 'rtl' : 'ltr'">
     <div class="container">
       <div class="footer-content">
-        <a v-if="computedHebrew" class="footer-item" href="http://dicta.org.il/aboutus-he.html" target="_blank">אודות</a>
-        <a v-else class="footer-item" href="http://dicta.org.il/aboutus-en.html" target="_blank">About</a>
-        <a class="footer-item" href="http://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
+        <a v-if="computedHebrew" class="footer-item" href="https://dicta.org.il/about" target="_blank">אודות</a>
+        <a v-else class="footer-item" href="https://dicta.org.il/about?lang=en" target="_blank">About</a>
+        <a class="footer-item" href="https://dicta.org.il/tos.html" target="_blank">{{computedHebrew ? 'תנאים ושרותים' : 'Terms of service'}}</a>
         <a href="https://www.facebook.com/dictatools" target="_blank"
            class="footer-item footer-icon"><i class="social-icon fab fa-facebook-f"></i></a>
         <a href="https://twitter.com/DictaTools?lang=he" target="_blank"

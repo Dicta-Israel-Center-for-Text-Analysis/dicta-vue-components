@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-4 text-right">
                         <div class="v-center">
-                          <a target="_blank" :href="'http://dicta.org.il/index' + (computedHebrew ? '-he.html' : '.html')">
+                          <a target="_blank" :href="'https://dicta.org.il/' + (!computedHebrew ? '?lang=en' : '')">
                             <span class="dicta text-body">DICTA</span>
                           </a>
                         </div>
