@@ -11,10 +11,10 @@
         <a
           id="mobile-about-button"
           v-if="howDialog"
-          class="text-white"
+          class="text-white mx-3"
           @click="openHowItWorks"
           >
-          <i class="fa fa-info-circle mx-3"></i>
+          <i class="fa fa-info-circle"></i>
         </a>
       </span>
       <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
