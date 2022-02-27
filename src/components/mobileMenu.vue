@@ -17,7 +17,7 @@
           <i class="fa fa-info-circle"></i>
         </a>
       </span>
-      <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported"/>
+      <dicta-tools-popup :dicta-tools-mode="dictaToolsMode" :englishSupported="englishSupported" :custom-links="customLinks"/>
     </div>
 </template>
 <script>
@@ -33,6 +33,11 @@ export default {
     },
     howDialog: {
       default: false
+    },
+    customLinks: {
+      type: Array,
+      default: () =>
+        []
     }
   },
   data () {

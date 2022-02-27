@@ -30,7 +30,7 @@
             </a>
             <i class="far fa-envelope px-3 text-primary"></i>
           </li>
-          <li class="tool dicta-tools-item" v-for="(tool, index) in tools" :key="index">
+          <li class="tool dicta-tools-item" v-for="(tool, index) in dictatools" :key="index">
             <a
               :href="tool.hasOwnProperty('href') ? tool.href : (computedHebrew ? tool.hebHref : tool.engHref)"
               class="tool-link"
@@ -110,9 +110,17 @@ export default {
     },
     englishSupported: {
       default: true
+    },
+    customLinks: {
+      type: Array,
+      default: () =>
+        []
     }
   },
   computed: {
+    dictatools () {
+      return this.customLinks.concat(this.tools)
+    },
     showDictaToolsPopup () {
       return this.dictaToolsMode.showDictaToolsPopup
     },
@@ -200,7 +208,6 @@ export default {
   text-decoration: none;
   align-items: center;
 }
-
 .logo {
   display: inline-block;
   margin: 2px 2px;
