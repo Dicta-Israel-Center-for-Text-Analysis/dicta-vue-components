@@ -9,6 +9,9 @@
     <div class="px-3" v-if="showMobileContactUs">
       <iframe  :src="iframeSrc"></iframe>
     </div>
+    <div class="px-3">
+      <b-btn variant="primary" class="d-block w-100" @click="submit">{{ hebrew ? 'שליחה' : 'Send' }}</b-btn>
+    </div>
   </div>
 </template>
 
@@ -51,6 +54,11 @@ export default {
         }
       }
     },
+    submit (bvModalEvt) {
+      bvModalEvt.preventDefault()
+      const iframe = document.querySelector('iframe')
+      iframe.contentWindow.postMessage('SUBMIT_FORM', this.iframeSrc)
+    },
     closeContact () {
       this.contactUsMode.showMobileContactUs = false
       this.iframeSrc = 'https://dicta.org.il/contact'
@@ -72,7 +80,7 @@ export default {
 iframe {
   width: 100%;
   border: none;
-  height: 100vh;
+  height: 88vh;
 }
 .mobile-contact-us-header {
   height: 50px;

@@ -7093,10 +7093,10 @@
     "pify" "^4.0.1"
     "semver" "^6.3.0"
 
-"sass@^1.58.3":
-  "integrity" "sha512-Q7RaEtYf6BflYrQ+buPudKR26/lH+10EmO9bBqbmPh/KeLqv8bjpTNqxe71ocONqXq+jYiCbpPUmQMS+JJPk4A=="
-  "resolved" "https://registry.npmjs.org/sass/-/sass-1.58.3.tgz"
-  "version" "1.58.3"
+"sass@^1.66.1":
+  "integrity" "sha512-50c+zTsZOJVgFfTgwwEzkjA3/QACgdNsKueWPyAR0mRINIvLAStVQBbPg14iuqEQ74NPDbXzJARJ/O4SI1zftA=="
+  "resolved" "https://registry.npmjs.org/sass/-/sass-1.66.1.tgz"
+  "version" "1.66.1"
   dependencies:
     "chokidar" ">=3.0.0 <4.0.0"
     "immutable" "^4.0.0"
