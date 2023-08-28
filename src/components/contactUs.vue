@@ -63,8 +63,3 @@ export default {
   }
 }
 </script>
-<style scoped>
-.contact-us {
-  font-size: 1rem;
-}
-</style>
