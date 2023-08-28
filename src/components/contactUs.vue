@@ -1,6 +1,6 @@
 <template>
   <b-modal :dir="hebrew ? 'rtl' : 'ltr'" id="contact-us" ref="contact-modal" class="contact-us"
-  centered :ok-title="hebrew ? 'שלח' : 'Send'" @show="onShow"
+  centered :ok-title="hebrew ? 'שלח' : 'Send'"
     :cancel-title="hebrew ? 'ביטול' : 'Cancel'" @ok="submit" :hide-footer="iframeSrc.includes('form-submitted')">
     <template slot="modal-header">
       <div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div>
@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       iframeWindow: null,
-      iframeSrc: ''
+      iframeSrc: 'https://dicta.org.il/contact'
     }
   },
   mounted () {
@@ -34,9 +34,6 @@ export default {
     window.removeEventListener('message', this.handleMessage)
   },
   methods: {
-    onShow () {
-      this.iframeSrc = 'https://dicta.org.il/contact'
-    },
     handleMessage (event) {
       // eslint-disable-next-line no-console
       if (event.data.message === 'PAGE_REDIRECTED') {
