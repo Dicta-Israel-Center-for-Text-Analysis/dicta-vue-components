@@ -10,7 +10,7 @@
       <iframe  :src="iframeSrc"></iframe>
     </div>
     <div class="px-3">
-      <b-btn variant="primary" class="d-block w-100" @click="submit">{{ hebrew ? 'שליחה' : 'Send' }}</b-btn>
+      <b-btn size="lg" variant="primary" class="d-block w-100 py-2" @click="submit">{{ hebrew ? 'שליחה' : 'Send' }}</b-btn>
     </div>
   </div>
 </template>
@@ -80,7 +80,7 @@ export default {
 iframe {
   width: 100%;
   border: none;
-  height: 88vh;
+  height: 80vh;
 }
 .mobile-contact-us-header {
   height: 50px;
