@@ -12,6 +12,7 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.2.1",
     "bootstrap-vue": "^2.0.0-rc.13",
+    "sass": "^1.58.3",
     "vue": "^2.6.10",
     "vue-cookies": "^1.6.1"
   },
@@ -23,7 +24,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.14.1",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-bootstrap-vue": "^0.2.0",
     "vue-template-compiler": "^2.6.10"

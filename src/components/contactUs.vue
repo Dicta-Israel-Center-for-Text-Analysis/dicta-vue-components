@@ -1,50 +1,19 @@
 <template>
-  <b-modal id="contact-us"
-           ref="contact-modal"
-           class="contact-us"
-           centered
-           :ok-title="hebrew ? 'שלח' : 'Send'"
-           :cancel-title="hebrew ? 'ביטול' : 'Cancel'"
-           @ok="submit"
-           @cancel="resetData"
-  >
-    <template slot="modal-header"><div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div></template>
-    <form ref="contact-form" id="contact-form" class='form' :class="{'was-validated': submitted}" target="_blank" action="https://formspree.io/f/xvovdkvj" method="POST">
-      <div class='row'>
-        <div class='col-12'>
-          <b-form-group
-            :label="hebrew ? 'שם' : 'Name'"
-            label-for="name"
-          >
-            <b-form-input v-model="name" required name="name"/>
-            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
-          </b-form-group>
-        </div>
+  <b-modal :dir="hebrew ? 'rtl' : 'ltr'" id="contact-us" ref="contact-modal" class="contact-us"
+  centered :ok-title="hebrew ? 'שלח' : 'Send'" @show="onShow"
+    :cancel-title="hebrew ? 'ביטול' : 'Cancel'" @ok="submit" :hide-footer="iframeSrc.includes('form-submitted')">
+    <template slot="modal-header">
+      <div><i-envelope></i-envelope> {{ hebrew ? 'צרו קשר' : 'Contact Us' }}</div>
+    </template>
+      <div>
+        <iframe
+          scrolling="no"
+          style="border: none;"
+          height="320"
+          width="470"
+          :src="iframeSrc"
+        ></iframe>
       </div>
-      <div class='row'>
-        <div class='col-12'>
-          <b-form-group
-            :label="hebrew ? 'דואר אלקטרוני' : 'Email'"
-            label-for="_replyto"
-          >
-            <b-form-input v-model="email" required name="_replyto" type='email'/>
-            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
-          </b-form-group>
-        </div>
-      </div>
-      <div class='row'>
-        <div class='col-12'>
-          <b-form-group
-            :label="hebrew ? 'תיאור' : 'Description'"
-            label-for="message"
-          >
-            <b-textarea v-model="description" name="message" rows="4" required></b-textarea>
-            <b-form-invalid-feedback>{{ hebrew ? 'שדה חובה' : 'Required field'}}</b-form-invalid-feedback>
-          </b-form-group>
-        </div>
-      </div>
-      <input type="hidden" name="_subject" :value="'New submission from: ' +siteUrl" />
-    </form>
   </b-modal>
 </template>
 
@@ -54,37 +23,48 @@ export default {
   props: ['hebrew'],
   data () {
     return {
-      name: '',
-      email: '',
-      description: '',
-      submitted: false,
-      siteUrl: window.location.href
+      iframeWindow: null,
+      iframeSrc: 'https://dicta.org.il/contact'
     }
   },
+  mounted () {
+    window.addEventListener('message', this.handleMessage)
+  },
+  beforeDestroy () {
+    window.removeEventListener('message', this.handleMessage)
+  },
   methods: {
-    resetData () {
-      this.name = ''
-      this.email = ''
-      this.description = ''
-      this.submitted = false
+    onShow () {
+      this.iframeSrc = 'https://dicta.org.il/contact'
+    },
+    handleMessage (event) {
+      // eslint-disable-next-line no-console
+      if (event.data.message === 'PAGE_REDIRECTED') {
+        this.iframeSrc = 'https://dicta.org.il//form-submitted'
+      }
+      if (event.data.message === 'PAGE_LOADED' || event.data.message === 'PAGE_REDIRECTED') {
+        const iframe = document.querySelector('iframe')
+        if (iframe) {
+          iframe.contentWindow.postMessage({
+            message: 'FORM_EMBEDDED',
+            data: {
+              hebrew: this.hebrew,
+              url: window.location.href
+            }
+          }, this.iframeSrc)
+        }
+      }
     },
     submit (bvModalEvt) {
       bvModalEvt.preventDefault()
-      this.submitted = true
-      if (this.$refs['contact-form'].checkValidity()) {
-        this.description = this.description
-        this.$refs['contact-form'].submit()
-        this.$nextTick(() => {
-          this.$refs['contact-modal'].hide()
-          this.resetData()
-        })
-      }
+      const iframe = document.querySelector('iframe')
+      iframe.contentWindow.postMessage('SUBMIT_FORM', this.iframeSrc)
     }
   }
 }
 </script>
 <style scoped>
-  .contact-us {
-    font-size: 1rem;
-  }
+.contact-us {
+  font-size: 1rem;
+}
 </style>
