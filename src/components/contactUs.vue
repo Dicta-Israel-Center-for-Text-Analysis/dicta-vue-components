@@ -24,7 +24,7 @@ export default {
   data () {
     return {
       iframeWindow: null,
-      iframeSrc: 'https://dicta.org.il/contact'
+      iframeSrc: ''
     }
   },
   mounted () {
